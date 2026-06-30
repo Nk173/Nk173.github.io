@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Dvara Open Online Repository for Household Finance — Nishanth K</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .post-header { padding: 3.5rem 0 2rem; border-bottom: 1px solid var(--border); }
+    .post-header h1 {
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -.03em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .post-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .75rem 1.5rem;
+      font-size: .8125rem;
+      color: var(--sub);
+    }
+    .post-date { color: var(--sub); }
+    .post-origin-inline { font-size: .8125rem; color: var(--sub); }
+    .post-origin-inline a { color: var(--sub); text-decoration: underline; }
+    .post-origin-inline a:hover { color: var(--text); }
+    .post-authors { display: flex; gap: .5rem; flex-wrap: wrap; }
+    .author-name {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: .15rem .6rem;
+      font-size: .75rem;
+      color: var(--sub);
+    }
+    .post-tags-list { display: flex; gap: .375rem; flex-wrap: wrap; margin-top: .25rem; }
+    .post-tag {
+      font-size: .6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      padding: .15rem .5rem;
+      border-radius: 4px;
+      background: rgba(47,129,247,.12);
+      color: #58a6ff;
+    }
+
+    /* Article body styles */
+    .post-body {
+      max-width: 720px;
+      padding: 2.5rem 0 5rem;
+    }
+    .post-body p {
+      color: var(--sub);
+      font-size: .9375rem;
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+    .post-body h1,.post-body h2,.post-body h3,.post-body h4 {
+      color: var(--text);
+      font-weight: 600;
+      letter-spacing: -.02em;
+      margin: 2rem 0 .75rem;
+      line-height: 1.3;
+    }
+    .post-body h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: .5rem; }
+    .post-body h3 { font-size: 1.0625rem; }
+    .post-body h4 { font-size: .9375rem; color: var(--sub); }
+    .post-body strong, .post-body b { color: var(--text); font-weight: 600; }
+    .post-body em, .post-body i { color: #b0bec5; font-style: italic; }
+    .post-body a { color: var(--accent); }
+    .post-body a:hover { text-decoration: underline; }
+    .post-body ul, .post-body ol {
+      color: var(--sub);
+      font-size: .9375rem;
+      line-height: 1.8;
+      margin: .75rem 0 1.25rem 1.5rem;
+    }
+    .post-body li { margin-bottom: .4rem; }
+    .post-body blockquote {
+      border-left: 3px solid var(--accent);
+      margin: 1.5rem 0;
+      padding: .75rem 1.25rem;
+      background: var(--bg2);
+      border-radius: 0 var(--r) var(--r) 0;
+      color: var(--sub);
+      font-style: italic;
+    }
+    .post-body img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--r);
+      margin: 1.5rem 0;
+      border: 1px solid var(--border);
+      display: block;
+    }
+    .post-body figure { margin: 1.5rem 0; }
+    .post-body figcaption {
+      font-size: .8125rem;
+      color: var(--sub);
+      text-align: center;
+      margin-top: .5rem;
+    }
+    .post-body table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .875rem;
+      margin: 1.5rem 0;
+      color: var(--sub);
+    }
+    .post-body th {
+      background: var(--bg2);
+      color: var(--text);
+      font-weight: 600;
+      padding: .6rem .875rem;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+    .post-body td {
+      padding: .5rem .875rem;
+      border: 1px solid var(--border);
+    }
+    .post-body tr:nth-child(even) td { background: rgba(22,27,34,.5); }
+    .post-body sup { font-size: .7em; vertical-align: super; }
+    .post-body .wp-caption, .post-body .wp-block-image { margin: 1.5rem 0; }
+    .post-body .wp-caption-text, .post-body figcaption {
+      font-size: .8125rem;
+      color: var(--sub);
+      text-align: center;
+      margin-top: .4rem;
+    }
+    /* Hide Elementor wrappers that weren't stripped */
+    .post-body [class*="elementor-"] { all: unset; display: contents; }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .8125rem;
+      color: var(--sub);
+      padding: 1.5rem 0 0;
+      transition: color .15s;
+    }
+    .back-link:hover { color: var(--text); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="../index.html">Nishanth K</a>
+    <ul class="nav-links">
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../writing.html" class="active">Writing</a></li>
+      <li><a href="../research.html">Research</a></li>
+      <li><a href="../policy.html">Policy</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <a class="back-link" href="../writing.html">← Back to Writing</a>
+
+  <div class="post-header">
+    <h1>The Dvara Open Online Repository for Household Finance</h1>
+    <div class="post-meta">
+      <span class="post-date">March 30, 2019</span>
+      <span class="post-origin-inline">Originally published in the <a href="https://dvararesearch.com/" target="_blank" rel="noopener">Dvara Research Blog</a></span>
+      <div class="post-authors"><span class="author-name">Nishanth Kumar</span><span class="author-name">Vishwanath C</span></div>
+    </div>
+    <div class="post-tags-list"><span class="post-tag">Financial Lives of Poor Households</span></div>
+  </div>
+
+  <div class="post-body">
+    <p>John Campbell in his presidential address to the American Financial Association in 2006<a href="https://dvararesearch.com/the-dvara-open-data-repository-for-household-finance/#_ftn1" name="_ftnref1">[1]</a>, introduced the field of Household Finance. In his address, he elaborates that this field of study “asks how households use financial instruments and markets to achieve their objectives”. While the economic models offered prescriptions for how agents should optimize consumption and investment decisions, these had sometimes failed to explain the behaviour of households in the real world.</p>
+<p>In his detailed exposition of the subject, Campbell makes an important distinction between the various modes of inquiry in the field of household finance. He posits that while rigorous normative models would tell us how households should make optimal financial decisions, there is also the need for an exploration of data to understand what financial decisions households make – a field he goes on to call positive household finance. The importance of understanding the discrepancies between ideal and observed financial behaviour may have potentially significant consequences on public policy. A good example of this is the portfolio allocations of low-income households. Life-cycle portfolio allocation models for households would predict high participation rates in financial assets throughout the life cycle with a relatively larger preference for debt for younger households, and a reduction of both assets and liabilities as people approach retirement. These theoretical propositions are difficult to reconcile with the observed empirical evidence balance-sheets of Indian households. Badarinza et. al (2016)<a href="https://dvararesearch.com/the-dvara-open-data-repository-for-household-finance/#_ftn2" name="_ftnref2">[2]</a> provide evidence that low-income households in India are often found to have an investment portfolio with a significant portion of wealth held in physical, illiquid assets, such as land<a href="https://dvararesearch.com/the-dvara-open-data-repository-for-household-finance/#_ftn3" name="_ftnref3">[3]</a>. There is no clear evidence of these investment strategies changing across the life-cycle. Under-developed financial markets have nudged households to adapt different strategies to manage the different risks to their portfolio. Another example of this is that a positive exploration of household savings behaviour in rural Madhya Pradesh found that cultivator households save in food stocks as a precautionary response to price uncertainty. As a consequence, there have been severe effects on child health and nutrition in these areas<a href="https://dvararesearch.com/the-dvara-open-data-repository-for-household-finance/#_ftn4" name="_ftnref4">[4]</a>. This discrepancy between what should be and what is should push us to examine the reasons for household choices and behaviour, and thus inform policy decisions.</p>
+<p>The study of positive household finance, however, has been hindered by a straightforward challenge – access to data. This is often because the financial decision-making and behaviour of a household is difficult to capture. The various modalities and complex financial lives of households, more pronounced in the case of low-income households, make it difficult to record the data comprehensively without understanding the complexities of circumstance.</p>
+<p>The <a href="https://dvararesearch.com/resources/household-finance-data-sets/" rel="noopener" target="_blank">Household Finance Research Initiative</a> at Dvara is launching the <a href="https://dvararesearch.com/dvara-open-online-repository/" rel="noopener" target="_blank">Dvara Open Online Repository</a> (DOOR) to provide a single location to access publicly available household finance data in India. It is a carefully curated catalogue of datasets which are a product of various research efforts testing different hypotheses by studying household-level financial decision making. It aims to bridge the gap between researchers and data, by compiling publicly available survey data and making it available through a single user interface. This compiled data will have a wide range of applications throughout the community, both academic and non-academic. While Dvara’s <a href="https://dvararesearch.com/a-100-papers-200-points-of-evidence-1-financial-well-being-evidence-gap-map-2/" rel="noopener" target="_blank">Financial Well-Being Evidence Gap Map</a> (FWB EGM) provides researchers with a way to look at existing research and identify evidence gaps in a thematic fashion, the DOOR will allow users to query open-source datasets for information on specific parameters of household financial behaviour.<strong> </strong></p>
+<p>The FWB EGM establishes thematic groups under which the publications listed lie. The datasets held in the DOOR are those used by a selection of the papers from the FWB EGM. However, they can be grouped slightly differently due to the broader nature of some of the datasets. Within this initial iteration of the DOOR, datasets can be classified as being related to:</p>
+<ol>
+<li>Payment cycles</li>
+<li>Effects of financial products</li>
+<li>Gender and policy</li>
+<li>Customer financial education</li>
+</ol>
+<p><img alt="" class="alignnone wp-image-109875923" decoding="async" fetchpriority="high" height="434" src="../Assets/Blogs/The Dvara Open Online Repository for Household Finance - Dvara Research_files/door_img.png" width="664"/></p>
+<p>The Dvara Open Online Repository takes the form of a searchable list of datasets. The datasets are listed by the papers they were used for and the authors that collected them. Datasets have been assigned keywords, which are a combination of keywords relating to the content of the paper as well as the variables held within the datasets. Each dataset is downloadable as a .zip file, which contains</p>
+<ol>
+<li>A README file to help the user get started on working with the data</li>
+<li>A documentation file that gives the user information specific to the data and its initial intended uses</li>
+<li>The data in .csv and .dta formats</li>
+<li>In the event that they are available, the original questionnaires for the survey</li>
+</ol>
+<p>Our goal for the Data Repository is to create a single destination for researchers looking to probe multiple research questions cutting across various dimensions of financial inclusion and household finance research. The repository will continuously evolve to ensure more thorough coverage of the scope of household finance.</p>
+<p><em><a href="https://dvararesearch.com/dvara-open-online-repository/" rel="noopener" target="_blank">Click here</a> to view the data repository.</em></p>
+<p>—</p>
+<p><a href="https://dvararesearch.com/the-dvara-open-data-repository-for-household-finance/#_ftnref1" name="_ftn1">[1]</a> Campbell JY. Household Finance, Presidential Address to the American Finance Association. Journal of Finance. 2006;LXI (4) :1553-1604. <a href="https://scholar.harvard.edu/files/campbell/files/householdfinance_jof_2006.pdf">https://scholar.harvard.edu/files/campbell/files/householdfinance_jof_2006.pdf</a></p>
+<p><a href="https://dvararesearch.com/the-dvara-open-data-repository-for-household-finance/#_ftnref2" name="_ftn2">[2]</a> Badarinza, Balasubramanium and Ramadurai (2016), The Indian Household Savings Landscape, India Policy Forum 2016.</p>
+<p><a href="https://dvararesearch.com/the-dvara-open-data-repository-for-household-finance/#_ftnref3" name="_ftn3">[3]</a> Report of the RBI Household Finance Committee, July 2017 <a href="https://rbidocs.rbi.org.in/rdocs/PublicationReport/Pdfs/HFCRA28D0415E2144A009112DD314ECF5C07.PDF">https://rbidocs.rbi.org.in/rdocs/PublicationReport/Pdfs/HFCRA28D0415E2144A009112DD314ECF5C07.PDF</a></p>
+<p><a href="https://dvararesearch.com/the-dvara-open-data-repository-for-household-finance/#_ftnref4" name="_ftn4">[4]</a> Kochar, Anjini et al. “Aggregate Risk , Saving and Malnutrition in Agricultural Households : Empirical Evidence from India.” (2016).</p>
+<div class="has-social-placeholder has-content-area" data-hashtags="" data-post-id="109875922" data-title="The Dvara Open Online Repository for Household Finance" data-url="https://dvararesearch.com/the-dvara-open-data-repository-for-household-finance/"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2024 Nishanth K</span>
+    <div class="footer-links">
+      <a href="../about.html">About</a>
+      <a href="../writing.html">Writing</a>
+      <a href="../research.html">Research</a>
+      <a href="../policy.html">Policy</a>
+      <a href="mailto:nishanthk050@gmail.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

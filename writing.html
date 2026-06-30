@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Nishanth K</title>
+  <meta name="description" content="Writing by Nishanth K on financial systems, social protection, financial depth, and data — grouped by theme.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.125rem;
+    }
+    .card-origin {
+      font-size: .75rem;
+      color: var(--sub);
+      margin-bottom: .4rem;
+      letter-spacing: .01em;
+    }
+    .blog-empty {
+      color: var(--sub);
+      font-size: .9375rem;
+      line-height: 1.7;
+      padding: 2.5rem 0 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">Nishanth K</a>
+    <ul class="nav-links">
+      <li><a href="writing.html" class="active">Blog</a></li>
+      <li><a href="articles.html">Op-Eds</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="policy.html">Policy</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="mcc.html">Collective</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="page-header">
+    <h1>Blog</h1>
+    <p>Essays, notes, and commentary on the ideas and questions I find interesting — grouped by theme.</p>
+  </div>
+
+  <div class="policy-cats cats-6" role="tablist" aria-label="Writing themes">
+    <button class="policy-cat active" data-target="cat-complex" role="tab" aria-selected="true">
+      <span class="cat-count">Coming soon</span>
+      <span class="cat-name">Complex Systems</span>
+      <span class="cat-desc">Notes and essays on networks, complexity, and emergence.</span>
+    </button>
+    <button class="policy-cat" data-target="cat-social" role="tab" aria-selected="false">
+      <span class="cat-count">4 posts</span>
+      <span class="cat-name">Social Protection &amp; Welfare</span>
+      <span class="cat-desc">Welfare delivery, pensions, and social security for informal and migrant workers.</span>
+    </button>
+    <button class="policy-cat" data-target="cat-depth" role="tab" aria-selected="false">
+      <span class="cat-count">6 posts</span>
+      <span class="cat-name">Financial Depth &amp; Credit</span>
+      <span class="cat-desc">Measuring credit depth and its link to growth across Indian states and districts.</span>
+    </button>
+    <button class="policy-cat" data-target="cat-modular" role="tab" aria-selected="false">
+      <span class="cat-count">4 posts</span>
+      <span class="cat-name">Modular Financial Systems</span>
+      <span class="cat-desc">The 2017 FSD series on modularisation, prudential regulation, and consumer harms.</span>
+    </button>
+    <button class="policy-cat" data-target="cat-reg" role="tab" aria-selected="false">
+      <span class="cat-count">3 posts</span>
+      <span class="cat-name">Regulation &amp; Supervision</span>
+      <span class="cat-desc">Prudential regulation, stress testing, and the RBI's financial-stability reporting.</span>
+    </button>
+    <button class="policy-cat" data-target="cat-digital" role="tab" aria-selected="false">
+      <span class="cat-count">5 posts</span>
+      <span class="cat-name">Digital Finance, Data &amp; Privacy</span>
+      <span class="cat-desc">Digital payments, financial inclusion, open data, and data-privacy interviews.</span>
+    </button>
+  </div>
+
+  <div class="item-list">
+
+    <!-- ── Complex Systems ──────────────────────────────────────── -->
+    <div class="blog-group" id="cat-complex">
+      <p class="blog-empty">Essays on complex systems are on the way — check back soon.</p>
+    </div>
+
+    <!-- ── Social Protection & Welfare ──────────────────────────── -->
+    <div class="blog-group hidden" id="cat-social">
+      <div class="blog-grid">
+
+        <a class="card" href="blog/registration-does-not-always-guarantee-access-to-welfare-exclusions-in-tamil-nad.html">
+          <div class="card-thumb"><img src="Assets/Blogs/thumbnails/registration-does-not-always-guarantee-access-to-welfare-exclusions-in-tamil-nad.svg" alt="Registration Does Not Always Guarantee Access to Welfare – Exclusions In Tamil Nadu’s Labour Welfare System" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-origin">Dvara Research · November 4, 2020</div>
+            <div class="card-title">Registration Does Not Always Guarantee Access to Welfare – Exclusions In Tamil Nadu’s Labour Welfare System</div>
+            <div class="item-tags"><span class="card-tag tag-blog">Direct benefit transfer</span><span class="card-tag tag-blog">Exclusion</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="blog/where-do-we-go-from-here-considerations-for-social-security-for-migrant-workers.html">
+          <div class="card-thumb"><img src="Assets/Blogs/thumbnails/where-do-we-go-from-here-considerations-for-social-security-for-migrant-workers.svg" alt="Where do we go from here? Considerations for social security for migrant workers" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-origin">Dvara Research · May 28, 2020</div>
+            <div class="card-title">Where do we go from here? Considerations for social security for migrant workers</div>
+            <div class="item-tags"><span class="card-tag tag-blog">Financial Lives of Poor Households</span><span class="card-tag tag-blog">Labour market</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="blog/the-state-of-social-pensions-in-india.html">
+          <div class="card-thumb"><img src="Assets/Blogs/The State of Social Pensions in India - Dvara Research_files/pensions_graph1.jpg" alt="The State of Social Pensions in India" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-origin">Dvara Research · July 23, 2019</div>
+            <div class="card-title">The State of Social Pensions in India</div>
+            <div class="item-tags"><span class="card-tag tag-blog">Financial Lives of Poor Households</span><span class="card-tag tag-blog">Pension</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="blog/old-wine-in-a-new-bottle-an-analysis-of-the-pradhan-mantri-shram-yogi-maandhan.html">
+          <div class="card-thumb"><img src="Assets/Blogs/thumbnails/old-wine-in-a-new-bottle-an-analysis-of-the-pradhan-mantri-shram-yogi-maandhan.svg" alt="Old wine in a new bottle? – An analysis of the Pradhan Mantri Shram-Yogi Maandhan" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-origin">Dvara Research · February 5, 2019</div>
+            <div class="card-title">Old wine in a new bottle? – An analysis of the Pradhan Mantri Shram-Yogi Maandhan</div>
+            <div class="item-tags"><span class="card-tag tag-blog">Government’s Welfare Schemes</span></div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- ── Financial Depth & Credit ─────────────────────────────── -->
+    <div class="blog-group hidden" id="cat-depth">
+      <div class="blog-grid">
+
+        <a class="card" href="blog/district-level-assessment-of-credit-depth-in-uttar-pradesh.html">
+          <div class="card-thumb"><img src="Assets/Blogs/District-level Assessment of Credit Depth in Uttar Pradesh - Dvara Research_files/UP_CreditDepth.png" alt="District-level Assessment of Credit Depth in Uttar Pradesh" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-origin">Dvara Research · March 9, 2017</div>
+            <div class="card-title">District-level Assessment of Credit Depth in Uttar Pradesh</div>
+            <div class="item-tags"><span class="card-tag tag-blog">Financial Lives of Poor Households</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="blog/exploratory-analysis-of-credit-and-gdp-growth-rates-for-tamil-nadu.html">
+          <div class="card-thumb"><img src="Assets/Blogs/thumbnails/exploratory-analysis-of-credit-and-gdp-growth-rates-for-tamil-nadu.svg" alt="Exploratory Analysis of Credit and GDP Growth Rates for Tamil Nadu" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-origin">Dvara Research · April 27, 2016</div>
+            <div class="card-title">Exploratory Analysis of Credit and GDP Growth Rates for Tamil Nadu</div>
+            <div class="item-tags"><span class="card-tag tag-blog">financial depth</span><span class="card-tag tag-blog">Financial Lives of Poor Households</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="blog/exploratory-analysis-of-credit-to-gdp-variable-for-tamil-nadu.html">
+          <div class="card-thumb"><img src="Assets/Blogs/Exploratory Analysis of Credit-to-GDP Variable for Tamil Nadu - Dvara Research_files/Figure-1_040416.png" alt="Exploratory Analysis of Credit-to-GDP Variable for Tamil Nadu" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-origin">Dvara Research · April 4, 2016</div>
+            <div class="card-title">Exploratory Analysis of Credit-to-GDP Variable for Tamil Nadu</div>
+            <div class="item-tags"><span class="card-tag tag-blog">financial depth</span><span class="card-tag tag-blog">Financial Lives of Poor Households</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="blog/comparing-the-incidence-and-cost-of-institutional-and-non-institutional-debt.html">
+          <div class="card-thumb"><img src="Assets/Blogs/Comparing the Incidence and Cost of Institutional and Non-Institutional debt - Dvara Research_files/nsso_img1.png" alt="Comparing the Incidence and Cost of Institutional and Non-Institutional debt" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-origin">Dvara Research · December 10, 2015</div>
+            <div class="card-title">Comparing the Incidence and Cost of Institutional and Non-Institutional debt</div>
+            <div class="item-tags"><span class="card-tag tag-blog">Debt Distress</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="blog/measures-of-financial-depth-and-their-limitations.html">
+          <div class="card-thumb"><img src="Assets/Blogs/Measures of Financial Depth and their Limitations - Dvara Research_files/Table_P2.png" alt="Measures of Financial Depth and their Limitations" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-origin">Dvara Research · August 7, 2015</div>
+            <div class="card-title">Measures of Financial Depth and their Limitations</div>
+            <div class="item-tags"><span class="card-tag tag-blog">perspectives on financial depth</span><span class="card-tag tag-blog">Regulatory and Supervisory Frameworks</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="blog/relationship-between-financial-depth-and-economic-growth.html">
+          <div class="card-thumb"><img src="Assets/Blogs/Relationship Between Financial Depth and Economic Growth - Dvara Research_files/house.jpeg" alt="Relationship Between Financial Depth and Economic Growth" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-origin">Dvara Research · July 31, 2015</div>
+            <div class="card-title">Relationship Between Financial Depth and Economic Growth</div>
+            <div class="item-tags"><span class="card-tag tag-blog">Regulatory and Supervisory Frameworks</span></div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- ── Modular Financial Systems ────────────────────────────── -->
+    <div class="blog-group hidden" id="cat-modular">
+      <div class="blog-grid">
+
+        <a class="card" href="blog/concerns-for-prudential-regulation-in-a-modular-financial-system.html">
+          <div class="card-thumb"><img src="Assets/Blogs/thumbnails/concerns-for-prudential-regulation-in-a-modular-financial-system.svg" alt="Concerns for Prudential Regulation in a Modular Financial System" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-origin">Dvara Research · November 26, 2017</div>
+            <div class="card-title">Concerns for Prudential Regulation in a Modular Financial System</div>
+            <div class="item-tags"><span class="card-tag tag-blog">fsd-2017</span><span class="card-tag tag-blog">Regulatory and Supervisory Frameworks</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="blog/harms-to-consumers-in-a-modular-financial-system.html">
+          <div class="card-thumb"><img src="Assets/Blogs/thumbnails/harms-to-consumers-in-a-modular-financial-system.svg" alt="Harms to Consumers in a Modular Financial System" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-origin">Dvara Research · November 7, 2017</div>
+            <div class="card-title">Harms to Consumers in a Modular Financial System</div>
+            <div class="item-tags"><span class="card-tag tag-blog">fsd-2017</span><span class="card-tag tag-blog">Regulatory and Supervisory Frameworks</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="blog/mapping-modularisation-in-the-financial-services-industry.html">
+          <div class="card-thumb"><img src="Assets/Blogs/Mapping Modularisation in the Financial Services Industry - Dvara Research_files/ModularFinServices_271017.png" alt="Mapping Modularisation in the Financial Services Industry" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-origin">Dvara Research · October 27, 2017</div>
+            <div class="card-title">Mapping Modularisation in the Financial Services Industry</div>
+            <div class="item-tags"><span class="card-tag tag-blog">fsd-2017</span><span class="card-tag tag-blog">Regulatory and Supervisory Frameworks</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="blog/designing-regulations-for-a-rapidly-evolving-financial-system-financial-systems-.html">
+          <div class="card-thumb"><img src="Assets/Blogs/Designing Regulations for a Rapidly Evolving Financial System - Financial Systems Design Conference 2017 - Dvara Research_files/DvaraResearch_FSD_2017.jpg" alt="Designing Regulations for a Rapidly Evolving Financial System – Financial Systems Design Conference 2017" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-origin">Dvara Research · October 20, 2017</div>
+            <div class="card-title">Designing Regulations for a Rapidly Evolving Financial System – Financial Systems Design Conference 2017</div>
+            <div class="item-tags"><span class="card-tag tag-blog">Regulatory and Supervisory Frameworks</span></div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- ── Regulation & Supervision ─────────────────────────────── -->
+    <div class="blog-group hidden" id="cat-reg">
+      <div class="blog-grid">
+
+        <a class="card" href="blog/rbis-financial-stability-reports-a-commentary-on-its-purpose-and-contents.html">
+          <div class="card-thumb"><img src="Assets/Blogs/thumbnails/rbis-financial-stability-reports---a-commentary-on-its-purpose-and-contents.svg" alt="RBI’s Financial Stability Reports – A Commentary on its Purpose and Contents" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-origin">Dvara Research · November 2, 2018</div>
+            <div class="card-title">RBI’s Financial Stability Reports – A Commentary on its Purpose and Contents</div>
+            <div class="item-tags"><span class="card-tag tag-blog">RBI</span><span class="card-tag tag-blog">Regulatory and Supervisory Frameworks</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="blog/stress-testing-methodology-brief-comparison-across-regulators.html">
+          <div class="card-thumb"><img src="Assets/Blogs/Stress Testing Methodology – Brief Comparison Across Regulators - Dvara Research_files/Infograph-Stress-Testing.jpeg" alt="Stress Testing Methodology – Brief Comparison Across Regulators" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-origin">Dvara Research · June 23, 2017</div>
+            <div class="card-title">Stress Testing Methodology – Brief Comparison Across Regulators</div>
+            <div class="item-tags"></div>
+          </div>
+        </a>
+
+        <a class="card" href="blog/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-instit.html">
+          <div class="card-thumb"><img src="Assets/Blogs/thumbnails/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-instit.svg" alt="A Comparison of Capital requirements for Microfinance and Housing Finance Institutions" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-origin">Dvara Research · June 30, 2016</div>
+            <div class="card-title">A Comparison of Capital requirements for Microfinance and Housing Finance Institutions</div>
+            <div class="item-tags"><span class="card-tag tag-blog">Microfinance</span><span class="card-tag tag-blog">NBFC</span></div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- ── Digital Finance, Data & Privacy ──────────────────────── -->
+    <div class="blog-group hidden" id="cat-digital">
+      <div class="blog-grid">
+
+        <a class="card" href="blog/the-dvara-open-online-repository-for-household-finance.html">
+          <div class="card-thumb"><img src="Assets/Blogs/The Dvara Open Online Repository for Household Finance - Dvara Research_files/door_img.png" alt="The Dvara Open Online Repository for Household Finance" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-origin">Dvara Research · March 30, 2019</div>
+            <div class="card-title">The Dvara Open Online Repository for Household Finance</div>
+            <div class="item-tags"><span class="card-tag tag-blog">Financial Lives of Poor Households</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="blog/between-the-state-of-access-and-use-in-india-some-observations-from-the-global-f.html">
+          <div class="card-thumb"><img src="Assets/Blogs/thumbnails/between-the-state-of-access-and-use-in-india-some-observations-from-the-global-f.svg" alt="Between the state of Access and Use in India: Some observations from the Global Findex" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-origin">Dvara Research · May 17, 2018</div>
+            <div class="card-title">Between the state of Access and Use in India: Some observations from the Global Findex</div>
+            <div class="item-tags"><span class="card-tag tag-blog">Financial Lives of Poor Households</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="blog/digitising-payment-in-our-backyard.html">
+          <div class="card-thumb"><img src="Assets/Blogs/thumbnails/digitising-payment-in-our-backyard.svg" alt="Digitising Payment in our backyard" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-origin">Dvara Research · August 17, 2016</div>
+            <div class="card-title">Digitising Payment in our backyard</div>
+            <div class="item-tags"><span class="card-tag tag-blog">Digital Financial Inclusion</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="blog/open-data-improves-the-situation-from-a-data-privacy-perspective-interview-with-.html">
+          <div class="card-thumb"><img src="Assets/Blogs/“Open data improves the situation from a data privacy perspective” - Interview with S. Anand - Part 2 - Dvara Research_files/GIF_3.gif" alt="“Open data improves the situation from a data privacy perspective” – Interview with S. Anand – Part 2" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-origin">Dvara Research · June 9, 2016</div>
+            <div class="card-title">“Open data improves the situation from a data privacy perspective” – Interview with S. Anand – Part 2</div>
+            <div class="item-tags"><span class="card-tag tag-blog">Privacy and Data Protection</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="blog/data-can-tell-different-stories-important-is-which-is-the-one-you-want-to-tell-i.html">
+          <div class="card-thumb"><img src="Assets/Blogs/“Data can tell different stories, important is, which is the one you want to tell_” - Interview with S. Anand - Part 1 - Dvara Research_files/Image1_060616.png" alt="“Data can tell different stories, important is, which is the one you want to tell?” – Interview with S. Anand – Part 1" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-origin">Dvara Research · June 6, 2016</div>
+            <div class="card-title">“Data can tell different stories, important is, which is the one you want to tell?” – Interview with S. Anand – Part 1</div>
+            <div class="item-tags"><span class="card-tag tag-blog">Privacy and Data Protection</span></div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-social">
+      <a href="mailto:nishanthk050@gmail.com" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v.35l-10 5.5L2 6.35Zm0 2.63V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8.63l-9.52 5.23a1 1 0 0 1-.96 0Z"/></svg></a>
+      <a href="https://github.com/nk173" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17 4.7 18 5 18 5c.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5Z"/></svg></a>
+      <a href="https://substack.com/@beamboybeamboy" target="_blank" rel="noopener" aria-label="Substack" title="Substack"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.54 8.24H1.46V5.4h21.08v2.84ZM1.46 10.81V24L12 18.11 22.54 24V10.81H1.46ZM22.54 0H1.46v2.84h21.08V0Z"/></svg></a>
+      <a href="https://www.linkedin.com/in/nkumar1191/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.74v20.51C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.74C24 .78 23.2 0 22.22 0Z"/></svg></a>
+      <a href="https://www.youtube.com/@MadrasComplexityCollective" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.2 3.6Z"/></svg></a>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Nishanth K</span>
+      <div class="footer-links">
+        <a href="writing.html">Blog</a>
+        <a href="articles.html">Op-Eds</a>
+        <a href="research.html">Research</a>
+        <a href="policy.html">Policy</a>
+        <a href="projects.html">Projects</a>
+        <a href="mcc.html">Collective</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="mailto:nishanthk050@gmail.com">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Prefer a custom thumbnail (Assets/Blogs/custom-thumbs/<blog-slug>.png|jpg|jpeg|webp) if present.
+  (function () {
+    const exts = ['png', 'jpg', 'jpeg', 'webp'];
+    document.querySelectorAll('.card').forEach(card => {
+      const img = card.querySelector('.card-thumb img');
+      if (!img) return;
+      const m = (card.getAttribute('href') || '').match(/blog\/(.+)\.html$/);
+      if (!m) return;
+      const slug = m[1];
+      (function tryExt(i) {
+        if (i >= exts.length) return;
+        const url = 'Assets/Blogs/custom-thumbs/' + slug + '.' + exts[i];
+        const probe = new Image();
+        probe.onload = () => { img.src = url; };
+        probe.onerror = () => tryExt(i + 1);
+        probe.src = url;
+      })(0);
+    });
+  })();
+
+  // Category filter boxes
+  (function () {
+    const cats = document.querySelectorAll('.policy-cat');
+    const groups = document.querySelectorAll('.blog-group');
+    function show(id) {
+      groups.forEach(g => g.classList.toggle('hidden', g.id !== id));
+      cats.forEach(c => {
+        const on = c.dataset.target === id;
+        c.classList.toggle('active', on);
+        c.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+    }
+    cats.forEach(c => c.addEventListener('click', () => show(c.dataset.target)));
+  })();
+</script>
+
+</body>
+</html>

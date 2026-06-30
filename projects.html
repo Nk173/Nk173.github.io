@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Nishanth K</title>
+  <meta name="description" content="Software projects, simulations, and tools built by Nishanth K.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">Nishanth K</a>
+    <ul class="nav-links">
+      <li><a href="writing.html">Blog</a></li>
+      <li><a href="articles.html">Op-Eds</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="policy.html">Policy</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="mcc.html">Collective</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="page-header">
+    <h1>Projects</h1>
+    <p>Software, simulations, and tools I've built — the work behind the repositories, not just the repositories.</p>
+  </div>
+
+  <div class="project-grid">
+
+    <!--
+      TEMPLATE — duplicate one block per project and fill it in.
+      • Thumbnail: drop an image in Assets/Projects/ and point <img src> at it,
+        or delete the <img> to show the placeholder glyph.
+      • Tech tags: list the main languages / libraries.
+      • Links: GitHub repo, live demo, write-up, etc. Remove any you don't need.
+    -->
+
+    <div class="project">
+      <div class="project-thumb contain"><img src="Assets/Projects/trade-abm.png" alt="Trade ABM model schematic"></div>
+      <div class="project-body">
+        <div class="project-title">Trade ABM</div>
+        <div class="project-desc">
+          A modular, scalable agent-based model of international trade in which heterogeneous
+          labourer agents across n countries and m sectors make labour, investment, and
+          consumption decisions that drive endogenous production, prices, trade flows, and
+          tariffs — extending Heckscher-Ohlin and New Trade Theory frameworks. The model is
+          empirically calibrated against EORA26 MRIO trade data (USA, China, Mexico) using
+          Nevergrad optimisation to match observed bilateral trade matrices.
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">NumPy</span>
+          <span class="tech-tag">pandas</span>
+          <span class="tech-tag">SciPy</span>
+          <span class="tech-tag">NetworkX</span>
+          <span class="tech-tag">Nevergrad</span>
+          <span class="tech-tag">Matplotlib</span>
+          <span class="tech-tag">Jupyter</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Nk173/Trade_ABM" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-social">
+      <a href="mailto:nishanthk050@gmail.com" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v.35l-10 5.5L2 6.35Zm0 2.63V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8.63l-9.52 5.23a1 1 0 0 1-.96 0Z"/></svg></a>
+      <a href="https://github.com/nk173" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17 4.7 18 5 18 5c.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5Z"/></svg></a>
+      <a href="https://substack.com/@beamboybeamboy" target="_blank" rel="noopener" aria-label="Substack" title="Substack"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.54 8.24H1.46V5.4h21.08v2.84ZM1.46 10.81V24L12 18.11 22.54 24V10.81H1.46ZM22.54 0H1.46v2.84h21.08V0Z"/></svg></a>
+      <a href="https://www.linkedin.com/in/nkumar1191/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.74v20.51C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.74C24 .78 23.2 0 22.22 0Z"/></svg></a>
+      <a href="https://www.youtube.com/@MadrasComplexityCollective" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.2 3.6Z"/></svg></a>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Nishanth K</span>
+      <div class="footer-links">
+        <a href="writing.html">Blog</a>
+        <a href="articles.html">Op-Eds</a>
+        <a href="research.html">Research</a>
+        <a href="policy.html">Policy</a>
+        <a href="projects.html">Projects</a>
+        <a href="mcc.html">Collective</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="mailto:nishanthk050@gmail.com">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

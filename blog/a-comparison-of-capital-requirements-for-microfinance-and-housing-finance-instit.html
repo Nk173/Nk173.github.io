@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Comparison of Capital requirements for Microfinance and Housing Finance Institutions — Nishanth K</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .post-header { padding: 3.5rem 0 2rem; border-bottom: 1px solid var(--border); }
+    .post-header h1 {
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -.03em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .post-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .75rem 1.5rem;
+      font-size: .8125rem;
+      color: var(--sub);
+    }
+    .post-date { color: var(--sub); }
+    .post-origin-inline { font-size: .8125rem; color: var(--sub); }
+    .post-origin-inline a { color: var(--sub); text-decoration: underline; }
+    .post-origin-inline a:hover { color: var(--text); }
+    .post-authors { display: flex; gap: .5rem; flex-wrap: wrap; }
+    .author-name {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: .15rem .6rem;
+      font-size: .75rem;
+      color: var(--sub);
+    }
+    .post-tags-list { display: flex; gap: .375rem; flex-wrap: wrap; margin-top: .25rem; }
+    .post-tag {
+      font-size: .6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      padding: .15rem .5rem;
+      border-radius: 4px;
+      background: rgba(47,129,247,.12);
+      color: #58a6ff;
+    }
+
+    /* Article body styles */
+    .post-body {
+      max-width: 720px;
+      padding: 2.5rem 0 5rem;
+    }
+    .post-body p {
+      color: var(--sub);
+      font-size: .9375rem;
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+    .post-body h1,.post-body h2,.post-body h3,.post-body h4 {
+      color: var(--text);
+      font-weight: 600;
+      letter-spacing: -.02em;
+      margin: 2rem 0 .75rem;
+      line-height: 1.3;
+    }
+    .post-body h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: .5rem; }
+    .post-body h3 { font-size: 1.0625rem; }
+    .post-body h4 { font-size: .9375rem; color: var(--sub); }
+    .post-body strong, .post-body b { color: var(--text); font-weight: 600; }
+    .post-body em, .post-body i { color: #b0bec5; font-style: italic; }
+    .post-body a { color: var(--accent); }
+    .post-body a:hover { text-decoration: underline; }
+    .post-body ul, .post-body ol {
+      color: var(--sub);
+      font-size: .9375rem;
+      line-height: 1.8;
+      margin: .75rem 0 1.25rem 1.5rem;
+    }
+    .post-body li { margin-bottom: .4rem; }
+    .post-body blockquote {
+      border-left: 3px solid var(--accent);
+      margin: 1.5rem 0;
+      padding: .75rem 1.25rem;
+      background: var(--bg2);
+      border-radius: 0 var(--r) var(--r) 0;
+      color: var(--sub);
+      font-style: italic;
+    }
+    .post-body img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--r);
+      margin: 1.5rem 0;
+      border: 1px solid var(--border);
+      display: block;
+    }
+    .post-body figure { margin: 1.5rem 0; }
+    .post-body figcaption {
+      font-size: .8125rem;
+      color: var(--sub);
+      text-align: center;
+      margin-top: .5rem;
+    }
+    .post-body table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .875rem;
+      margin: 1.5rem 0;
+      color: var(--sub);
+    }
+    .post-body th {
+      background: var(--bg2);
+      color: var(--text);
+      font-weight: 600;
+      padding: .6rem .875rem;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+    .post-body td {
+      padding: .5rem .875rem;
+      border: 1px solid var(--border);
+    }
+    .post-body tr:nth-child(even) td { background: rgba(22,27,34,.5); }
+    .post-body sup { font-size: .7em; vertical-align: super; }
+    .post-body .wp-caption, .post-body .wp-block-image { margin: 1.5rem 0; }
+    .post-body .wp-caption-text, .post-body figcaption {
+      font-size: .8125rem;
+      color: var(--sub);
+      text-align: center;
+      margin-top: .4rem;
+    }
+    /* Hide Elementor wrappers that weren't stripped */
+    .post-body [class*="elementor-"] { all: unset; display: contents; }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .8125rem;
+      color: var(--sub);
+      padding: 1.5rem 0 0;
+      transition: color .15s;
+    }
+    .back-link:hover { color: var(--text); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="../index.html">Nishanth K</a>
+    <ul class="nav-links">
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../writing.html" class="active">Writing</a></li>
+      <li><a href="../research.html">Research</a></li>
+      <li><a href="../policy.html">Policy</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <a class="back-link" href="../writing.html">← Back to Writing</a>
+
+  <div class="post-header">
+    <h1>A Comparison of Capital requirements for Microfinance and Housing Finance Institutions</h1>
+    <div class="post-meta">
+      <span class="post-date">June 30, 2016</span>
+      <span class="post-origin-inline">Originally published in the <a href="https://dvararesearch.com/" target="_blank" rel="noopener">Dvara Research Blog</a></span>
+      <div class="post-authors"><span class="author-name">Deepti George</span><span class="author-name">Nishanth Kumar</span></div>
+    </div>
+    <div class="post-tags-list"><span class="post-tag">Microfinance</span><span class="post-tag">NBFC</span><span class="post-tag">Regulatory and Supervisory Frameworks</span></div>
+  </div>
+
+  <div class="post-body">
+    <p><em>In this post, we attempt to compare the regulatory landscape for NBFC-MFIs and Housing Finance Companies (HFC) within the broader context of the regulatory landscape for niche credit intermediaries. </em></p>
+<p>Financial Institutions are required to hold regulatory capital to protect retail depositors from unexpected losses they may incur in the course of their business. This takes the form of capital adequacy ratio or the ratio of capital held by an institution to its risk-exposure which is measured by its risk-weighted assets. Among other capital requirements<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftn1" name="_ftnref1">[1]</a>, the Reserve Bank of India (RBI) prescribes a minimum capital of 9% of risk-weighted assets<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftn2" name="_ftnref2">[2]</a> for banks. However, commercial banks have maintained levels of capital adequacy (13% as on September 2015<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftn3" name="_ftnref3">[3]</a>) that are higher than the regulatory requirements. Specific categories of NBFCs are typically required to meet higher capital adequacy ratios (CRAR), but are otherwise not prescribed any regulatory requirement. Systemically important NBFCs (with asset size of Rs. 500 crore or more) as well as NBFC-MFIs are required to have a CRAR of 15%. The below table (Table 1) gives the capital adequacy requirements for various types of financial institutions:</p>
+<p> </p>
+<table border="1" style="border-color: #000000; height: 400px;" width="453">
+<tbody>
+<tr>
+<td rowspan="2" width="95"><strong>Institutions</strong></td>
+<td rowspan="2" width="47"><strong>Minimum CRAR (%)</strong></td>
+<td colspan="3" width="191"><strong>Minimum Tier-1 CRAR (%)</strong></td>
+<td rowspan="2" width="74"><strong>Minimum Leverage ratio</strong><p></p>
+<p><strong>(%)</strong></p></td>
+</tr>
+<tr>
+<td width="64"><strong>As of Now</strong></td>
+<td width="64"><strong>As of March-2016</strong></td>
+<td width="64"><strong>As of March-2017</strong></td>
+</tr>
+<tr>
+<td width="95"><strong>Banks</strong></td>
+<td style="text-align: right;" width="47">9</td>
+<td colspan="3" style="text-align: right;" width="191">7 (and a max. of 2% Tier-2 CRAR)</td>
+<td style="text-align: right;" width="74">4.5</td>
+</tr>
+<tr>
+<td width="95"><strong>NBFC-D</strong></td>
+<td style="text-align: right;" width="47">15</td>
+<td style="text-align: right;" width="64">7.5</td>
+<td style="text-align: right;" width="64">8.5</td>
+<td style="text-align: right;" width="64">10</td>
+<td style="text-align: right;" width="74">–</td>
+</tr>
+<tr>
+<td width="95"><strong>NBFC-ND-SI</strong></td>
+<td style="text-align: right;" width="47">15</td>
+<td style="text-align: right;" width="64">7.5</td>
+<td style="text-align: right;" width="64">8.5</td>
+<td style="text-align: right;" width="64">10</td>
+<td style="text-align: right;" width="74">–</td>
+</tr>
+<tr>
+<td width="95"><strong>NBFC-MFI</strong></td>
+<td style="text-align: right;" width="47">15</td>
+<td colspan="3" style="text-align: right;" width="191">Should be greater than or equal to Tier-2 CRAR</td>
+<td style="text-align: right;" width="74">7</td>
+</tr>
+<tr>
+<td width="95"><strong>IFC</strong></td>
+<td style="text-align: right;" width="47">15</td>
+<td colspan="3" style="text-align: right;" width="191">10</td>
+<td style="text-align: right;" width="74">–</td>
+</tr>
+<tr>
+<td width="95"><strong>Gold Loan -NBFC</strong></td>
+<td style="text-align: right;" width="47">15</td>
+<td style="text-align: right;" width="64">12</td>
+<td style="text-align: right;" width="64">12</td>
+<td style="text-align: right;" width="64">12</td>
+<td style="text-align: right;" width="74">7</td>
+</tr>
+<tr>
+<td width="95"><strong>Non SI, NBFC-ND</strong></td>
+<td style="text-align: right;" width="47">–</td>
+<td colspan="3" style="text-align: right;" width="191">–</td>
+<td style="text-align: right;" width="74">7</td>
+</tr>
+<tr>
+<td width="95"><strong>HFC</strong></td>
+<td style="text-align: right;" width="47">12</td>
+<td colspan="3" style="text-align: right;" width="191">Should be greater than or equal to Tier-2 CRAR</td>
+<td style="text-align: right;" width="74">–</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>As you can see from Table 1, regulatory capital requirements are different for the various classes of financial institutions. What would be the basis for such differences? This could be because of the differences in risks that these institutions face as well as risks they pose to the real economy in the event of a crisis. A typical NBFC-MFI offers small ticket, unsecured loans to lower income borrowers. Although, banks too take exposure to such borrowers, the concentration of unsecured lending to relatively unknown customers with little or no credit information and high exposure to socio-political risk is considerably higher for instance in NBFC-MFI books. Credit ratings for NBFC-MFIs have continued to factor in risks associated with unsecured lending, socio-political intervention, geographic concentration and operational risks related to cash-based transactions and as a result called for the need to keep higher capital cushions for these entities.</p>
+<p>HFCs offer three products: Housing loans, home improvement loans and Loans against Property, all of which are secured assets. In addition, some HFCs are also allowed to accept public deposits<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftn4" name="_ftnref4">[4]</a>. They are regulated by the National Housing Bank<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftn5" name="_ftnref5">[5]</a> (NHB), an apex development finance institution for housing. With the objective of promoting housing finance institutions, it provides financial and other support incidental to such institutions. While there are several players in the housing finance space, such as scheduled commercial banks, HFCs, other NBFCs, regional rural banks, cooperative banks, agriculture and rural development banks, and state level apex cooperative housing societies, the housing loan market is dominated by SCBs and HFCs.</p>
+<p><strong><u>HFCs have lower capital adequacy requirements in comparison to NBFC-MFIs: </u></strong>Although NBFC-MFIs and HFCs deal with completely different asset classes and are regulated by different entities (RBI and NHB respectively), they are both specialized financial institutions providing niche financial services (predominantly credit intermediation) and are of relatively similar sizes. However, the regulatory capital requirements for these institutions are quite different. HFCs enjoy relatively low risk weights (50%-100%) for home loans and commercial real estate loans for residential projects<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftn6" name="_ftnref6">[6]</a>, besides lower CRAR of 12% compared to NBFC-MFIs which provide small ticket unsecured short-term loans to low income individuals (risk weighting of 100% for assets originated, CRAR of 15%).</p>
+<p> </p>
+<table border="1" style="border-color: #000000;" width="362">
+<tbody>
+<tr>
+<td colspan="5" style="text-align: center;" width="362"><strong>Capital Adequacy Ratio maintained by HFCs<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftn7" name="_ftnref7">[7]</a></strong></td>
+</tr>
+<tr>
+<td width="130"><strong>CRAR</strong></td>
+<td style="text-align: right;" width="58"><strong>2015</strong></td>
+<td style="text-align: right;" width="58"><strong>2014</strong></td>
+<td style="text-align: right;" width="58"><strong>2013</strong></td>
+<td style="text-align: right;" width="58"><strong>2012</strong></td>
+</tr>
+<tr>
+<td width="130"><strong>Median of HFCs</strong></td>
+<td style="text-align: right;" width="58">18%</td>
+<td style="text-align: right;" width="58">17%</td>
+<td style="text-align: right;" width="58">17%</td>
+<td style="text-align: right;" width="58">15%</td>
+</tr>
+<tr>
+<td width="130"><strong>Small HFCs</strong></td>
+<td style="text-align: right;" width="58">11%</td>
+<td style="text-align: right;" width="58">12%</td>
+<td style="text-align: right;" width="58">13%</td>
+<td style="text-align: right;" width="58">13%</td>
+</tr>
+<tr>
+<td width="130"><strong>Median of Small HFCs</strong></td>
+<td style="text-align: right;" width="58">15%</td>
+<td style="text-align: right;" width="58">17%</td>
+<td style="text-align: right;" width="58">17%</td>
+<td style="text-align: right;" width="58">15%</td>
+</tr>
+<tr>
+<td width="130"><strong>Large HFCs</strong></td>
+<td style="text-align: right;" width="58">12%</td>
+<td style="text-align: right;" width="58">12%</td>
+<td style="text-align: right;" width="58">13%</td>
+<td style="text-align: right;" width="58">13%</td>
+</tr>
+<tr>
+<td width="130"><strong>Median of Large HFCs</strong></td>
+<td style="text-align: right;" width="58">18%</td>
+<td style="text-align: right;" width="58">17%</td>
+<td style="text-align: right;" width="58">18%</td>
+<td style="text-align: right;" width="58">15%</td>
+</tr>
+<tr>
+<td width="130"><strong>All HFCs</strong></td>
+<td style="text-align: right;" width="58">11%</td>
+<td style="text-align: right;" width="58">12%</td>
+<td style="text-align: right;" width="58">13%</td>
+<td style="text-align: right;" width="58">13%</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: Report, Indian Mortgage Finance Market Updated for 2014-15, ICRA<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftn8" name="_ftnref8">[8]</a> </em></p>
+<p> </p>
+<table border="1" style="border-color: #000000;" width="369">
+<tbody>
+<tr>
+<td colspan="6" style="text-align: center;" width="369"><strong>Capital Adequacy Ratio of NBFC-MFIs<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftn9" name="_ftnref9">[9]</a></strong></td>
+</tr>
+<tr>
+<td width="83"><strong>CRAR<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftn10" name="_ftnref10"><strong>[10]</strong></a></strong></td>
+<td style="text-align: right;" width="57"><strong>2015</strong></td>
+<td style="text-align: right;" width="57"><strong>2014</strong></td>
+<td style="text-align: right;" width="57"><strong>2013</strong></td>
+<td style="text-align: right;" width="57"><strong>2012</strong></td>
+<td style="text-align: right;" width="57"><strong>2011</strong></td>
+</tr>
+<tr>
+<td width="83"><strong>Small MFIs</strong></td>
+<td style="text-align: right;" width="57">30%</td>
+<td style="text-align: right;" width="57">44%</td>
+<td style="text-align: right;" width="57">44%</td>
+<td style="text-align: right;" width="57">50%</td>
+<td style="text-align: right;" width="57">40%</td>
+</tr>
+<tr>
+<td width="83"><strong>Medium MFIs</strong></td>
+<td style="text-align: right;" width="57">20%</td>
+<td style="text-align: right;" width="57">24%</td>
+<td style="text-align: right;" width="57">29%</td>
+<td style="text-align: right;" width="57">29%</td>
+<td style="text-align: right;" width="57">30%</td>
+</tr>
+<tr>
+<td width="83"><strong>Large MFIs</strong></td>
+<td style="text-align: right;" width="57">18%</td>
+<td style="text-align: right;" width="57">19%</td>
+<td style="text-align: right;" width="57">21%</td>
+<td style="text-align: right;" width="57">26%</td>
+<td style="text-align: right;" width="57">29%</td>
+</tr>
+<tr>
+<td width="83"><strong>All MFIs</strong></td>
+<td style="text-align: right;" width="57">23%</td>
+<td style="text-align: right;" width="57">30%</td>
+<td style="text-align: right;" width="57">33%</td>
+<td style="text-align: right;" width="57">33%</td>
+<td style="text-align: right;" width="57">32%</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>This is interesting when capital adequacy requirements for these two institutional types are seen against their Expected Loss (EL) and Unexpected Loss numbers<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftn11" name="_ftnref11">[11]</a> calculated using the assumption that recovery rates for HFCs and NBFC-MFIs are 50% and 0% respectively.</p>
+<p> </p>
+<table border="1" style="border-color: #000000;">
+<tbody>
+<tr>
+<td width="76"></td>
+<td width="99">Expected Loss (EL)</td>
+<td width="199">Unexpected Loss (UL)</td>
+</tr>
+<tr>
+<td width="76">HFC<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftn12" name="_ftnref12">[12]</a></td>
+<td style="text-align: right;" width="99">0.95%</td>
+<td style="text-align: right;" width="199">0.44% (at 50% recovery rate)<p></p>
+<p>0.88% (at 0% recovery rate)</p></td>
+</tr>
+<tr>
+<td width="76">NBFC-MFI<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftn13" name="_ftnref13">[13]</a></td>
+<td style="text-align: right;" width="99">0.74%</td>
+<td style="text-align: right;" width="199">0.87% (at 0% recovery rate)</td>
+</tr>
+</tbody>
+</table>
+<p>MFIs have higher volatility in their PAR numbers, and this is consistent with their higher capital adequacy requirements.</p>
+<p><strong><u>HFCs have much better access to refinancing schemes</u></strong><strong>: </strong>HFCs are accessing more diversified sources of funding, such as borrowings from the market in the form of non-convertible debentures and commercial paper, loans from banks and other institutions, and fixed deposits<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftn14" name="_ftnref14">[14]</a> for some of the large HFCs. However, smaller HFCs with lower or no access to public deposits depend considerably on refinance schemes offered by NHB – NHB refinance formed 23% of the total funding for small HFCs in 2015.</p>
+<p> </p>
+<table border="1" style="border-color: #000000;" width="355">
+<tbody>
+<tr>
+<td width="100"><strong> </strong></td>
+<td colspan="3" style="text-align: center;" width="126"><strong>All HFCs<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftn15" name="_ftnref15"><strong>[15]</strong></a></strong></td>
+<td colspan="3" style="text-align: center;" width="129"><strong>Small HFCs</strong></td>
+</tr>
+<tr>
+<td width="100"></td>
+<td style="text-align: right;" width="39"><strong>2015</strong></td>
+<td style="text-align: right;" width="43"><strong>2014</strong></td>
+<td style="text-align: right;" width="43"><strong>2013</strong></td>
+<td style="text-align: right;" width="43"><strong>2015</strong></td>
+<td style="text-align: right;" width="43"><strong>2014</strong></td>
+<td style="text-align: right;" width="43"><strong>2013</strong></td>
+</tr>
+<tr>
+<td width="100"><strong>NCDs and Commercial Paper</strong></td>
+<td style="text-align: right;" width="39">52%</td>
+<td style="text-align: right;" width="43">48%</td>
+<td style="text-align: right;" width="43">49%</td>
+<td style="text-align: right;" width="43">30%</td>
+<td style="text-align: right;" width="43">27%</td>
+<td style="text-align: right;" width="43">27%</td>
+</tr>
+<tr>
+<td width="100"><strong>Banks</strong></td>
+<td style="text-align: right;" width="39">26%</td>
+<td style="text-align: right;" width="43">30%</td>
+<td style="text-align: right;" width="43">27%</td>
+<td style="text-align: right;" width="43">37%</td>
+<td style="text-align: right;" width="43">38%</td>
+<td style="text-align: right;" width="43">35%</td>
+</tr>
+<tr>
+<td width="100"><strong>Fixed Deposits</strong></td>
+<td style="text-align: right;" width="39">17%</td>
+<td style="text-align: right;" width="43">16%</td>
+<td style="text-align: right;" width="43">17%</td>
+<td style="text-align: right;" width="43">10%</td>
+<td style="text-align: right;" width="43">8%</td>
+<td style="text-align: right;" width="43">7%</td>
+</tr>
+<tr>
+<td width="100"><strong>NHB Refinance<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftn16" name="_ftnref16"><strong>[16]</strong></a></strong></td>
+<td style="text-align: right;" width="39">4%</td>
+<td style="text-align: right;" width="43">4%</td>
+<td style="text-align: right;" width="43">4%</td>
+<td style="text-align: right;" width="43">23%</td>
+<td style="text-align: right;" width="43">20%</td>
+<td style="text-align: right;" width="43">19%</td>
+</tr>
+<tr>
+<td width="100"><strong>Others</strong></td>
+<td style="text-align: right;" width="39">1%</td>
+<td style="text-align: right;" width="43">3%</td>
+<td style="text-align: right;" width="43">2%</td>
+<td style="text-align: right;" width="43">9%</td>
+<td style="text-align: right;" width="43">7%</td>
+<td style="text-align: right;" width="43">3%</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>In comparison, the majority of funds for NBFC-MFIs came from borrowings from banks and other financial institutions besides equity capital. In 2014-15, NBFC-MFIs (which are a part of MFIN) received a total of Rs. 276.82 billion in debt funding<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftn17" name="_ftnref17">[17]</a> from Banks, which accounts for about 78% of the funding that NBFC-MFIs have access to.</p>
+<table border="1" cellpadding="-0.5px" style="border-color: #000000; width: 522px; height: 337px;">
+<tbody>
+<tr>
+<td colspan="13" style="text-align: center;" width="510"><strong>Debt Funding Profile of NBFC-MFIs<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftn18" name="_ftnref18">[18]</a></strong></td>
+</tr>
+<tr>
+<td width="35"></td>
+<td colspan="3" width="127">Total MFIs</td>
+<td colspan="3" width="114">Small MFIs(GLP^&lt;Rs 1bn)</td>
+<td colspan="3" width="121">Medium MFIs(1bn&lt;GLP&lt;5bn)</td>
+<td colspan="3" width="113">Large MFIs(GLP&gt;Rs 5bn)</td>
+</tr>
+<tr>
+<td width="35"></td>
+<td width="47">2015</td>
+<td width="40">2014</td>
+<td width="40">2013</td>
+<td width="40">2015</td>
+<td width="38">2014</td>
+<td width="35">2013</td>
+<td width="43">2015</td>
+<td width="43">2014</td>
+<td width="35">2013</td>
+<td width="35">2015</td>
+<td width="35">2014</td>
+<td width="43">2013</td>
+</tr>
+<tr>
+<td width="35">Banks</td>
+<td width="47">77.90%</td>
+<td width="40">79.29%</td>
+<td width="40">85.27%</td>
+<td width="40">37.75%</td>
+<td width="38">42.45%</td>
+<td width="35">52.61%</td>
+<td width="43">54.77%</td>
+<td width="43">63.93%</td>
+<td width="35">70.20%</td>
+<td width="35">82.39%</td>
+<td width="35">82.49%</td>
+<td width="43"> <p></p>
+<p>87.71%</p>
+<p> </p></td>
+</tr>
+<tr>
+<td width="35">Other FIs</td>
+<td width="47">22.10%</td>
+<td width="40">20.71%</td>
+<td width="40">14.78%</td>
+<td width="40">62.25%</td>
+<td width="38">47.55%</td>
+<td width="35">47.39%</td>
+<td width="43">45.23%</td>
+<td width="43">36.07%</td>
+<td width="35">29.80%</td>
+<td width="35">17.61%</td>
+<td width="35">17.51%</td>
+<td width="43">12.29%</td>
+</tr>
+</tbody>
+</table>
+<p><em>^GLP – Gross Loan Portfolio</em></p>
+<p>Often, the differences in capital requirements for HFCs and NBFC-MFIs are explained by the inherent differences in the nature of the asset. However, we contest this view as the allocation of risk weights for the calculation of capital adequacy should take into consideration the credit risk associated with the different asset classes. Also, it is interesting to note that HFCs face much higher maturity and liquidity mismatches, a risk that is much easier to control for NBFC-MFIs given their short-term lending profiles.</p>
+<p>—<br/>
+<span style="font-size: xx-small;"><br/>
+<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftnref1" name="_ftn1">[1]</a> Master Circular-Prudential Norms for Capital Adequacy, July 2015, RBI<br/>
+<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftnref2" name="_ftn2">[2]</a> This is higher than the minimum CRAR requirement of 8% suggested by the Basel Committee for Banking Supervision<br/>
+<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftnref3" name="_ftn3">[3]</a> Financial Stability Report, May 2015, RBI.<br/>
+<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftnref4" name="_ftn4">[4]</a> As of March 2015, there are 64 Housing finance Companies registered with the NHB out of which only 18 are allowed to take public deposits.<br/>
+<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftnref5" name="_ftn5">[5]</a> NHB is a wholly owned subsidiary of RBI set up under the National Housing Bank Act, 1987<br/>
+<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftnref6" name="_ftn6">[6]</a> <a href="http://www.nhb.org.in/Regulation/HFC(NHB)-Directions-(As-modified-upto-1st-July-2013).pdf">http://www.nhb.org.in/Regulation/HFC(NHB)-Directions-(As-modified-upto-1st-July-2013).pdf</a><br/>
+<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftnref7" name="_ftn7">[7]</a> ICRA defines Large HFCs to include HDFC, LIC HF, Dewan Housing finance limited and Indiabulls Housing finance limited. Small HFCs are HFCs other than the above mentioned.<br/>
+<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftnref8" name="_ftn8">[8]</a> ICRA report, Performance Review of Housing Finance Companies and Industry Outlook, multiple years<br/>
+<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftnref9" name="_ftn9">[9]</a> Source: MFIN – the MicroScape, FY2014-15<br/>
+<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftnref10" name="_ftn10">[10]</a> Proxied by Capital/Total assets ratio. We make this approximation given that microfinance loans have a risk weight of 100%<br/>
+<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftnref11" name="_ftn11">[11]</a> A rough estimate using methodology as covered in ”An approach to risk-pricing of loans” by Chakrabarti, Ahmed, Mullick<br/>
+<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftnref12" name="_ftn12">[12]</a> EL: Average of GNPA ratio (PAR 90) for 2005 to 2015; Housing Finance Companies and the Indian Mortgage Finance Market, ICRA Rating Feature, various years. UL: Calculated at 50% recovery rate, at 99% confidence level<br/>
+<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftnref13" name="_ftn13">[13]</a> EL: Average PAR 90 figures for non-AP MFIs, for 2011 to 2015; MFIN Micrometer, various years. UL: Calculated at 0% recovery rate, at 99% confidence level<br/>
+<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftnref14" name="_ftn14">[14]</a> Not all HFCs are allowed to take public deposits. The list of those that can is given <a href="http://www.nhb.org.in/Regulation/list_of_housing_finance.php">here</a><br/>
+<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftnref15" name="_ftn15">[15]</a> ICRA report, Performance Review of Housing Finance Companies and Industry Outlook<br/>
+<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftnref16" name="_ftn16">[16]</a> http://www.nhb.org.in/Financial/HFC-Booklet-of-All-Refinance-Schemes.pdf<br/>
+<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftnref17" name="_ftn17">[17]</a> Micrometer, May 2015, MFIN Publications.<br/>
+<a href="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/#_ftnref18" name="_ftn18">[18]</a> Micrometer, May 2015, MFIN Publications<br/>
+</span></p>
+<div class="has-social-placeholder has-content-area" data-hashtags="" data-post-id="109873607" data-title="A Comparison of Capital requirements for Microfinance and Housing Finance Institutions" data-url="https://dvararesearch.com/a-comparison-of-capital-requirements-for-microfinance-and-housing-finance-institutions/"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2024 Nishanth K</span>
+    <div class="footer-links">
+      <a href="../about.html">About</a>
+      <a href="../writing.html">Writing</a>
+      <a href="../research.html">Research</a>
+      <a href="../policy.html">Policy</a>
+      <a href="mailto:nishanthk050@gmail.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The State of Social Pensions in India — Nishanth K</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .post-header { padding: 3.5rem 0 2rem; border-bottom: 1px solid var(--border); }
+    .post-header h1 {
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -.03em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .post-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .75rem 1.5rem;
+      font-size: .8125rem;
+      color: var(--sub);
+    }
+    .post-date { color: var(--sub); }
+    .post-origin-inline { font-size: .8125rem; color: var(--sub); }
+    .post-origin-inline a { color: var(--sub); text-decoration: underline; }
+    .post-origin-inline a:hover { color: var(--text); }
+    .post-authors { display: flex; gap: .5rem; flex-wrap: wrap; }
+    .author-name {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: .15rem .6rem;
+      font-size: .75rem;
+      color: var(--sub);
+    }
+    .post-tags-list { display: flex; gap: .375rem; flex-wrap: wrap; margin-top: .25rem; }
+    .post-tag {
+      font-size: .6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      padding: .15rem .5rem;
+      border-radius: 4px;
+      background: rgba(47,129,247,.12);
+      color: #58a6ff;
+    }
+
+    /* Article body styles */
+    .post-body {
+      max-width: 720px;
+      padding: 2.5rem 0 5rem;
+    }
+    .post-body p {
+      color: var(--sub);
+      font-size: .9375rem;
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+    .post-body h1,.post-body h2,.post-body h3,.post-body h4 {
+      color: var(--text);
+      font-weight: 600;
+      letter-spacing: -.02em;
+      margin: 2rem 0 .75rem;
+      line-height: 1.3;
+    }
+    .post-body h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: .5rem; }
+    .post-body h3 { font-size: 1.0625rem; }
+    .post-body h4 { font-size: .9375rem; color: var(--sub); }
+    .post-body strong, .post-body b { color: var(--text); font-weight: 600; }
+    .post-body em, .post-body i { color: #b0bec5; font-style: italic; }
+    .post-body a { color: var(--accent); }
+    .post-body a:hover { text-decoration: underline; }
+    .post-body ul, .post-body ol {
+      color: var(--sub);
+      font-size: .9375rem;
+      line-height: 1.8;
+      margin: .75rem 0 1.25rem 1.5rem;
+    }
+    .post-body li { margin-bottom: .4rem; }
+    .post-body blockquote {
+      border-left: 3px solid var(--accent);
+      margin: 1.5rem 0;
+      padding: .75rem 1.25rem;
+      background: var(--bg2);
+      border-radius: 0 var(--r) var(--r) 0;
+      color: var(--sub);
+      font-style: italic;
+    }
+    .post-body img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--r);
+      margin: 1.5rem 0;
+      border: 1px solid var(--border);
+      display: block;
+    }
+    .post-body figure { margin: 1.5rem 0; }
+    .post-body figcaption {
+      font-size: .8125rem;
+      color: var(--sub);
+      text-align: center;
+      margin-top: .5rem;
+    }
+    .post-body table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .875rem;
+      margin: 1.5rem 0;
+      color: var(--sub);
+    }
+    .post-body th {
+      background: var(--bg2);
+      color: var(--text);
+      font-weight: 600;
+      padding: .6rem .875rem;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+    .post-body td {
+      padding: .5rem .875rem;
+      border: 1px solid var(--border);
+    }
+    .post-body tr:nth-child(even) td { background: rgba(22,27,34,.5); }
+    .post-body sup { font-size: .7em; vertical-align: super; }
+    .post-body .wp-caption, .post-body .wp-block-image { margin: 1.5rem 0; }
+    .post-body .wp-caption-text, .post-body figcaption {
+      font-size: .8125rem;
+      color: var(--sub);
+      text-align: center;
+      margin-top: .4rem;
+    }
+    /* Hide Elementor wrappers that weren't stripped */
+    .post-body [class*="elementor-"] { all: unset; display: contents; }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .8125rem;
+      color: var(--sub);
+      padding: 1.5rem 0 0;
+      transition: color .15s;
+    }
+    .back-link:hover { color: var(--text); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="../index.html">Nishanth K</a>
+    <ul class="nav-links">
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../writing.html" class="active">Writing</a></li>
+      <li><a href="../research.html">Research</a></li>
+      <li><a href="../policy.html">Policy</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <a class="back-link" href="../writing.html">← Back to Writing</a>
+
+  <div class="post-header">
+    <h1>The State of Social Pensions in India</h1>
+    <div class="post-meta">
+      <span class="post-date">July 23, 2019</span>
+      <span class="post-origin-inline">Originally published in the <a href="https://dvararesearch.com/" target="_blank" rel="noopener">Dvara Research Blog</a></span>
+      <div class="post-authors"><span class="author-name">Aparajita Singh</span><span class="author-name">Nishanth Kumar</span></div>
+    </div>
+    <div class="post-tags-list"><span class="post-tag">Financial Lives of Poor Households</span><span class="post-tag">Pension</span><span class="post-tag">Personal finance</span><span class="post-tag">social pensions</span><span class="post-tag">Social protection</span></div>
+  </div>
+
+  <div class="post-body">
+    <p><em>This is the second post in our <a href="https://dvararesearch.com/tag/social-pensions/" rel="noopener" target="_blank">three-part</a> series on pensions.</em></p>
+<p>India’s pension system is one of the lowest-rated in the world in terms of adequacy, sustainability and integrity<a href="https://dvararesearch.com/the-state-of-social-pensions-in-india/#_ftn1" name="_ftnref1">[1]</a>. Increasing longevity, decreasing fertility, and a large informal workforce necessitate strengthening our national pensions framework as an immediate concern for policymakers. Cash-transfers such as the Indira Gandhi National Old Age Pension Scheme (IGNOAPS), state elderly pension schemes, and occupational pensions targeted at the unorganised sector suggest that there is a strong imperative to increase expenditure on social pensions in India. While this is encouraging, it is crucial to take a step back and understand whether increasing social pensions schemes in their current form can lead to a systemic impact on old-age income security and poverty.</p>
+<p>A well-functioning pensions system should ensure two outcomes: (i) long-term savings to build inflation-protected corpuses that offer adequate annuities in post-retirement life; and (ii) redistribution to ensure that the economically poor have access to a basic level of sustenance in their old age. While financial markets have a clear role in developing pension solutions to enhance long-term savings for individuals, the redistribution function can effectively be carried out by the government.</p>
+<p>In this post, we inquire into the publicly managed, tax-financed pension schemes provided in India.</p>
+<p><strong><u>Low quantum of pension benefit</u></strong></p>
+<p>For most states, pension amounts do not even cover half the monthly per capita consumption expenditure (MPCE) specified by their respective poverty rates, let alone the average household consumption expenditure. At a national level, the average pension amount is 16% lesser than the poverty line MPCE and covers only 45% of the average MPCE<a href="https://dvararesearch.com/the-state-of-social-pensions-in-india/#_ftn2" name="_ftnref2">[2]</a>. Tax-financed pensions aimed at redistribution should at least ensure an acceptable standard of living for the household, below which basic human dignity is considered compromised. A minimum pension should enable a person to afford a basic level of subsistence that covers consumption related to food, education, health, fuel, and clothing.</p>
+<p>As per the Tendulkar Committee<a href="https://dvararesearch.com/the-state-of-social-pensions-in-india/#_ftn3" name="_ftnref3">[3]</a>, the national rural poverty line is at (MPCE) of Rs. 816, the urban poverty line is at Rs. 1,000 and at a consolidated level,  it is approximately Rs. 953<a href="https://dvararesearch.com/the-state-of-social-pensions-in-india/#_ftn4" name="_ftnref4"><sup>[4]</sup></a>. If we consider this as a rough benchmark for minimum pension amounts, there are only 16 states and UTs (out of 36) where benefits under IGNOAPS are higher than poverty line MPCE. Given that minimum living standard conditions are quite different across states, we use state poverty line MPCE estimates to evaluate pension amounts.</p>
+<p><img alt="" class="alignnone wp-image-109876140" decoding="async" fetchpriority="high" height="400" src="../Assets/Blogs/The State of Social Pensions in India - Dvara Research_files/pensions_graph1.jpg" width="780"/></p>
+<p>Figure 1<a href="https://dvararesearch.com/the-state-of-social-pensions-in-india/#_ftn5" name="_ftnref5">[5]</a> shows a comparison of 19 states in India, chosen based on their size and availability of data, with active old-age pension schemes. The analysis suggests that pension amounts from all these states are well below the average MPCE of a household and in 15 of these states is below the state poverty line. If the aim of non-contributory old-age pensions is to guarantee a minimum post-retirement corpus, the amounts should reflect a real (inflation-indexed) monthly pension that can afford minimum consumption expenditures of households in each state.</p>
+<p>Indexing to inflation regularly will be essential to ensure that at the time of annuitisation, the beneficiary receives the future value of pension amount (and not a nominal amount which would be worth much less in the distant future).</p>
+<p><strong><u>Increasing the channels for last-mile delivery</u></strong></p>
+<p>Recent NSAP reports show that delivery channels employed for disbursing public pensions differ across states (figure below).  While transfers into bank accounts serve as the primary delivery channel (78% of all pensioners), there are states where cash, post offices and money orders are still used. States such as Rajasthan, West Bengal, and Karnataka use a mix of at least three of the four specified delivery channels.  In Madhya Pradesh, 46% of all pension transfers are made via post offices. All transfers in Kerala, a state with one of the highest old-age dependency ratios<strong>, </strong>are made via money orders. Meanwhile, in Odisha, all pensions are disbursed via cash.</p>
+<p><img alt="" class="alignnone wp-image-109876141" decoding="async" height="364" src="../Assets/Blogs/The State of Social Pensions in India - Dvara Research_files/pensions_graph2.jpg" width="780"/></p>
+<p>The recent years have witnessed a shift towards using Direct Benefit Transfer (DBT) systems by leveraging the Jan Dhan-Aadhaar-Mobile (JAM) to identify beneficiaries better and arrest leakages. Yet, this architecture has created some unintended consequences. Studies in Jharkhand have shown challenges with accessing pensions in JAM’s infancy because of friction in the process of linking bank accounts with Aadhaar cards. There are also older challenges of exclusion by the banking channel that have not been adequately addressed. We know from <a href="https://www.nseindia.com/research/content/NSE-IFMR_Paper_5.pdf" rel="noopener" target="_blank">a previous study</a> that banks have refused to market the regulator-mandated basic accounts targeted towards low-income households. Further, in more than half the cases, banks have turned away customers who negotiate for cheaper alternatives, harass them with demands of excessive identity/address documents, withhold vital information about the product, and impose significant incident costs on the customer concerning time and effort. As the government aims to bring most, if not all, schemes under the framework of DBT through JAM, it is vital to take stock and understand whether these schemes are efficiently reducing the vulnerability of households.</p>
+<p>As has been discussed in a <a href="http://ifmrlead.org/wp-content/uploads/2015/OWC/CSS_Report.pdf" rel="noopener" target="_blank">previous report</a>, the present targeting and delivery model consisting of nodal agencies hosting intermittent enrolment camps and sparsely distributed bank branches act as a barrier for the development of a long-term relationship between the distributor and the beneficiary. The use of non-bank financial intermediaries such as payment banks, micro-ATMs and white label BCs would effectively help expand the range of accessible touchpoints. It is critical to evaluate whether the current intervention machinery is robust enough to provide universal social security for India.</p>
+<p><strong><u>Challenges in targeting beneficiaries </u></strong></p>
+<p>An evaluation of the IGNOAPS terms the levels of cash transfers as “small” and “inadequate” and highlights the fact that the use of poverty (BPL) lists to target and identify beneficiaries has led to “huge errors of inclusion and exclusion”<a href="https://dvararesearch.com/the-state-of-social-pensions-in-india/#_ftn6" name="_ftnref6"><sup>[6]</sup></a>. In spite of having access to fairly recent data, the current methodology <a href="https://darpg.gov.in/sites/default/files/NSAP-District%20Manual_21.11.2017%281%29.pdf" rel="noopener" target="_blank">is still employing the 2001 census</a> and <a href="http://www.cbgaindia.org/wp-content/uploads/2017/11/Resource-Gap-Analysis-of-National-Social-Assistance-Programme.pdf" rel="noopener" target="_blank">2004-05 poverty ratios</a> to target beneficiaries. Similarly, having a fixed age criterion may lead to exclusion as the life expectancy at birth of vulnerable sections of the society like the Scheduled Tribes is lesser than the general population<a href="https://dvararesearch.com/the-state-of-social-pensions-in-india/#_ftn7" name="_ftnref7">[7]</a>. Morbidity is higher among those residing in slums and employed in the informal economy<a href="https://dvararesearch.com/the-state-of-social-pensions-in-india/#_ftn8" name="_ftnref8">[8]</a>. Those employed in arduous occupations are prematurely forced out of the labour market due to a decline in physical capacity<a href="https://dvararesearch.com/the-state-of-social-pensions-in-india/#_ftn9" name="_ftnref9">[9]</a>. Hence, the age for receiving old-age pensions needs to be rationalised. For example, the eligibility criteria for receiving pensions in Rajasthan has been rationalized where the minimum age to access pensions has been brought down to 55 for women and 58 for men.  Even with better identification, usually, men are more likely to receive benefits. Studies across various countries show that significant gender gaps exist in pension coverage<a href="https://dvararesearch.com/the-state-of-social-pensions-in-india/#_ftn10" name="_ftnref10">[10]</a>. This often leads to distortions in the intra-household distribution of resources and excludes women. Even within the subset of people who receive pensions, there is a severe gender gap across states (figure below). In 13 out of the 19 states analysed, the number of eligible female beneficiaries is higher than the actual beneficiaries<a href="https://dvararesearch.com/the-state-of-social-pensions-in-india/#_ftn11" name="_ftnref12">[11]</a>. Changes need to be incorporated into scheme design to check against gender-based exclusions.</p>
+<p><img alt="" class="alignnone wp-image-109876142" decoding="async" height="389" src="../Assets/Blogs/The State of Social Pensions in India - Dvara Research_files/pensions_graph3.jpg" width="780"/></p>
+<p>Given our concerns on coverage and adequacy of the existing pension programmes, the reductions in the budget allocations for NSAP schemes in the July 2019 budget <a href="http://www.cbgaindia.org/wp-content/uploads/2017/11/Resource-Gap-Analysis-of-National-Social-Assistance-Programme.pdf" rel="noopener" target="_blank">may further increase the resource gap for old-age income security</a>.</p>
+<p>These challenges must be dealt with to ensure an efficient redistribution of wealth to help the elderly poor in the country manage a minimum standard of living. Given the increasing levels of old-age dependency and rapid ageing of the workforce, the focus should be on enabling private pensions markets that encourage individuals to accumulate inflation-adjusted corpuses for retirement voluntarily.</p>
+<p><span style="font-size: xx-small;"><br/>
+—</span></p>
+<p><a href="https://dvararesearch.com/the-state-of-social-pensions-in-india/#_ftnref1" name="_ftn1">[1]</a> Australian Centre for Financial Studies (2018). Melbourne Mercer Global Pension Index.</p>
+<p><a href="https://dvararesearch.com/the-state-of-social-pensions-in-india/#_ftnref2" name="_ftn2">[2]</a> Based on our analysis using poverty lines as specified by Tendulkar Methodology and pension amounts from State guidelines</p>
+<p><a href="https://dvararesearch.com/the-state-of-social-pensions-in-india/#_ftnref3" name="_ftn3">[3]</a> Planning Commission, Government of India (2014, June). Report of the Expert Group to Review the Methodology for Measurement of Poverty. Table B1: State specific poverty lines (Tendulkar Methodology), Annexure-B (pp 28).</p>
+<p><a href="https://dvararesearch.com/the-state-of-social-pensions-in-india/#_ftnref4" name="_ftn4">[4]</a> Calculated by weighting the rural and urban poverty lines from 2011 with their respective populations. As per the 2011 <a href="http://censusindia.gov.in/2011-prov-results/paper2/data_files/india/Rural_Urban_2011.pdf" rel="noopener" target="_blank">census</a>, 68.8% of the population is rural, while 31.2% of the population is urban.</p>
+<p><a href="https://dvararesearch.com/the-state-of-social-pensions-in-india/#_ftnref5" name="_ftn5">[5]</a> For India, the pension amount is taken as the average of pension amounts (as specified by guidelines) received across the 36 States/UTs</p>
+<p><a href="https://dvararesearch.com/the-state-of-social-pensions-in-india/#_ftnref6" name="_ftn6">[6]</a> The <a href="http://nsap.nic.in/nsap/Report_Task_Force_Comprehensive_NSAP.pdf" rel="noopener" target="_blank">Report of the Task Force on National Social Assistance to the Poor (NSAP)</a> for the Ministry of Rural Development undertakes an in-depth analysis of the issues in design and delivery of the IGNOAPS, in addition to other social security programs.</p>
+<p><a href="https://dvararesearch.com/the-state-of-social-pensions-in-india/#_ftnref7" name="_ftn7">[7]</a> Ministry of Tribal Affairs, Government of India (2014). Report of the High-Level Committee on Socio-Economic, Health and Educational Status of Tribal Communities of India.</p>
+<p><a href="https://dvararesearch.com/the-state-of-social-pensions-in-india/#_ftnref8" name="_ftn8">[8]</a> Kumar, S., (2015). “Dimension and Determinants of Morbidity: Evidence from Slums of Chandigarh”. <em>Journal of International Development, 28(6)</em>, pp 845-856. <a href="https://doi.org/10.1002/jid.3128">https://doi.org/10.1002/jid.3128</a>;  Marimuthu P, Meitei M H, and Sharma B. (2009). General morbidity prevalence in the Delhi slums. <em>Indian J Community Med 2009</em>;34:338-42. doi:10.4103/0970-0218.58395; Nag, A., Vyas, H., &amp; Nag, P. (2016). Occupational health scenario of Indian informal sector. <em>Industrial health, 54(4),</em> 377–385. doi:10.2486/indhealth.2015-0112</p>
+<p><a href="https://dvararesearch.com/the-state-of-social-pensions-in-india/#_ftnref9" name="_ftn9">[9]</a> Kenny, G.P., Groeller, H., McGinn, R., and Flouris, D. A., (2016). Applied Physiology, Nutrition, and Metabolism<em>, 41:S92-S107,</em><a href="https://doi.org/10.1139/apnm-2015-0483">https://doi.org/10.1139/apnm-2015-0483</a></p>
+<p><a href="https://dvararesearch.com/the-state-of-social-pensions-in-india/#_ftnref10" name="_ftn10">[10]</a> Arza, C. (2015). “The Gender Dimensions of Pension Systems: Policies and constraints for the protection of older women”. The UN Women Discussion Paper series.</p>
+<p><a href="https://dvararesearch.com/the-state-of-social-pensions-in-india/#_ftnref11" name="_ftn12">[11]</a> Occupational pensions like those for building and construction workers, poor farmers, beedi and cigar workers, weavers, toddy toppers, and artisans have not been included in this analysis. Hence, the number of eligible beneficiaries may be over and above these findings. Additionally, eligibility criteria for State schemes differ across State, which has an impact on ranking the coverage gap. For instance, Kerala has the highest coverage gap, while Tamil Nadu has the lowest coverage gap where Tamil Nadu is covering over and above the legal coverage. This may be since in Kerala the eligibility age for elderly pensions for women lower at 55 while in Tamil Nadu it’s the same for men and women at 60. Therefore, Kerala is naturally expected to have a larger population that is entitled to legal coverage as compared to Tamil Nadu.</p>
+<p> </p>
+<div class="has-social-placeholder has-content-area" data-hashtags="" data-post-id="109876136" data-title="The State of Social Pensions in India" data-url="https://dvararesearch.com/the-state-of-social-pensions-in-india/"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2024 Nishanth K</span>
+    <div class="footer-links">
+      <a href="../about.html">About</a>
+      <a href="../writing.html">Writing</a>
+      <a href="../research.html">Research</a>
+      <a href="../policy.html">Policy</a>
+      <a href="mailto:nishanthk050@gmail.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

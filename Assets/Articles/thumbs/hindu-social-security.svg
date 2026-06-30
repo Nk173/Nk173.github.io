@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="560" viewBox="0 0 560 560" role="img" aria-label="An xkcd-style stick figure riding a delivery motorcycle above a safety net labelled social security">
+  <defs>
+    <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="3" seed="4" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <clipPath id="netlens">
+      <path d="M80,392 Q280,440 480,392 Q280,462 80,392 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- hand-drawn linework (roughened) -->
+  <g filter="url(#rough)" fill="none" stroke="#d7dee6" stroke-width="3.2"
+     stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- motion lines -->
+    <g stroke-width="2.4">
+      <path d="M110,250 L150,250"/>
+      <path d="M98,278 L142,278"/>
+      <path d="M110,306 L150,306"/>
+    </g>
+
+    <!-- wheels -->
+    <circle cx="215" cy="300" r="46"/>
+    <circle cx="375" cy="300" r="46"/>
+    <circle cx="215" cy="300" r="30"/>
+    <circle cx="375" cy="300" r="30"/>
+    <circle cx="215" cy="300" r="7"/>
+    <circle cx="375" cy="300" r="7"/>
+
+    <!-- frame -->
+    <path d="M215,300 L255,248"/>
+    <path d="M238,248 L302,248"/>
+    <path d="M302,248 L342,300"/>
+    <path d="M375,300 L400,238"/>
+    <path d="M302,248 L400,238"/>
+    <path d="M250,300 L342,300"/>
+    <!-- engine block -->
+    <path d="M280,300 L320,300 L317,328 L283,328 Z"/>
+    <!-- handlebar -->
+    <path d="M400,238 L424,230"/>
+    <path d="M400,238 L388,234"/>
+
+    <!-- delivery box over rear wheel -->
+    <path d="M178,226 L236,226 L236,272 L178,272 Z"/>
+    <path d="M178,249 L236,249"/>
+    <path d="M207,226 L207,272"/>
+    <path d="M212,272 L242,250"/>
+
+    <!-- rider -->
+    <path d="M272,246 L302,208"/>
+    <circle cx="314" cy="190" r="18"/>
+    <path d="M296,190 Q314,164 332,190"/>
+    <path d="M301,197 L329,197"/>
+    <path d="M302,210 L414,234"/>
+    <path d="M272,246 L282,298 L268,328"/>
+
+    <!-- ground + poles -->
+    <path d="M40,478 L520,478"/>
+    <path d="M80,478 L80,392"/>
+    <path d="M480,478 L480,392"/>
+
+    <!-- net frame -->
+    <path d="M80,392 Q280,440 480,392"/>
+    <path d="M80,392 Q280,462 480,392"/>
+
+    <!-- net mesh -->
+    <g stroke-width="1.6" clip-path="url(#netlens)">
+      <path d="M60,386 L150,471"/><path d="M110,382 L200,467"/><path d="M160,380 L250,465"/>
+      <path d="M210,379 L300,464"/><path d="M260,379 L350,464"/><path d="M310,380 L400,465"/>
+      <path d="M360,382 L450,467"/><path d="M410,386 L500,471"/>
+      <path d="M150,471 L60,386"/><path d="M200,467 L110,382"/><path d="M250,465 L160,380"/>
+      <path d="M300,464 L210,379"/><path d="M350,464 L260,379"/><path d="M400,465 L310,380"/>
+      <path d="M450,467 L360,382"/><path d="M500,471 L410,386"/>
+    </g>
+  </g>
+
+  <!-- handwritten label (kept crisp) -->
+  <text x="280" y="524" text-anchor="middle"
+        font-family="'xkcd Script','Comic Sans MS','Chalkboard SE','Comic Neue',cursive"
+        font-size="26" fill="#c9d1d9">social security</text>
+
+  <text x="36" y="46" font-family="-apple-system, Segoe UI, sans-serif" font-size="14"
+        font-weight="700" letter-spacing="3" fill="#8b949e">THE HINDU · OPINION</text>
+</svg>

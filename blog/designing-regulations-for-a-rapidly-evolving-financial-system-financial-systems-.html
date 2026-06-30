@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Designing Regulations for a Rapidly Evolving Financial System – Financial Systems Design Conference 2017 — Nishanth K</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .post-header { padding: 3.5rem 0 2rem; border-bottom: 1px solid var(--border); }
+    .post-header h1 {
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -.03em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .post-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .75rem 1.5rem;
+      font-size: .8125rem;
+      color: var(--sub);
+    }
+    .post-date { color: var(--sub); }
+    .post-origin-inline { font-size: .8125rem; color: var(--sub); }
+    .post-origin-inline a { color: var(--sub); text-decoration: underline; }
+    .post-origin-inline a:hover { color: var(--text); }
+    .post-authors { display: flex; gap: .5rem; flex-wrap: wrap; }
+    .author-name {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: .15rem .6rem;
+      font-size: .75rem;
+      color: var(--sub);
+    }
+    .post-tags-list { display: flex; gap: .375rem; flex-wrap: wrap; margin-top: .25rem; }
+    .post-tag {
+      font-size: .6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      padding: .15rem .5rem;
+      border-radius: 4px;
+      background: rgba(47,129,247,.12);
+      color: #58a6ff;
+    }
+
+    /* Article body styles */
+    .post-body {
+      max-width: 720px;
+      padding: 2.5rem 0 5rem;
+    }
+    .post-body p {
+      color: var(--sub);
+      font-size: .9375rem;
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+    .post-body h1,.post-body h2,.post-body h3,.post-body h4 {
+      color: var(--text);
+      font-weight: 600;
+      letter-spacing: -.02em;
+      margin: 2rem 0 .75rem;
+      line-height: 1.3;
+    }
+    .post-body h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: .5rem; }
+    .post-body h3 { font-size: 1.0625rem; }
+    .post-body h4 { font-size: .9375rem; color: var(--sub); }
+    .post-body strong, .post-body b { color: var(--text); font-weight: 600; }
+    .post-body em, .post-body i { color: #b0bec5; font-style: italic; }
+    .post-body a { color: var(--accent); }
+    .post-body a:hover { text-decoration: underline; }
+    .post-body ul, .post-body ol {
+      color: var(--sub);
+      font-size: .9375rem;
+      line-height: 1.8;
+      margin: .75rem 0 1.25rem 1.5rem;
+    }
+    .post-body li { margin-bottom: .4rem; }
+    .post-body blockquote {
+      border-left: 3px solid var(--accent);
+      margin: 1.5rem 0;
+      padding: .75rem 1.25rem;
+      background: var(--bg2);
+      border-radius: 0 var(--r) var(--r) 0;
+      color: var(--sub);
+      font-style: italic;
+    }
+    .post-body img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--r);
+      margin: 1.5rem 0;
+      border: 1px solid var(--border);
+      display: block;
+    }
+    .post-body figure { margin: 1.5rem 0; }
+    .post-body figcaption {
+      font-size: .8125rem;
+      color: var(--sub);
+      text-align: center;
+      margin-top: .5rem;
+    }
+    .post-body table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .875rem;
+      margin: 1.5rem 0;
+      color: var(--sub);
+    }
+    .post-body th {
+      background: var(--bg2);
+      color: var(--text);
+      font-weight: 600;
+      padding: .6rem .875rem;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+    .post-body td {
+      padding: .5rem .875rem;
+      border: 1px solid var(--border);
+    }
+    .post-body tr:nth-child(even) td { background: rgba(22,27,34,.5); }
+    .post-body sup { font-size: .7em; vertical-align: super; }
+    .post-body .wp-caption, .post-body .wp-block-image { margin: 1.5rem 0; }
+    .post-body .wp-caption-text, .post-body figcaption {
+      font-size: .8125rem;
+      color: var(--sub);
+      text-align: center;
+      margin-top: .4rem;
+    }
+    /* Hide Elementor wrappers that weren't stripped */
+    .post-body [class*="elementor-"] { all: unset; display: contents; }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .8125rem;
+      color: var(--sub);
+      padding: 1.5rem 0 0;
+      transition: color .15s;
+    }
+    .back-link:hover { color: var(--text); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="../index.html">Nishanth K</a>
+    <ul class="nav-links">
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../writing.html" class="active">Writing</a></li>
+      <li><a href="../research.html">Research</a></li>
+      <li><a href="../policy.html">Policy</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <a class="back-link" href="../writing.html">← Back to Writing</a>
+
+  <div class="post-header">
+    <h1>Designing Regulations for a Rapidly Evolving Financial System – Financial Systems Design Conference 2017</h1>
+    <div class="post-meta">
+      <span class="post-date">October 20, 2017</span>
+      <span class="post-origin-inline">Originally published in the <a href="https://dvararesearch.com/" target="_blank" rel="noopener">Dvara Research Blog</a></span>
+      <div class="post-authors"><span class="author-name">Madhu Srinivas</span><span class="author-name">Nishanth Kumar</span></div>
+    </div>
+    <div class="post-tags-list"><span class="post-tag">Regulatory and Supervisory Frameworks</span></div>
+  </div>
+
+  <div class="post-body">
+    <p>Dvara Research (formerly known as IFMR Finance Foundation) held its 3rd Financial Systems Design Conference on August 4th and 5th, 2017 in Chennai India. The two-day Conference brought together a carefully curated group of regulators, academics and thought leaders in financial services to examine the trend of Modularisation and its implications for regulation design for the Indian Financial System.</p>
+<p>Modularisation is defined as the unbundling of the financial services value chain into different modules. Traditionally, financial services industry has been populated with institutions that perform all the functions associated with the delivery of a product to a consumer. From the on-boarding of the customer to the delivery and servicing of the product, a majority of, if not all, the functions associated with the sale are performed internally within an institution like in the case of full-service banks.</p>
+<p>The recent trend of firms engaging in only a specific part of a financial transaction typifies the growth of Modularisation in the system. In a modular financial system, each module contains a set of functions which may now be performed by different institutions. This allows specialised firms to combine their offerings together and provide a financial product to the end customer.</p>
+<p>This unbundling of services could potentially benefit the consumer in multiple ways. However, regulation would have to evolve to mitigate any amplification of existing consumer risks as well as new risks to the consumer because of modularisation. Additionally the regulators would also need to be aware of the implication of modularisation on systemic risk.</p>
+<p>Given the above context, the Conference hosted a set of sessions that covered a discovery of potential impacts, benefits and harms to consumers from Modularisation, as well as implications for prudential and customer protection regulations for the modular world, led by experts from India, US and Australia.</p>
+<p><img alt="" class="alignnone wp-image-109874095" decoding="async" fetchpriority="high" height="440" src="../Assets/Blogs/Designing Regulations for a Rapidly Evolving Financial System - Financial Systems Design Conference 2017 - Dvara Research_files/DvaraResearch_FSD_2017.jpg" width="660"/><br/>
+<em>Conference Participants</em></p>
+<p>The conference was structured in a manner conducive to addressing the following questions at its core:</p>
+<ol>
+<li>How Modularisation has been shaping, and could potentially shape the financial services industry?</li>
+<li>How should regulation respond to the trend of Modularisation?</li>
+</ol>
+<p>The Conference yielded rich discussions and the participants identified several interesting issues and priorities for the Indian financial system. The Conference <a href="http://fsdconference.in/" rel="noopener noreferrer" target="_blank">website</a> contains the agenda and the profiles of participants. We will be in the coming days releasing the conference proceeds, and through a series of posts detail the insights that came out of the discussions at the conference.</p>
+<div class="has-social-placeholder has-content-area" data-hashtags="" data-post-id="109874092" data-title="Designing Regulations for a Rapidly Evolving Financial System – Financial Systems Design Conference 2017" data-url="https://dvararesearch.com/designing-regulations-for-a-rapidly-evolving-financial-system-financial-systems-design-conference-2017/"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2024 Nishanth K</span>
+    <div class="footer-links">
+      <a href="../about.html">About</a>
+      <a href="../writing.html">Writing</a>
+      <a href="../research.html">Research</a>
+      <a href="../policy.html">Policy</a>
+      <a href="mailto:nishanthk050@gmail.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

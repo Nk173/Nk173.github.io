@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>“Data can tell different stories, important is, which is the one you want to tell?” – Interview with S. Anand – Part 1 — Nishanth K</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .post-header { padding: 3.5rem 0 2rem; border-bottom: 1px solid var(--border); }
+    .post-header h1 {
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -.03em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .post-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .75rem 1.5rem;
+      font-size: .8125rem;
+      color: var(--sub);
+    }
+    .post-date { color: var(--sub); }
+    .post-origin-inline { font-size: .8125rem; color: var(--sub); }
+    .post-origin-inline a { color: var(--sub); text-decoration: underline; }
+    .post-origin-inline a:hover { color: var(--text); }
+    .post-authors { display: flex; gap: .5rem; flex-wrap: wrap; }
+    .author-name {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: .15rem .6rem;
+      font-size: .75rem;
+      color: var(--sub);
+    }
+    .post-tags-list { display: flex; gap: .375rem; flex-wrap: wrap; margin-top: .25rem; }
+    .post-tag {
+      font-size: .6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      padding: .15rem .5rem;
+      border-radius: 4px;
+      background: rgba(47,129,247,.12);
+      color: #58a6ff;
+    }
+
+    /* Article body styles */
+    .post-body {
+      max-width: 720px;
+      padding: 2.5rem 0 5rem;
+    }
+    .post-body p {
+      color: var(--sub);
+      font-size: .9375rem;
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+    .post-body h1,.post-body h2,.post-body h3,.post-body h4 {
+      color: var(--text);
+      font-weight: 600;
+      letter-spacing: -.02em;
+      margin: 2rem 0 .75rem;
+      line-height: 1.3;
+    }
+    .post-body h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: .5rem; }
+    .post-body h3 { font-size: 1.0625rem; }
+    .post-body h4 { font-size: .9375rem; color: var(--sub); }
+    .post-body strong, .post-body b { color: var(--text); font-weight: 600; }
+    .post-body em, .post-body i { color: #b0bec5; font-style: italic; }
+    .post-body a { color: var(--accent); }
+    .post-body a:hover { text-decoration: underline; }
+    .post-body ul, .post-body ol {
+      color: var(--sub);
+      font-size: .9375rem;
+      line-height: 1.8;
+      margin: .75rem 0 1.25rem 1.5rem;
+    }
+    .post-body li { margin-bottom: .4rem; }
+    .post-body blockquote {
+      border-left: 3px solid var(--accent);
+      margin: 1.5rem 0;
+      padding: .75rem 1.25rem;
+      background: var(--bg2);
+      border-radius: 0 var(--r) var(--r) 0;
+      color: var(--sub);
+      font-style: italic;
+    }
+    .post-body img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--r);
+      margin: 1.5rem 0;
+      border: 1px solid var(--border);
+      display: block;
+    }
+    .post-body figure { margin: 1.5rem 0; }
+    .post-body figcaption {
+      font-size: .8125rem;
+      color: var(--sub);
+      text-align: center;
+      margin-top: .5rem;
+    }
+    .post-body table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .875rem;
+      margin: 1.5rem 0;
+      color: var(--sub);
+    }
+    .post-body th {
+      background: var(--bg2);
+      color: var(--text);
+      font-weight: 600;
+      padding: .6rem .875rem;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+    .post-body td {
+      padding: .5rem .875rem;
+      border: 1px solid var(--border);
+    }
+    .post-body tr:nth-child(even) td { background: rgba(22,27,34,.5); }
+    .post-body sup { font-size: .7em; vertical-align: super; }
+    .post-body .wp-caption, .post-body .wp-block-image { margin: 1.5rem 0; }
+    .post-body .wp-caption-text, .post-body figcaption {
+      font-size: .8125rem;
+      color: var(--sub);
+      text-align: center;
+      margin-top: .4rem;
+    }
+    /* Hide Elementor wrappers that weren't stripped */
+    .post-body [class*="elementor-"] { all: unset; display: contents; }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .8125rem;
+      color: var(--sub);
+      padding: 1.5rem 0 0;
+      transition: color .15s;
+    }
+    .back-link:hover { color: var(--text); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="../index.html">Nishanth K</a>
+    <ul class="nav-links">
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../writing.html" class="active">Writing</a></li>
+      <li><a href="../research.html">Research</a></li>
+      <li><a href="../policy.html">Policy</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <a class="back-link" href="../writing.html">← Back to Writing</a>
+
+  <div class="post-header">
+    <h1>“Data can tell different stories, important is, which is the one you want to tell?” – Interview with S. Anand – Part 1</h1>
+    <div class="post-meta">
+      <span class="post-date">June 6, 2016</span>
+      <span class="post-origin-inline">Originally published in the <a href="https://dvararesearch.com/" target="_blank" rel="noopener">Dvara Research Blog</a></span>
+      <div class="post-authors"><span class="author-name">Nishanth Kumar</span></div>
+    </div>
+    <div class="post-tags-list"><span class="post-tag">Privacy and Data Protection</span></div>
+  </div>
+
+  <div class="post-body">
+    <p>The role of data in shaping public perception and informing policy decisions cannot be emphasised enough. Given the shift towards increasing digitisation and an influx of data points that is now available in the public domain, it is fundamental that one has an improved understanding of the nuances in handling large volumes of data and in better appreciating the different facets that accompany it. Beginning this post we intend to interview prominent experts in India and abroad, who through this series, will help provide an insight into the process of collecting, collating and interpreting data and ways in which these could be effectively disseminated. The series will also cover the technical, legal and design aspects that make data, and the accompanying challenges, a fascinating subject that has both universal appeal and relevance.</p>
+<p>In the first post as part of the series we feature an interview with <a href="http://www.s-anand.net/" rel="noopener" target="_blank">S. Anand</a>. Anand is the Chief Data Scientist at <a href="https://gramener.com/" rel="noopener" target="_blank">Gramener</a> and is an accomplished expert in handling large datasets having worked extensively across public, private and government entities. He uses insights from data and communicates these as visual stories and is a well-known figure in the Indian data science community. In this two-part interview he shares his thoughts on data visualisation and the different aspects that one has to keep in mind while undertaking such an effort.</p>
+<p><em>Note: Credit to Kaliamoorthy A, IFMR Finance Foundation, for the transcription.</em></p>
+<p><strong>What are the some of the key trends that are fundamentally driving data visualisation as a field globally? Is there something unique about how it is shaping up in the Indian context?</strong></p>
+<p>A strong trend that I see is that there is a lot of automation that is happening that can be captured in three aspects:</p>
+<ol>
+<li><em>Visualisations are getting automated:</em> It is no longer the case that people are subtly creating data visualisations. We are steadily moving away from infographics which are custom drawn and used to convey data to more automated, data-driven visualisations where the design itself comes from the data.</li>
+<li><em>Analysis is getting automated:</em> There are enough patterns of analysis that work across datasets irrespective of the domain and in many cases quite independent of structure as well that lead to patterns of insight. So for example questions such as: “<em>what influences what?</em>”, “<em>what do the outliers look like?</em>”, “<em>What items/elements of the data are similar?</em>” are questions that seem to be applicable across almost any dataset. Once we have the data in a moderately standard structure irrespective of the domain, people are able to apply automated techniques to analyse the data.</li>
+<li><em>Story telling is also getting automated:</em> There are enough ways in which one can communicate insights around a certain pattern. To give you an example: The below work is where we were doing a simple narrative visualisation and at the same it has elements of automation. In this <a href="https://gramener.com/budget/?Year=2008" rel="noopener" target="_blank">example</a> the reaction of the stock market to the budget announcements is captured, so for instance on the day after budget how does the stock market move in various years. If I have to pick, say, the year 2008 you can see that the banking and financial services didn’t respond too well whereas Oil and gas industry was neutral and Telecom industry reacted well.</li>
+</ol>
+<p><img alt="Image1_060616" class="alignnone wp-image-109873514" decoding="async" fetchpriority="high" height="387" src="../Assets/Blogs/“Data can tell different stories, important is, which is the one you want to tell_” - Interview with S. Anand - Part 1 - Dvara Research_files/Image1_060616.png" width="660"/></p>
+<p style="text-align: justify; padding-left: 30px;">There are some annotations on the left. All of these are generated automatically using what are very obvious templates that one can see working behind the scenes. Once you have enough of these templates and if you decide to show some of these only when it is an interesting statement, then you’re approaching what is effectively borderline artificial intelligence in the sense that’s what a human would do. One would look for a series of patterns and tell a story based on that. So narration of the story is also getting automated in some way. This is probably the strongest trend that I see in the data visualisation space.</p>
+<p>In the Indian context, the market for data visualisations is growing as more people and organisations are becoming aware of data visualisation as a tool for effective communication. There are many people from India who are contributing very strongly in this sphere. For example, Vega is a famous data visualisation library and one of the chief contributors is <a href="http://arvindsatya.com/" rel="noopener" target="_blank">Arvind Satyanarayan</a>. So, there is considerable work that’s happening in India which will hopefully bear fruit in the future.</p>
+<p><strong>What are the fundamentals of a good visualisation effort? Are there any nuances that someone has to keep in mind while balancing breaking down complex data and its visual presentation?</strong></p>
+<p>Every data visualisation is a function which takes in data and transforms it into certain visual attributes. Therefore, all the principles of standard design apply. The reason I mention standard principles of design is because these are often forgotten when one starts looking at programmatic design. We spent a lot of time putting together work that constitutes “not bad” design and in the form of a poster, a simple <a href="https://gramener.com/design/better-design.pdf?v=3ad8f" rel="noopener" target="_blank">one-page PDF</a>, that explains how one should go about creating better design.</p>
+<p>Beyond that, in terms of how one goes about getting a good data visualisation, a good resource would be ‘Noah Illinsky’s book: <a href="http://shop.oreilly.com/product/0636920022060.do" rel="noopener" target="_blank">Designing Data Visualizations</a>. Particularly, one table from the book which shows various encodings that can be used to transform data into a set of visual attributes.</p>
+<p><img alt="Image_2_060616" class="alignnone wp-image-109873517" decoding="async" height="514" src="../Assets/Blogs/“Data can tell different stories, important is, which is the one you want to tell_” - Interview with S. Anand - Part 1 - Dvara Research_files/Image_2_060616.png" width="660"/></p>
+<p>This list by and large covers most of the possible visual attributes set one can map the data to. Given some data, I can represent the data in terms of a position on the X axis and Y axis. I can represent it as a measurement of length, size, angle, colour or a variety of other parameters. Different types of data work well when they are assigned to certain encodings. For example, for representing ordered data, colour encodings aren’t always best as it’s not clear whether yellow is larger than blue or smaller than blue. Whereas colour encoding work really well for categorical data.</p>
+<p>These are also ordered roughly in decreasing order of effectiveness. We are much better at discerning position than we are at discerning colour. So if I have to take a column of data and use it to represent a visual in an accurate way, then position is our best way i.e., scatter plot is usually an excellent choice. On top of that if I wanted to add another parameter, for example, I could use area as one of the dimension and position as another dimension. Adding different parameters one can create a new type of chart.</p>
+<p>Broadly there are two ways in which we can evaluate a visualisation: aesthetics and functionality. This table also gives us a way of evaluating whether a particular visualisation is better than another functionally speaking. We can make sure that we are using an optimal encoding for the data and at the same time not violate any of the basic design principles.</p>
+<p>It doesn’t talk about aesthetics though, which is a different topic altogether. While we can easily argue that a pie chart is worse than a bar chart functionally, it is not that an easy argument to make from an aesthetics standpoint. In terms of functionality, we know what the rules are as explained above, whereas for aesthetics we don’t know what the rules are, at least I don’t!</p>
+<p><strong>How would you characterise the demand for Data Visualisation driven Journalism as opposed to the more traditional forms such as anecdotal evidence and story-telling?</strong></p>
+<p>A happy development in recent times is that the role of data itself in journalism is growing. Visualisation in journalism has always existed in many forms. Infographics, as a specific aspect of data visualisation in journalism, has always been there especially in scientific journalism. The Scientific American data visualisation team, for instance, is spectacular. The kind of visuals they come up with are amazing. So, it has always been there, however its gaining more prominence now.</p>
+<p>I think that there is a huge market for stories. Ultimately people consume stories and visuals are useful. In fact it’s quite interesting if you look at any newspaper or magazine and remove all that text and look at just the pictures and try and see if you can guess what the story is about. More than half the times you will find that you actually can’t figure out what the story is about from the picture. The picture is not there at all to explain the story or to elaborate the story. It exists, by and large, to make things look prettier.</p>
+<p>At a recent conference, I pulled out a random story from a newspaper which had a picture that was an aerial view of the city. Just looking at that picture, the story could have been about anything. It could have been about traffic, about riots in the city or about retail growth in the city etc. It happened to be that it was about how the construction industry is slumping. The point is that the story is what is selling from a journalism perspective but not the visual. Therefore, the market while it’s growing, will probably saturate at something smaller than what at least the data visualisation enthusiast hopes for. On the other hand, data driven journalism, irrespective of the visualisation, has the potential to scale a lot. That’s because data is a source for stories.</p>
+<p>Let me show you an example of a considerable data visualisation story that is scalable. Just go to google.co.in and type in the words “<em>how to</em>”. Now you will get four suggestions:</p>
+<p><em>How to kiss, how to download YouTube videos, how to lose weight and how to reduce weight?</em></p>
+<p>In some sense, this represents India’s priorities today at least as far as the google search is concerned. This is a source of insight in itself and what if we could capture all of this and put it into a list and say if you start searching for “<em>how to</em>” – what are the recommendations in different countries? Can it provide startling insights into what different countries are thinking of against various kinds of questions? This is a point-in-time analysis and it keeps changing every day and this tool gives you an insight into the ever changing minds of geographies over time.</p>
+<p><img alt="GIF_1" class="alignnone wp-image-109873516" decoding="async" height="376" src="../Assets/Blogs/“Data can tell different stories, important is, which is the one you want to tell_” - Interview with S. Anand - Part 1 - Dvara Research_files/GIF_1.gif" width="660"/></p>
+<p>This is not a story but a source for several stories which is what makes data journalism powerful. So, I believe that data visualisation in journalism has been there, is growing and will grow little more. But data itself in journalism has much more potential.</p>
+<p><strong>In the context of trying to visualize and disseminate data which would impact, lets say public policy, how important is it to keep in mind the target audience for a visual?</strong></p>
+<p>The context is at least as important as the data itself. A piece of data can explain very different things to different people. Similarly, the same inference can also come out from very different pieces of data. The context and data together is what drives good data visualisation.</p>
+<p>To give you an example of how the context can completely change the structure of a visual is our work on the 2014 election results page. When we came up with the initial sketch, we thought, we had arrived at a reasonably sophisticated visual that covered various aspects in a dashboard that most people would like. However, there were several problems with this. With subsequent feedback and <a href="http://blog.gramener.com/1755/design-of-the-2014-election-results-page" rel="noopener" target="_blank">multiple iterations</a> later, the <a href="https://gramener.com/election/live" rel="noopener" target="_blank">final version</a> was completely different from the visual we had in the beginning.</p>
+<p>Even though we thought we had a pretty well-designed original visual, the contextual feedback helped create a visual that addressed the questions that the audience would like answered. The same data can tell different stories, important is, which is the one you want to tell? And that depends on the audience and what they find interesting.</p>
+<p><em><a href="https://dvararesearch.com/open-data-improves-the-situation-from-a-data-privacy-perspective-interview-with-s-anand-part-2/">Part 2</a> of the interview will cover aspects of challenges in public vs. private datasets, data privacy and open data movement.</em></p>
+<div class="has-social-placeholder has-content-area" data-hashtags="" data-post-id="109873511" data-title="“Data can tell different stories, important is, which is the one you want to tell?” – Interview with S. Anand – Part 1" data-url="https://dvararesearch.com/data-can-tell-different-stories-important-is-which-is-the-one-you-want-to-tell-interview-with-s-anand-part-1/"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2024 Nishanth K</span>
+    <div class="footer-links">
+      <a href="../about.html">About</a>
+      <a href="../writing.html">Writing</a>
+      <a href="../research.html">Research</a>
+      <a href="../policy.html">Policy</a>
+      <a href="mailto:nishanthk050@gmail.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

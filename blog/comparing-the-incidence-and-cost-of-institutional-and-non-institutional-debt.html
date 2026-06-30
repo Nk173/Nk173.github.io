@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparing the Incidence and Cost of Institutional and Non-Institutional debt — Nishanth K</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .post-header { padding: 3.5rem 0 2rem; border-bottom: 1px solid var(--border); }
+    .post-header h1 {
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -.03em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .post-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .75rem 1.5rem;
+      font-size: .8125rem;
+      color: var(--sub);
+    }
+    .post-date { color: var(--sub); }
+    .post-origin-inline { font-size: .8125rem; color: var(--sub); }
+    .post-origin-inline a { color: var(--sub); text-decoration: underline; }
+    .post-origin-inline a:hover { color: var(--text); }
+    .post-authors { display: flex; gap: .5rem; flex-wrap: wrap; }
+    .author-name {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: .15rem .6rem;
+      font-size: .75rem;
+      color: var(--sub);
+    }
+    .post-tags-list { display: flex; gap: .375rem; flex-wrap: wrap; margin-top: .25rem; }
+    .post-tag {
+      font-size: .6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      padding: .15rem .5rem;
+      border-radius: 4px;
+      background: rgba(47,129,247,.12);
+      color: #58a6ff;
+    }
+
+    /* Article body styles */
+    .post-body {
+      max-width: 720px;
+      padding: 2.5rem 0 5rem;
+    }
+    .post-body p {
+      color: var(--sub);
+      font-size: .9375rem;
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+    .post-body h1,.post-body h2,.post-body h3,.post-body h4 {
+      color: var(--text);
+      font-weight: 600;
+      letter-spacing: -.02em;
+      margin: 2rem 0 .75rem;
+      line-height: 1.3;
+    }
+    .post-body h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: .5rem; }
+    .post-body h3 { font-size: 1.0625rem; }
+    .post-body h4 { font-size: .9375rem; color: var(--sub); }
+    .post-body strong, .post-body b { color: var(--text); font-weight: 600; }
+    .post-body em, .post-body i { color: #b0bec5; font-style: italic; }
+    .post-body a { color: var(--accent); }
+    .post-body a:hover { text-decoration: underline; }
+    .post-body ul, .post-body ol {
+      color: var(--sub);
+      font-size: .9375rem;
+      line-height: 1.8;
+      margin: .75rem 0 1.25rem 1.5rem;
+    }
+    .post-body li { margin-bottom: .4rem; }
+    .post-body blockquote {
+      border-left: 3px solid var(--accent);
+      margin: 1.5rem 0;
+      padding: .75rem 1.25rem;
+      background: var(--bg2);
+      border-radius: 0 var(--r) var(--r) 0;
+      color: var(--sub);
+      font-style: italic;
+    }
+    .post-body img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--r);
+      margin: 1.5rem 0;
+      border: 1px solid var(--border);
+      display: block;
+    }
+    .post-body figure { margin: 1.5rem 0; }
+    .post-body figcaption {
+      font-size: .8125rem;
+      color: var(--sub);
+      text-align: center;
+      margin-top: .5rem;
+    }
+    .post-body table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .875rem;
+      margin: 1.5rem 0;
+      color: var(--sub);
+    }
+    .post-body th {
+      background: var(--bg2);
+      color: var(--text);
+      font-weight: 600;
+      padding: .6rem .875rem;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+    .post-body td {
+      padding: .5rem .875rem;
+      border: 1px solid var(--border);
+    }
+    .post-body tr:nth-child(even) td { background: rgba(22,27,34,.5); }
+    .post-body sup { font-size: .7em; vertical-align: super; }
+    .post-body .wp-caption, .post-body .wp-block-image { margin: 1.5rem 0; }
+    .post-body .wp-caption-text, .post-body figcaption {
+      font-size: .8125rem;
+      color: var(--sub);
+      text-align: center;
+      margin-top: .4rem;
+    }
+    /* Hide Elementor wrappers that weren't stripped */
+    .post-body [class*="elementor-"] { all: unset; display: contents; }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .8125rem;
+      color: var(--sub);
+      padding: 1.5rem 0 0;
+      transition: color .15s;
+    }
+    .back-link:hover { color: var(--text); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="../index.html">Nishanth K</a>
+    <ul class="nav-links">
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../writing.html" class="active">Writing</a></li>
+      <li><a href="../research.html">Research</a></li>
+      <li><a href="../policy.html">Policy</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <a class="back-link" href="../writing.html">← Back to Writing</a>
+
+  <div class="post-header">
+    <h1>Comparing the Incidence and Cost of Institutional and Non-Institutional debt</h1>
+    <div class="post-meta">
+      <span class="post-date">December 10, 2015</span>
+      <span class="post-origin-inline">Originally published in the <a href="https://dvararesearch.com/" target="_blank" rel="noopener">Dvara Research Blog</a></span>
+      <div class="post-authors"><span class="author-name">Nishanth Kumar</span></div>
+    </div>
+    <div class="post-tags-list"><span class="post-tag">Debt Distress</span></div>
+  </div>
+
+  <div class="post-body">
+    <p>The <a href="http://mospi.nic.in/Mospi_New/upload/KI_70_18.2_19dec14.pdf" rel="noopener" target="_blank">All-India Debt and Investment Survey</a> (AIDIS) is a survey conducted by the National Sample Survey Office (NSSO) at decennial intervals through household interviews from a random, nationally representative sample of households. As part of the 70th round survey of NSSO conducted between January and December 2013, the AIDIS provides a perspective on state of assets, debt and investment in India during 2012-13<sup>1</sup>.</p>
+<p>A summary of the results of the survey show that non-institutional sources i.e., sources of credit other than government, banks, insurance companies, pension funds, financial companies, and so on, played a major role in providing credit to the rural households. In the rural segment of India, about 19% of all households have acquired credit from non-institutional sources while the institutional or formal sources have advanced credit to 17.2% of rural households. However, in the urban segment of the country, institutional agencies appear to be the more prominent source of credit, advancing credit to 14.8% of households against 10.3% by non-institutional agencies.</p>
+<p></p><center><img alt="nsso_img1" class="alignnone wp-image-109873307" decoding="async" fetchpriority="high" height="389" src="../Assets/Blogs/Comparing the Incidence and Cost of Institutional and Non-Institutional debt - Dvara Research_files/nsso_img1.png" width="600"/></center><br/>
+<em>Note: Incidence of Indebtedness is defined as Number of households with any one loan (from respective source) divided by all households in that population segment.</em><p></p>
+<p>For the rural sector, about 4 times as many households in the highest decile class of asset holding (32.6%) are indebted to institutional agencies compared to the bottom decile class (7.9%), while in the urban sector about 8 times as many households in the top decile class (29.1%) were indebted to institutional agencies compared to the bottom decile class (3.4%)<sup>2</sup>.</p>
+<p>It is also interesting to note that the trend of the share of households indebted to institutional agencies increases with an increase in asset holding. The share of households indebted to non-institutional agencies decreases with increase in asset holding for the urban segment whereas it remains about the same for the rural segment.</p>
+<p>Another interesting result from the survey is that a large share of outstanding debt from the non-institutional sources are at very high rates of interest.</p>
+<p></p><center><img alt="nsso_img2" class="alignnone wp-image-109873308" decoding="async" height="459" src="../Assets/Blogs/Comparing the Incidence and Cost of Institutional and Non-Institutional debt - Dvara Research_files/nsso_img2.png" width="600"/></center><p></p>
+<p>From the above table, we can see that the predominant share of outstanding debt from institutional sources (89% in the rural and 92% in the urban) was provided at less than 15% interest rates. In stark contrast, we see that the predominant share of non-institutional credit, in both rural and urban segments, come at very high costs: 20% or higher.</p>
+<p>These statistics provide very important insights:</p>
+<ol>
+<li style="list-style-type: none;">
+<ol>
+<li>A significant share of rural households still depends on non-institutional sources of credit regardless of their assets, whereas the corresponding incidence of indebtedness reduces with increase in household assets.</li>
+<li>With the increase in asset holding, the share of households indebted to institutional sources of credit increases, both in rural and urban segments. This may be due to the lack of access to formal financial resources for households with lesser household assets, and indicates that collateral-based financing may be the predominant product available, and availability of collateral might be an important constraint to accessing credit.</li>
+<li>A very high proportion of the outstanding debt from non-institutional sources of credit are at a very high cost compared to the debt from institutional sources of credit.</li>
+</ol>
+</li>
+</ol>
+<p><span style="font-size: xx-small;"> —<br/>
+1 – Government of India (2014): Key Indicators of Situation of Agricultural Households in India, NSSO 70th Round (January to December 2013), Ministry of Statistics and Programme Implementation, December.<br/>
+2 – ibid</span></p>
+<div class="has-social-placeholder has-content-area" data-hashtags="" data-post-id="109873306" data-title="Comparing the Incidence and Cost of Institutional and Non-Institutional debt" data-url="https://dvararesearch.com/comparing-the-incidence-and-cost-of-institutional-and-non-institutional-debt/"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2024 Nishanth K</span>
+    <div class="footer-links">
+      <a href="../about.html">About</a>
+      <a href="../writing.html">Writing</a>
+      <a href="../research.html">Research</a>
+      <a href="../policy.html">Policy</a>
+      <a href="mailto:nishanthk050@gmail.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

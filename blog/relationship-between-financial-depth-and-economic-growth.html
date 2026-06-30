@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relationship Between Financial Depth and Economic Growth — Nishanth K</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .post-header { padding: 3.5rem 0 2rem; border-bottom: 1px solid var(--border); }
+    .post-header h1 {
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -.03em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .post-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .75rem 1.5rem;
+      font-size: .8125rem;
+      color: var(--sub);
+    }
+    .post-date { color: var(--sub); }
+    .post-origin-inline { font-size: .8125rem; color: var(--sub); }
+    .post-origin-inline a { color: var(--sub); text-decoration: underline; }
+    .post-origin-inline a:hover { color: var(--text); }
+    .post-authors { display: flex; gap: .5rem; flex-wrap: wrap; }
+    .author-name {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: .15rem .6rem;
+      font-size: .75rem;
+      color: var(--sub);
+    }
+    .post-tags-list { display: flex; gap: .375rem; flex-wrap: wrap; margin-top: .25rem; }
+    .post-tag {
+      font-size: .6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      padding: .15rem .5rem;
+      border-radius: 4px;
+      background: rgba(47,129,247,.12);
+      color: #58a6ff;
+    }
+
+    /* Article body styles */
+    .post-body {
+      max-width: 720px;
+      padding: 2.5rem 0 5rem;
+    }
+    .post-body p {
+      color: var(--sub);
+      font-size: .9375rem;
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+    .post-body h1,.post-body h2,.post-body h3,.post-body h4 {
+      color: var(--text);
+      font-weight: 600;
+      letter-spacing: -.02em;
+      margin: 2rem 0 .75rem;
+      line-height: 1.3;
+    }
+    .post-body h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: .5rem; }
+    .post-body h3 { font-size: 1.0625rem; }
+    .post-body h4 { font-size: .9375rem; color: var(--sub); }
+    .post-body strong, .post-body b { color: var(--text); font-weight: 600; }
+    .post-body em, .post-body i { color: #b0bec5; font-style: italic; }
+    .post-body a { color: var(--accent); }
+    .post-body a:hover { text-decoration: underline; }
+    .post-body ul, .post-body ol {
+      color: var(--sub);
+      font-size: .9375rem;
+      line-height: 1.8;
+      margin: .75rem 0 1.25rem 1.5rem;
+    }
+    .post-body li { margin-bottom: .4rem; }
+    .post-body blockquote {
+      border-left: 3px solid var(--accent);
+      margin: 1.5rem 0;
+      padding: .75rem 1.25rem;
+      background: var(--bg2);
+      border-radius: 0 var(--r) var(--r) 0;
+      color: var(--sub);
+      font-style: italic;
+    }
+    .post-body img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--r);
+      margin: 1.5rem 0;
+      border: 1px solid var(--border);
+      display: block;
+    }
+    .post-body figure { margin: 1.5rem 0; }
+    .post-body figcaption {
+      font-size: .8125rem;
+      color: var(--sub);
+      text-align: center;
+      margin-top: .5rem;
+    }
+    .post-body table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .875rem;
+      margin: 1.5rem 0;
+      color: var(--sub);
+    }
+    .post-body th {
+      background: var(--bg2);
+      color: var(--text);
+      font-weight: 600;
+      padding: .6rem .875rem;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+    .post-body td {
+      padding: .5rem .875rem;
+      border: 1px solid var(--border);
+    }
+    .post-body tr:nth-child(even) td { background: rgba(22,27,34,.5); }
+    .post-body sup { font-size: .7em; vertical-align: super; }
+    .post-body .wp-caption, .post-body .wp-block-image { margin: 1.5rem 0; }
+    .post-body .wp-caption-text, .post-body figcaption {
+      font-size: .8125rem;
+      color: var(--sub);
+      text-align: center;
+      margin-top: .4rem;
+    }
+    /* Hide Elementor wrappers that weren't stripped */
+    .post-body [class*="elementor-"] { all: unset; display: contents; }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .8125rem;
+      color: var(--sub);
+      padding: 1.5rem 0 0;
+      transition: color .15s;
+    }
+    .back-link:hover { color: var(--text); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="../index.html">Nishanth K</a>
+    <ul class="nav-links">
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../writing.html" class="active">Writing</a></li>
+      <li><a href="../research.html">Research</a></li>
+      <li><a href="../policy.html">Policy</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <a class="back-link" href="../writing.html">← Back to Writing</a>
+
+  <div class="post-header">
+    <h1>Relationship Between Financial Depth and Economic Growth</h1>
+    <div class="post-meta">
+      <span class="post-date">July 31, 2015</span>
+      <span class="post-origin-inline">Originally published in the <a href="https://dvararesearch.com/" target="_blank" rel="noopener">Dvara Research Blog</a></span>
+      <div class="post-authors"><span class="author-name">Irene Baby</span><span class="author-name">Nishanth Kumar</span></div>
+    </div>
+    <div class="post-tags-list"><span class="post-tag">Regulatory and Supervisory Frameworks</span></div>
+  </div>
+
+  <div class="post-body">
+    <p><em>This is the first post in our blog series on the concept of financial depth and the various methods to measure it. The introductory post summarizes the literature pertaining to the significance of financial depth. The subsequent posts in the series covers the limitations of the various measures of financial depth and delves on the concepts of Equilibrium Credit and Financial Possibility Frontier. The series will also cover the advantages of these concepts over previously-used measures, especially when attempting to measure financial depth at sub-national levels.<br/>
+</em><br/>
+The relationship between financial development and economic growth has been long discussed and debated. The earliest school of thought led by Joseph Schumpeter<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftn1" name="_ftnref1">[1]</a> posited the idea that countries with well-developed financial systems tend to grow faster than the rest. However, recent studies suggest that unrestrained and unchecked use of financial instruments and practices has led to macroeconomic crises<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftn2" name="_ftnref2">[2]</a>.</p>
+<p>In the context of this blog series, financial development is to be broadly understood as a multidimensional concept that includes measures of <span style="text-decoration: underline;">depth</span>, <span style="text-decoration: underline;">access</span>, <span style="text-decoration: underline;">efficiency</span><a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftn3" name="_ftnref3">[3]</a> and <span style="text-decoration: underline;">stability</span><a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftn4" name="_ftnref4">[4]</a>. <span style="text-decoration: underline;">Financial depth</span> refers to the size of financial institutions and markets. It is captured by measures such as credit-to–GDP ratio, pension fund assets-to-GDP ratio as well as mutual fund assets-to-GDP ratio. <span style="text-decoration: underline;">Access</span> is the degree to which individuals can and do use financial institutions and markets. <span style="text-decoration: underline;">Efficiency</span> is understood as the efficiency of financial institutions and markets in providing financial services. <span style="text-decoration: underline;">Stability</span> refers to the stability of financial institutions and markets as captured through growth volatility.</p>
+<p>Within these broad measures for financial development, we undertook a review of literature to further our understanding of approaches that focus on ‘Credit Depth’ (Credit-to-GDP ratio) as a measure of financial depth, as well as its relationship with economic growth, inequality and poverty. This post summarises our key findings from the literature survey.</p>
+<p><strong>Financial depth is positively correlated with economic growth across countries</strong></p>
+<p>Joseph Schumpeter<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftn5" name="_ftnref5">[5]</a> (1912) postulated that financial development drives technological innovation and consequently, the rate of economic growth. Also, recent empirical economic evidence across a cross-section of 80 countries over the time period 1960-1989 shows that higher levels of financial development are significantly and robustly correlated with faster current and future rates of economic growth, physical capital accumulation, and economic efficiency improvements<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftn6" name="_ftnref6">[6]</a>. In other words, when countries have relatively high levels of financial development, economic growth tends to be relatively fast over the next 10 to 30 years<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftn7" name="_ftnref7">[7]</a>.</p>
+<p><strong>Financial depth influences growth rates of sectors within a country</strong></p>
+<p>Industries that are more dependent on external finance (defined as the difference between investments and cash generated from operations) grow disproportionately faster in countries with a more developed financial sector<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftn8" name="_ftnref8">[8]</a>. For example, in Malaysia, which has high levels of financial depth, the Drugs and Pharmaceutical industry (which is relatively heavily dependent on external finance) grows at a 4% higher annual real rate than Tobacco (which is relatively less dependent on external finance). In Chile, which was in the lowest quartile, drugs grew at a rate of 2.5% lower than Tobacco.</p>
+<p>In India, expansion of directed credit lending (from 1998 – 2002) to medium-sized firms (firms with requirement for capital stock between INR 6.5 to 10 million) shows that this increased availability of credit accelerates their rate of growth of sales, and consequently, profits<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftn9" name="_ftnref9">[9]</a>.</p>
+<p><strong>Financial deepening reduces poverty and inequality</strong></p>
+<p>Research shows that financial deepening significantly raises the average income of the lower 80% of the population of the world and lowers inequality across 70 middle and low income countries<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftn10" name="_ftnref10">[10]</a>. Empirical research also shows that with every 0.1% increase in the level of credit available in an economy, head count poverty ratio reduces by 2.5% – 3%<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftn11" name="_ftnref11">[11]</a>.</p>
+<p>The positive impact of financial deepening on reducing poverty holds for within-country studies too. Empirical studies show that financial depth has a negative and significant impact on rural poverty (head- count ratio and poverty gap) in India<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftn12" name="_ftnref12">[12]</a>. Financial deepening works positively towards reducing poverty by increasing opportunities for entrepreneurship in rural areas and enabling migration from rural to urban areas<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftn13" name="_ftnref13">[13]</a>.</p>
+<p><strong>Financial depth, beyond a threshold, leads to adverse macroeconomic effects</strong></p>
+<p><img alt="house" class="alignnone size-full wp-image-109873161" decoding="async" fetchpriority="high" height="600" src="../Assets/Blogs/Relationship Between Financial Depth and Economic Growth - Dvara Research_files/house.jpeg" width="660"/></p>
+<p>A deeper financial system is significantly associated with lesser growth volatility; however, the relationship appears to be nonlinear. As the financial system becomes larger relative to GDP, systemic risk becomes relatively more important, and acts to reduce stability. In other words, when there is excess credit within an economy, there can be a “vanishing effect” of financial depth on economic growth. The threshold above which this vanishing effect occurs is estimated to be when private credit goes beyond 110% – 120% of Gross Domestic Product (GDP)<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftn14" name="_ftnref14">[14]</a>.</p>
+<p></p><center><br/>
+<img alt="Too_much_finance_graph_img" class="aligncenter size-full wp-image-109873165" decoding="async" height="392" src="../Assets/Blogs/Relationship Between Financial Depth and Economic Growth - Dvara Research_files/Too_much_finance_graph_img.jpg" width="500"/></center><br/>
+<em><br/>
+</em><p></p>
+<p>Figure 1: Replicated from the results from table 5 of Arcand et al(2012). The grey line shows that as credit to GDP ratio goes beyond 1.1, the slope of the graph becomes negative.</p>
+<p>Having discussed the significance of financial depth on the macro-economy, the next question that naturally follows is regarding the ways to measure financial depth. The next blog post in this series will briefly discuss the various measures used in literature and their limitations.</p>
+<p>—<br/>
+<span style="font-size: xx-small;"><br/>
+<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftnref1" name="_ftn1">[1]</a> Levine, 1997. “<strong>Financial Development and Economic Growth: Views and Agenda” </strong><br/>
+<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftnref2" name="_ftn2">[2]</a> Loayza and Ranciere, 2006. “<strong>Financial Development, Financial Fragility, and Growth” </strong><br/>
+<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftnref3" name="_ftn3">[3]</a> Sahay et al, 2015. “<strong>Rethinking Financial Deepening: Stability and Growth in Emerging Markets”</strong><br/>
+<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftnref4" name="_ftn4">[4]</a> Čihák, Demirgüč-Kunt, Feyen and Levine, 2013. “<strong>Financial Development in 205 Economies, 1960 to 2010″ </strong><br/>
+<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftnref5" name="_ftn5">[5]</a> King and Levine, 1993. “<strong>Finance and Growth: Schumpeter Might Be Right” </strong><br/>
+<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftnref6" name="_ftn6">[6]</a> ibid<br/>
+<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftnref7" name="_ftn7">[7]</a> ibid<br/>
+<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftnref8" name="_ftn8">[8]</a> Rajan and Zingales, 1998. “<strong>Financial Dependence and Growth</strong>.”<br/>
+<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftnref9" name="_ftn9">[9]</a> Banerjee and Duflo, 2012. “<strong>Do Firms Want to Borrow More? Testing Credit Constraints using a Directed Lending Program</strong>”<br/>
+<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftnref10" name="_ftn10">[10]</a> Honohan, 2004. “<strong>Financial development, growth, and poverty: how close are the links?”</strong><br/>
+<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftnref11" name="_ftn11">[11]</a> ibid<br/>
+<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftnref12" name="_ftn12">[12]</a> Ayyagari, Beck and Hoseini, 2013. “<strong>Finance and Poverty: Evidence from India</strong>”<br/>
+<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftnref13" name="_ftn13">[13]</a> ibid<br/>
+<a href="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/#_ftnref14" name="_ftn14">[14]</a> Berkes, Panizza and Arcand, 2012. “<strong>Too Much Finance?”</strong><br/>
+</span></p>
+<div class="has-social-placeholder has-content-area" data-hashtags="" data-post-id="109873160" data-title="Relationship Between Financial Depth and Economic Growth" data-url="https://dvararesearch.com/relationship-between-financial-depth-and-economic-growth/"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2024 Nishanth K</span>
+    <div class="footer-links">
+      <a href="../about.html">About</a>
+      <a href="../writing.html">Writing</a>
+      <a href="../research.html">Research</a>
+      <a href="../policy.html">Policy</a>
+      <a href="mailto:nishanthk050@gmail.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

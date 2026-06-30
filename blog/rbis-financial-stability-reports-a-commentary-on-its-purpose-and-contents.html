@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RBI’s Financial Stability Reports – A Commentary on its Purpose and Contents — Nishanth K</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .post-header { padding: 3.5rem 0 2rem; border-bottom: 1px solid var(--border); }
+    .post-header h1 {
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -.03em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .post-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .75rem 1.5rem;
+      font-size: .8125rem;
+      color: var(--sub);
+    }
+    .post-date { color: var(--sub); }
+    .post-origin-inline { font-size: .8125rem; color: var(--sub); }
+    .post-origin-inline a { color: var(--sub); text-decoration: underline; }
+    .post-origin-inline a:hover { color: var(--text); }
+    .post-authors { display: flex; gap: .5rem; flex-wrap: wrap; }
+    .author-name {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: .15rem .6rem;
+      font-size: .75rem;
+      color: var(--sub);
+    }
+    .post-tags-list { display: flex; gap: .375rem; flex-wrap: wrap; margin-top: .25rem; }
+    .post-tag {
+      font-size: .6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      padding: .15rem .5rem;
+      border-radius: 4px;
+      background: rgba(47,129,247,.12);
+      color: #58a6ff;
+    }
+
+    /* Article body styles */
+    .post-body {
+      max-width: 720px;
+      padding: 2.5rem 0 5rem;
+    }
+    .post-body p {
+      color: var(--sub);
+      font-size: .9375rem;
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+    .post-body h1,.post-body h2,.post-body h3,.post-body h4 {
+      color: var(--text);
+      font-weight: 600;
+      letter-spacing: -.02em;
+      margin: 2rem 0 .75rem;
+      line-height: 1.3;
+    }
+    .post-body h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: .5rem; }
+    .post-body h3 { font-size: 1.0625rem; }
+    .post-body h4 { font-size: .9375rem; color: var(--sub); }
+    .post-body strong, .post-body b { color: var(--text); font-weight: 600; }
+    .post-body em, .post-body i { color: #b0bec5; font-style: italic; }
+    .post-body a { color: var(--accent); }
+    .post-body a:hover { text-decoration: underline; }
+    .post-body ul, .post-body ol {
+      color: var(--sub);
+      font-size: .9375rem;
+      line-height: 1.8;
+      margin: .75rem 0 1.25rem 1.5rem;
+    }
+    .post-body li { margin-bottom: .4rem; }
+    .post-body blockquote {
+      border-left: 3px solid var(--accent);
+      margin: 1.5rem 0;
+      padding: .75rem 1.25rem;
+      background: var(--bg2);
+      border-radius: 0 var(--r) var(--r) 0;
+      color: var(--sub);
+      font-style: italic;
+    }
+    .post-body img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--r);
+      margin: 1.5rem 0;
+      border: 1px solid var(--border);
+      display: block;
+    }
+    .post-body figure { margin: 1.5rem 0; }
+    .post-body figcaption {
+      font-size: .8125rem;
+      color: var(--sub);
+      text-align: center;
+      margin-top: .5rem;
+    }
+    .post-body table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .875rem;
+      margin: 1.5rem 0;
+      color: var(--sub);
+    }
+    .post-body th {
+      background: var(--bg2);
+      color: var(--text);
+      font-weight: 600;
+      padding: .6rem .875rem;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+    .post-body td {
+      padding: .5rem .875rem;
+      border: 1px solid var(--border);
+    }
+    .post-body tr:nth-child(even) td { background: rgba(22,27,34,.5); }
+    .post-body sup { font-size: .7em; vertical-align: super; }
+    .post-body .wp-caption, .post-body .wp-block-image { margin: 1.5rem 0; }
+    .post-body .wp-caption-text, .post-body figcaption {
+      font-size: .8125rem;
+      color: var(--sub);
+      text-align: center;
+      margin-top: .4rem;
+    }
+    /* Hide Elementor wrappers that weren't stripped */
+    .post-body [class*="elementor-"] { all: unset; display: contents; }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .8125rem;
+      color: var(--sub);
+      padding: 1.5rem 0 0;
+      transition: color .15s;
+    }
+    .back-link:hover { color: var(--text); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="../index.html">Nishanth K</a>
+    <ul class="nav-links">
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../writing.html" class="active">Writing</a></li>
+      <li><a href="../research.html">Research</a></li>
+      <li><a href="../policy.html">Policy</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <a class="back-link" href="../writing.html">← Back to Writing</a>
+
+  <div class="post-header">
+    <h1>RBI’s Financial Stability Reports – A Commentary on its Purpose and Contents</h1>
+    <div class="post-meta">
+      <span class="post-date">November 2, 2018</span>
+      <span class="post-origin-inline">Originally published in the <a href="https://dvararesearch.com/" target="_blank" rel="noopener">Dvara Research Blog</a></span>
+      <div class="post-authors"><span class="author-name">Deepti George</span><span class="author-name">Madhu Srinivas</span><span class="author-name">Nishanth Kumar</span></div>
+    </div>
+    <div class="post-tags-list"><span class="post-tag">RBI</span><span class="post-tag">Regulatory and Supervisory Frameworks</span></div>
+  </div>
+
+  <div class="post-body">
+    <p>The Reserve Bank of India (RBI) has been publishing its bi-annual Financial Stability Reports (FSR) from May 2010. The FSRs provide extensive information about the way the RBI conducts its stress tests on the banking system; an aggregate sense of the results of such tests provide a measure of the overall resilience and stability of the banking system, along with commentary on other topical themes. The presentation of the results on a regular basis provides much-needed transparency.</p>
+<p>We have in the past few years worked on understanding the key elements of stress test design <a href="https://dvararesearch.com/stress-testing-methodology-brief-comparison-across-regulators/" rel="noopener" target="_blank">across a few jurisdictions</a> (and how India compares) as well as attempted to <a href="https://dvararesearch.com/stress-testing-credit-risk-of-indian-banks/" rel="noopener" target="_blank">replicate credit risk stress tests</a> on Indian banks using publicly available data. In this blog post, we attempt to make a list of themes and priorities along which the RBI can consider incremental improvements to its FSRs. In doing so, we refer to the latest <a href="https://rbidocs.rbi.org.in/rdocs/PublicationReport/Pdfs/0FSR_JUNE2018A3526EF7DC8640539C1420D256A470FC.PDF" rel="noopener" target="_blank">FSR released in June 2018</a>.</p>
+<p><strong>a) Reforming Stress Test Design</strong></p>
+<p><strong><u>Design of stress tests</u></strong></p>
+<p>We discuss below some aspects where there is scope for improvement in the design of the stress tests and the way the results have been represented.</p>
+<ol>
+<li><strong><u>Robust selection and disclosure of stress scenarios: </u></strong>The Basel Committee on Banking Supervision (BCBS) prescribes that the stress scenarios should be severe events that are “unlikely but plausible”<a name="_ftnref1"></a><a href="https://dvararesearch.com/rbis-financial-stability-reports-a-commentary-on-its-purpose-and-contents/#_ftn1">[1]</a>. Currently, the design of the scenarios for stress have been standardised, and thus they offer no reflection of the actual intensity of the scenarios considered or their relevance under the current economic climate. The inclusion of a comprehensive Risk Assessment Matrix (RAM) to assess individual risk sources, the likelihood of realisation, and the severity of the impact would be helpful in showcasing the immediate vulnerabilities in the system. For example, the current stress scenarios do not account for operations risk although it is observed to be a significant factor for the deterioration of banking assets over the last year<a name="_ftnref2"></a><a href="https://dvararesearch.com/rbis-financial-stability-reports-a-commentary-on-its-purpose-and-contents/#_ftn2">[2]</a>. A Risk Assessment Matrix based approach would be a more robust way to identify relevant stress scenarios for the stability assessments at regular intervals. While stress tests results offer new information to investors and creditors of banks, research indicates that in the EU the markets can identify weak banks when stress test procedures are announced. Hence, the disclosure of stress scenarios helps improve transparency<a name="_ftnref3"></a><a href="https://dvararesearch.com/rbis-financial-stability-reports-a-commentary-on-its-purpose-and-contents/#_ftn3">[3]</a>.</li>
+<li><strong><u>Time horizon of stress scenarios:</u></strong> General shocks and scenarios could be classified as short-term shocks, medium-term shocks and long-term shocks and then analysed. This would help to test for latent impacts of stress effectively. Multi-year time horizon stress tests need to be forward-looking and should consider system-level interactions and feedback effects. The model should estimate the impact of shocks on multiple real and financial parameters which may have an interaction effect over the period considered. It should also account for the possible management actions of the individual banks when faced with such shocks and the impact of such actions on the system<a name="_ftnref4"></a><a href="https://dvararesearch.com/rbis-financial-stability-reports-a-commentary-on-its-purpose-and-contents/#_ftn4">[4]</a>.</li>
+<li><strong><u>Model validation:</u></strong> Given that the system has faced significant stress over the last few years, an important step to consider would be to validate the stress testing models and their predictive capability. This will provide an insight into how effective stress tests have been as a tool to inform supervisory action. The model can only be meaningfully enhanced if we can observe its inaccuracies.</li>
+</ol>
+<p><strong>b) Disclosure of de-anonymised stress test results</strong></p>
+<p>The results of stress tests are currently being presented in aggregate terms, ie., in terms of how many banks have failed particular tests and by how much. It does not reveal the names of banks that fail stress tests. One reason for this could be that the disclosure of stress test results of individual banks may have unintended adverse consequences such as a triggering of panic in the financial markets. However, research finds that there is no significant negative impact from the disclosure of banking stress test results in the US and EU<a name="_ftnref5"></a><a href="https://dvararesearch.com/rbis-financial-stability-reports-a-commentary-on-its-purpose-and-contents/#_ftn5">[5]</a>. On the other hand, disclosure has benefits in the form of promoting transparency and market discipline. Therefore, the RBI could consider the timely disclosure of de-anonymised bank-level stress test results. It could also disclose the general guidance given by it to the managements of banks which failed the tests, as well as actions taken by these banks in responding to this guidance.</p>
+<p><strong>c) Narrative around RBI’s stand and efforts around recent significant developments in the banking sector</strong></p>
+<p>The June 2018 FSR was published at a time when the banking system was dealing with the fallout of the large-scale fraud perpetrated in Punjab National Bank. The RBI had by then, sufficient time to investigate the issue, analyse it and arrive at possible solutions. For transparency, the RBI can do well to provide an update on steps it took, both to handle the event and to signal preparedness for future events.</p>
+<p>For the December 2018 FSR, the RBI can also consider providing such a narrative in relation to the issues faced by IL&amp;FS and its impact in the form of significant liquidity squeeze to the NBFC sector, and steps taken by RBI to alleviate this, as well as its take on reliance on rating reports for credit risk assessments by banks.</p>
+<p><strong>d) Regular disclosure of major concerns from supervisory audits and enforcement actions taken</strong></p>
+<p>One of the big missing pieces in the FSR is the lack of adequate information on the supervisory audits and their results conducted by RBI. Given the steps taken by RBI in the aftermath of the recent fraud in Punjab National Bank, this would be an opportune time for RBI to make itself more transparent and release more details about its supervisory process and the results of its supervisory audits as part of the regular disclosure. The enforcement actions taken by RBI are mentioned only in a brief manner in the June 2018 FSR. It would be better if RBI goes into greater detail on what the enforcement actions were and the specific reason for and the entity against which they were undertaken. In addition, the RBI could release a summary of the private enforcement actions – such as an informal warning, that it took against regulated entities. Given the private, and possibly non-systemic nature of these transgressions, the summary could be anonymised.</p>
+<p><strong>e) Detailed explanation of the PCA framework, its application, and impact of the intervention</strong></p>
+<p>The latest <a href="https://rbi.org.in/scripts/NotificationUser.aspx?Mode=0&amp;Id=10921" rel="noopener" target="_blank">Prompt Corrective Action (PCA) framework</a> released by the RBI provides a menu of interventions by RBI based on subjective assessments. However, it is not clear what are the specific constraints that RBI has imposed on each bank under PCA. This is important since not all the banks were put under PCA at the same time and thus presenting an aggregate view of their capital ratios/profitability/asset quality would not provide enough evidence for the effectiveness, or lack thereof, of the PCA framework.  Including these details would complement the PCA versus non-PCA analysis of public sector banks (Pg. 28, Box 2.2, FSR June 2018) and bring in greater transparency. Subsequent FSRs can do well to showcase performances of banks placed under PCA, and the half-yearly nature of this discussion in the FSR will give a good sense of status updates on the performance of PCA-banks to the market.</p>
+<p><strong>f) Regular disclosures relating to the Insolvency and Bankruptcy Code (IBC)</strong></p>
+<p>A summary of large cases put under resolution/liquidation under the IBC would go a long way in giving a good picture of the movements in bad assets and consequently of banks’ balance sheets. While the FSR does have some aggregate information about the cases referred to the IBC (Pg.62, 3.23), a more detailed view with details of impact on bank capital and recovery rates, disaggregated at an account level, will shed more light of how well this channel is performing, especially in respect to the list of 12 defaulters identified by RBI for immediate bankruptcy proceedings.</p>
+<p><strong>g) Narrative around macro-prudential policy of the RBI </strong></p>
+<p>The FSR provides some observations relating to the domestic and global macroeconomic scenario. RBI can further this discussion by providing its thinking on how this would translate to risks in the real and the financial economy. Consequently, it can provide a discussion of macro-prudential policy actions, if any, taken by it to ensure financial stability. Given that the FSR reflects the collective assessment of the Sub-Committee of the Financial Stability and Development Council (FSDC) on risks to financial stability, there is a reason to extend the analysis of these risks to encompass the entire financial system. For instance, a fair assessment of excessive leverage in the economy must take into consideration bank loans, non-bank loans and all kinds of debt security issuances.  In the June 2018 FSR, there is only a brief mention (in Pg. 64, under Important Regulatory Initiatives) of the creation of an investment fluctuation reserve by banks to deal with MTM issues from sovereign risk in the wake of a spike in Government bond yields in March 2017. Similarly, recent allowances that permit banks to carve out SLR to up to 15% of NDTL, and the temporary increase in exposure limits to NBFCs by banks seem aimed at mitigating macro-level liquidity risks and easing lending to the NBFC sector respectively, but a discussion on the rationale for such interventions can be provided by RBI in the FSR too.</p>
+<p><strong>h) Feedback loop for the systemic risk survey</strong></p>
+<p>It is quite unclear what the role of the systemic risk survey is in identifying risks to the banking system. While it is currently used as a dissemination tool to showcase the opinion of leading experts, the results of the systemic risk survey could feed back into a risk assessment matrix, and thus in the design of stress scenarios.</p>
+<p> </p>
+<p>—</p>
+<p><a name="_ftn1"></a><a href="https://dvararesearch.com/rbis-financial-stability-reports-a-commentary-on-its-purpose-and-contents/#_ftnref1">[1]</a> BCBS (2009), <a href="https://www.bis.org/publ/bcbs155.htm" rel="noopener" target="_blank"><em>Principles for sound stress testing practices and supervision</em></a><em>, </em>Consultative Document, Bank of International Settlements</p>
+<p><a name="_ftn2"></a><a href="https://dvararesearch.com/rbis-financial-stability-reports-a-commentary-on-its-purpose-and-contents/#_ftnref2">[2]</a> <a href="https://rbidocs.rbi.org.in/rdocs/PublicationReport/Pdfs/0FSR_JUNE2018A3526EF7DC8640539C1420D256A470FC.PDF" rel="noopener" target="_blank">Financial Stability Report</a>, June 2018, Reserve Bank of India.</p>
+<p><a name="_ftn3"></a><a href="https://dvararesearch.com/rbis-financial-stability-reports-a-commentary-on-its-purpose-and-contents/#_ftnref3">[3]</a> Carboni, Marika &amp; Fiordelisi, Franco &amp; Ricci, Ornella &amp; Lopes, Francesco Saverio Stentella, 2017. “Surprised or not surprised? The investors’ reaction to the comprehensive assessment preceding the launch of the banking union,” Journal of Banking &amp; Finance, Elsevier, vol. 74(C), pages 122-132.</p>
+<p><a name="_ftn4"></a><a href="https://dvararesearch.com/rbis-financial-stability-reports-a-commentary-on-its-purpose-and-contents/#_ftnref4">[4]</a> Bank of England (2018), “<a href="https://www.bankofengland.co.uk/-/media/boe/files/stress-testing/2018/stress-testing-the-uk-banking-system-2018-guidance.pdf" rel="noopener" target="_blank"><em>Stress testing the UK banking system: 2018 guidance for participating banks and building societies</em></a>”.</p>
+<p><a name="_ftn5"></a><a href="https://dvararesearch.com/rbis-financial-stability-reports-a-commentary-on-its-purpose-and-contents/#_ftnref5">[5]</a> Bertrand Candelon &amp; Amadou N Sy, 2015. “<a href="https://ideas.repec.org/p/imf/imfwpa/15-75.html" rel="noopener" target="_blank">How Did Markets React to Stress Tests?</a>,” <a href="https://ideas.repec.org/s/imf/imfwpa.html" rel="noopener" target="_blank">IMF Working Papers</a>15/75, International Monetary Fund</p>
+<p> </p>
+<div class="has-social-placeholder has-content-area" data-hashtags="" data-post-id="109875779" data-title="RBI’s Financial Stability Reports – A Commentary on its Purpose and Contents" data-url="https://dvararesearch.com/rbis-financial-stability-reports-a-commentary-on-its-purpose-and-contents/"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2024 Nishanth K</span>
+    <div class="footer-links">
+      <a href="../about.html">About</a>
+      <a href="../writing.html">Writing</a>
+      <a href="../research.html">Research</a>
+      <a href="../policy.html">Policy</a>
+      <a href="mailto:nishanthk050@gmail.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digitising Payment in our backyard — Nishanth K</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .post-header { padding: 3.5rem 0 2rem; border-bottom: 1px solid var(--border); }
+    .post-header h1 {
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -.03em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .post-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .75rem 1.5rem;
+      font-size: .8125rem;
+      color: var(--sub);
+    }
+    .post-date { color: var(--sub); }
+    .post-origin-inline { font-size: .8125rem; color: var(--sub); }
+    .post-origin-inline a { color: var(--sub); text-decoration: underline; }
+    .post-origin-inline a:hover { color: var(--text); }
+    .post-authors { display: flex; gap: .5rem; flex-wrap: wrap; }
+    .author-name {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: .15rem .6rem;
+      font-size: .75rem;
+      color: var(--sub);
+    }
+    .post-tags-list { display: flex; gap: .375rem; flex-wrap: wrap; margin-top: .25rem; }
+    .post-tag {
+      font-size: .6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      padding: .15rem .5rem;
+      border-radius: 4px;
+      background: rgba(47,129,247,.12);
+      color: #58a6ff;
+    }
+
+    /* Article body styles */
+    .post-body {
+      max-width: 720px;
+      padding: 2.5rem 0 5rem;
+    }
+    .post-body p {
+      color: var(--sub);
+      font-size: .9375rem;
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+    .post-body h1,.post-body h2,.post-body h3,.post-body h4 {
+      color: var(--text);
+      font-weight: 600;
+      letter-spacing: -.02em;
+      margin: 2rem 0 .75rem;
+      line-height: 1.3;
+    }
+    .post-body h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: .5rem; }
+    .post-body h3 { font-size: 1.0625rem; }
+    .post-body h4 { font-size: .9375rem; color: var(--sub); }
+    .post-body strong, .post-body b { color: var(--text); font-weight: 600; }
+    .post-body em, .post-body i { color: #b0bec5; font-style: italic; }
+    .post-body a { color: var(--accent); }
+    .post-body a:hover { text-decoration: underline; }
+    .post-body ul, .post-body ol {
+      color: var(--sub);
+      font-size: .9375rem;
+      line-height: 1.8;
+      margin: .75rem 0 1.25rem 1.5rem;
+    }
+    .post-body li { margin-bottom: .4rem; }
+    .post-body blockquote {
+      border-left: 3px solid var(--accent);
+      margin: 1.5rem 0;
+      padding: .75rem 1.25rem;
+      background: var(--bg2);
+      border-radius: 0 var(--r) var(--r) 0;
+      color: var(--sub);
+      font-style: italic;
+    }
+    .post-body img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--r);
+      margin: 1.5rem 0;
+      border: 1px solid var(--border);
+      display: block;
+    }
+    .post-body figure { margin: 1.5rem 0; }
+    .post-body figcaption {
+      font-size: .8125rem;
+      color: var(--sub);
+      text-align: center;
+      margin-top: .5rem;
+    }
+    .post-body table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .875rem;
+      margin: 1.5rem 0;
+      color: var(--sub);
+    }
+    .post-body th {
+      background: var(--bg2);
+      color: var(--text);
+      font-weight: 600;
+      padding: .6rem .875rem;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+    .post-body td {
+      padding: .5rem .875rem;
+      border: 1px solid var(--border);
+    }
+    .post-body tr:nth-child(even) td { background: rgba(22,27,34,.5); }
+    .post-body sup { font-size: .7em; vertical-align: super; }
+    .post-body .wp-caption, .post-body .wp-block-image { margin: 1.5rem 0; }
+    .post-body .wp-caption-text, .post-body figcaption {
+      font-size: .8125rem;
+      color: var(--sub);
+      text-align: center;
+      margin-top: .4rem;
+    }
+    /* Hide Elementor wrappers that weren't stripped */
+    .post-body [class*="elementor-"] { all: unset; display: contents; }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .8125rem;
+      color: var(--sub);
+      padding: 1.5rem 0 0;
+      transition: color .15s;
+    }
+    .back-link:hover { color: var(--text); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="../index.html">Nishanth K</a>
+    <ul class="nav-links">
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../writing.html" class="active">Writing</a></li>
+      <li><a href="../research.html">Research</a></li>
+      <li><a href="../policy.html">Policy</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <a class="back-link" href="../writing.html">← Back to Writing</a>
+
+  <div class="post-header">
+    <h1>Digitising Payment in our backyard</h1>
+    <div class="post-meta">
+      <span class="post-date">August 17, 2016</span>
+      <span class="post-origin-inline">Originally published in the <a href="https://dvararesearch.com/" target="_blank" rel="noopener">Dvara Research Blog</a></span>
+      <div class="post-authors"><span class="author-name">Nishanth Kumar</span><span class="author-name">Rachit Khaitan</span></div>
+    </div>
+    <div class="post-tags-list"><span class="post-tag">Digital Financial Inclusion</span></div>
+  </div>
+
+  <div class="post-body">
+    <p>There has been a strong national imperative to move towards a “cashless” economy in India<a href="https://dvararesearch.com/digitising-payment-in-our-backyard/#_ftn1" name="_ftnref1">[1]</a>. Despite a substantive impetus from public and private sector forces, the adoption and use of digital modes of payment in the country remains paltry<a href="https://dvararesearch.com/digitising-payment-in-our-backyard/#_ftn2" name="_ftnref2">[2]</a>. While the many virtues of going cashless have been widely extolled, there seems to be little understanding of what might be “barriers” that are impeding large scale adoption.</p>
+<p>In our endeavour to get a hands-on perspective on some of the challenges and better appreciate issues towards enabling a cashless environment, as part of the <a href="https://dvararesearch.com/curating-innovative-ideas-through-i-innovate/" rel="noopener" target="_blank">i-Innovate</a> initiative, we set up and operationalised a market-prevalent digital payment channel (through mobile wallet) for paying for meals and other purchases at our office cafeteria (our proverbial backyard if you may). The goal of the experiment was to better understand the extent to which popularly perceived barriers in adopting a new mode of payment existed, from the perspectives of the vendor as well as consumers.</p>
+<p>Despite the limited nature of this experiment, there are some valuable insights to glean towards for increasing adoption, at least in similar settings</p>
+<p><strong>The Vendor Perspective</strong></p>
+<p>From the vendor perspective, we perceived significant barriers in terms of the cost of adoption, the on-boarding of new technology, and cash management. We discuss each of these alongside our own experience with helping to implement a solution with the vendor:</p>
+<p><u>Costs of adoption</u>: Accepting digital payment involves fixed and variable costs. To mitigate fixed costs, we provided the vendor with a smart-phone and access to the office Wi-Fi network. The vendor was happy to contribute with a new sim card and phone number, required for registration of a new user account in the payment platform.</p>
+<p>In our experience with variable costs, we found that rather than incurring the costs, there was a more significant barrier in terms of completely understanding what those costs might be. After surveying the growing landscape of digital payment platforms in India, we suggested one that recently received a payments bank license and featured low costs of transaction, high existing user adoption, and ease of use. We also understood all costs involved from the fine print in the terms and conditions and explained it clearly to the vendor. After this, we found that incurring those costs were barely a barrier to the vendor, especially when viewed against the benefit of providing customers with an alternate mode of payment.</p>
+<p><u>On-boarding of new tech</u>: Another major perceived barrier for adoption was that point-of-sale operators may not be trained or comfortable using such technology to accept payment in return for their goods sold.</p>
+<p>When we set out to explain the nuts and bolts of receiving digital payments using a smartphone to our young cafeteria operator, we found to our pleasant surprise, that he was already well versed with using digital payment platforms and claimed to use it regularly. While we have yet to understand the issues around troubleshooting and exception handling (such as providing refunds), this barrier was found to be largely non-existent in our experience.</p>
+<p><u>Working capital management</u>: As a majority of the economy remains cash-based, a typical small business may accept digital payment from its customers but still has to deal with other parties, such as suppliers and distributors, in cash on a day-to-day basis. This was perceived as one of the most significant barrier to adoption. Fortunately, in our case, the vendor had a diversified stream of revenues from running multiple outlets across the city, which may be why he found it acceptable to collect digitally, despite the possible delay in cashing out to pay cash-based suppliers. However, we understand that this may not be the case for other smaller scale vendors.</p>
+<p><strong>The Consumer Perspective</strong></p>
+<p>There were several perceived barriers to adoption from the consumer’s perspective. Some of these barriers include:</p>
+<ul>
+<li>Lack of smartphone for transaction</li>
+<li>No prior experience with digital payments, or at worst, a conscious distrust of the channel</li>
+<li>No prior experience with the particular service/app, and/or an unwillingness to start using a new service provider</li>
+<li>Strong preference for cash for familiarity, convenience, or privacy</li>
+<li>Inertia to adopt a new mode of payment</li>
+</ul>
+<p><strong>Results from our analysis and survey</strong></p>
+<p><em>In the below <a href="https://dvararesearch.com/digitising-payment-in-our-backyard/">interactive</a> we share some results from the analysis of transaction data and a survey that we conducted.</em></p>
+<p><script id="infogram_0_307fc634-345a-4ff7-a4c8-8a93270374fa" src="../Assets/Blogs/Digitising Payment in our backyard - Dvara Research_files/embed.js" title="Digitising Payment in our backyard" type="text/javascript"></script><iframe allowfullscreen="" frameborder="0" scrolling="no" src="../Assets/Blogs/Digitising Payment in our backyard - Dvara Research_files/307fc634-345a-4ff7-a4c8-8a93270374fa.html" style="border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; width: 745px; height: 587px;" title="Digitising Payment in our backyard"></iframe></p>
+<div style="padding: 8px 0; font-family: Arial!important; font-size: 13px!important; line-height: 15px!important; text-align: center; border-top: 1px solid #dadada; margin: 0 30px;"></div>
+<p>Anecdotes from the consumer survey as well as conversations in person provided deeper explanations. Many respondents lauded the initiative for the convenience that it affords them. One respondent stated that with this new service, their cash transactions had reduced to just one or two transactions in a month. Many other respondents however pointed to the need for a longer lead time towards adoption such as this user who stated that “<em>Maybe in another week I will adapt to technology.</em>”</p>
+<p>Other respondents indicated a strong preference for cash. One respondent stated that “<em>I consider it as a secondary option of payment. In case I do not have cash or change then I will use that service</em><strong>.</strong>” Another respondent clearly stated that there is “<em>No need. It has no value addition</em>”. One respondent stated their reluctance to adopt this new payment mode explaining that transacting at the cafeteria was actually a useful way to break down large currency notes into smaller values in order to pay auto drivers (who offer no alternative to cash payment) on their way to and from office.</p>
+<p><strong>Conclusion</strong></p>
+<p>In our experiment, we tried to identify (and mitigate, wherever possible) the barriers that might impede the adoption of a new digital payment platform and understand the experiences of the vendor and its consumers. Our backyard laboratory (i.e. our office) comprised a consumer sample of financially and technologically literate consumers, a vendor willing to accept an additional small transaction cost, and a tech-savvy POS agent.</p>
+<p>In the short time period of assessment (ten days), we found that more than half of all transactions turned digital! However, consumer adoption was slow with only 24% of cafeteria users getting on board. Our experience suggests that even savvy and highly likely adopters might be having a preference for cash for its familiarity, its convenience, or its anonymity, that digital payment in its current form is not able to substitute for.</p>
+<p>Our experience also suggests that when a vendor offers payment through one particular payment provider, those consumers that are not already users on that platform may be reluctant to maintain balances in multiple payment wallets or even to sign up on multiple platforms using their mobile numbers and email ids fearing a spam explosion. Finally, even with all other barriers notwithstanding, our experience suggests that consumers could simply need more time, more persuasive marketing, and perhaps more active handholding to mitigate the inertia of adopting an unfamiliar new technology.</p>
+<p>The advent of payments banks and the Unified Payments Interface (UPI) are set to lower such barriers to adoption with cash-out as a feature, an ability to carry out real-time mobile-based interbank transactions, and a much larger network of digital payment senders and recipients. These developments thus hold great promise for Indian merchants and consumers to leapfrog into the fold of digital financial services.</p>
+<p>—<br/>
+<span style="font-size: xx-small;"><br/>
+<a href="https://dvararesearch.com/digitising-payment-in-our-backyard/#_ftnref1" name="_ftn1">[1]</a> PM Modi emphasis need for digital payments, Livemint (May 2016): <a href="http://www.livemint.com/Politics/jucQ9NUkKOnm4btxAMGk3N/Mann-ki-baat-Modi-urges-for-cashless-economy.html">http://www.livemint.com/Politics/jucQ9NUkKOnm4btxAMGk3N/Mann-ki-baat-Modi-urges-for-cashless-economy.html</a><br/>
+<a href="https://dvararesearch.com/digitising-payment-in-our-backyard/#_ftnref2" name="_ftn2">[2]</a> RBI estimates that 96% of all the retail transactions in the country are conducted using cash, Microsave (June 2016): <a href="http://blog.microsave.net/offline-payment-acceptance-a-puzzle-and-an-opportunity/">http://blog.microsave.net/offline-payment-acceptance-a-puzzle-and-an-opportunity/</a><br/>
+</span></p>
+<div class="has-social-placeholder has-content-area" data-hashtags="" data-post-id="109873651" data-title="Digitising Payment in our backyard" data-url="https://dvararesearch.com/digitising-payment-in-our-backyard/"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2024 Nishanth K</span>
+    <div class="footer-links">
+      <a href="../about.html">About</a>
+      <a href="../writing.html">Writing</a>
+      <a href="../research.html">Research</a>
+      <a href="../policy.html">Policy</a>
+      <a href="mailto:nishanthk050@gmail.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

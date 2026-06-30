@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exploratory Analysis of Credit and GDP Growth Rates for Tamil Nadu — Nishanth K</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .post-header { padding: 3.5rem 0 2rem; border-bottom: 1px solid var(--border); }
+    .post-header h1 {
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -.03em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .post-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .75rem 1.5rem;
+      font-size: .8125rem;
+      color: var(--sub);
+    }
+    .post-date { color: var(--sub); }
+    .post-origin-inline { font-size: .8125rem; color: var(--sub); }
+    .post-origin-inline a { color: var(--sub); text-decoration: underline; }
+    .post-origin-inline a:hover { color: var(--text); }
+    .post-authors { display: flex; gap: .5rem; flex-wrap: wrap; }
+    .author-name {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: .15rem .6rem;
+      font-size: .75rem;
+      color: var(--sub);
+    }
+    .post-tags-list { display: flex; gap: .375rem; flex-wrap: wrap; margin-top: .25rem; }
+    .post-tag {
+      font-size: .6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      padding: .15rem .5rem;
+      border-radius: 4px;
+      background: rgba(47,129,247,.12);
+      color: #58a6ff;
+    }
+
+    /* Article body styles */
+    .post-body {
+      max-width: 720px;
+      padding: 2.5rem 0 5rem;
+    }
+    .post-body p {
+      color: var(--sub);
+      font-size: .9375rem;
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+    .post-body h1,.post-body h2,.post-body h3,.post-body h4 {
+      color: var(--text);
+      font-weight: 600;
+      letter-spacing: -.02em;
+      margin: 2rem 0 .75rem;
+      line-height: 1.3;
+    }
+    .post-body h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: .5rem; }
+    .post-body h3 { font-size: 1.0625rem; }
+    .post-body h4 { font-size: .9375rem; color: var(--sub); }
+    .post-body strong, .post-body b { color: var(--text); font-weight: 600; }
+    .post-body em, .post-body i { color: #b0bec5; font-style: italic; }
+    .post-body a { color: var(--accent); }
+    .post-body a:hover { text-decoration: underline; }
+    .post-body ul, .post-body ol {
+      color: var(--sub);
+      font-size: .9375rem;
+      line-height: 1.8;
+      margin: .75rem 0 1.25rem 1.5rem;
+    }
+    .post-body li { margin-bottom: .4rem; }
+    .post-body blockquote {
+      border-left: 3px solid var(--accent);
+      margin: 1.5rem 0;
+      padding: .75rem 1.25rem;
+      background: var(--bg2);
+      border-radius: 0 var(--r) var(--r) 0;
+      color: var(--sub);
+      font-style: italic;
+    }
+    .post-body img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--r);
+      margin: 1.5rem 0;
+      border: 1px solid var(--border);
+      display: block;
+    }
+    .post-body figure { margin: 1.5rem 0; }
+    .post-body figcaption {
+      font-size: .8125rem;
+      color: var(--sub);
+      text-align: center;
+      margin-top: .5rem;
+    }
+    .post-body table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .875rem;
+      margin: 1.5rem 0;
+      color: var(--sub);
+    }
+    .post-body th {
+      background: var(--bg2);
+      color: var(--text);
+      font-weight: 600;
+      padding: .6rem .875rem;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+    .post-body td {
+      padding: .5rem .875rem;
+      border: 1px solid var(--border);
+    }
+    .post-body tr:nth-child(even) td { background: rgba(22,27,34,.5); }
+    .post-body sup { font-size: .7em; vertical-align: super; }
+    .post-body .wp-caption, .post-body .wp-block-image { margin: 1.5rem 0; }
+    .post-body .wp-caption-text, .post-body figcaption {
+      font-size: .8125rem;
+      color: var(--sub);
+      text-align: center;
+      margin-top: .4rem;
+    }
+    /* Hide Elementor wrappers that weren't stripped */
+    .post-body [class*="elementor-"] { all: unset; display: contents; }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .8125rem;
+      color: var(--sub);
+      padding: 1.5rem 0 0;
+      transition: color .15s;
+    }
+    .back-link:hover { color: var(--text); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="../index.html">Nishanth K</a>
+    <ul class="nav-links">
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../writing.html" class="active">Writing</a></li>
+      <li><a href="../research.html">Research</a></li>
+      <li><a href="../policy.html">Policy</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <a class="back-link" href="../writing.html">← Back to Writing</a>
+
+  <div class="post-header">
+    <h1>Exploratory Analysis of Credit and GDP Growth Rates for Tamil Nadu</h1>
+    <div class="post-meta">
+      <span class="post-date">April 27, 2016</span>
+      <span class="post-origin-inline">Originally published in the <a href="https://dvararesearch.com/" target="_blank" rel="noopener">Dvara Research Blog</a></span>
+      <div class="post-authors"><span class="author-name">Irene Baby</span><span class="author-name">Nishanth Kumar</span></div>
+    </div>
+    <div class="post-tags-list"><span class="post-tag">financial depth</span><span class="post-tag">Financial Lives of Poor Households</span></div>
+  </div>
+
+  <div class="post-body">
+    <p>This post is the next in the <a href="https://dvararesearch.com/tag/financial-depth/" rel="noopener" target="_blank">credit depth series</a>. While the previous <a href="https://dvararesearch.com/exploratory-analysis-of-credit-to-gdp-variable-for-tamil-nadu/%22" rel="noopener" target="_blank">post</a> covered trends in Credit-to-GDP variable for the districts of Tamil Nadu, this post will elucidate trends related to Compounded Annual Growth Rate (CAGR, henceforth referred to as growth rate)<sup>1</sup> of Credit, Gross State Domestic Product (GSDP) and Credit-to-GDP variables.</p>
+<p>Figure 1 plots growth rate of bank credit outstanding for various districts on the x-axis and growth rate of Gross District Domestic Product (GDDP) for these districts on the y-axis (both in constant prices). The colour of each bubble (as given by the scale on the right hand side) indicates the district’s share in total credit outstanding in Tamil Nadu in 2011-12. The size of each bubble indicates the proportion of each district’s Gross District Domestic Product (GDDP) to Tamil Nadu’s Gross State Domestic Product (GSDP) in 2011-12.</p>
+<p><object data="./Exploratory Analysis of Credit and GDP Growth Rates for Tamil Nadu - Dvara Research_files/Figure4_1.html" height="500" width="650"><embed height="500" src="https://dvararesearch.com/wp-content/uploads/2024/02/Figure4_1.html" width="650"/></object><br/>
+<em>Figure 1: Credit Growth Rate versus GDP Growth Rate of Districts at Constant Prices (2004-05 to 2011-12) </em></p>
+<ul>
+<li><strong>Observation 1:</strong> There is a catch-up effect (or convergence)<sup>2</sup> in credit growth rate, relative to Chennai for districts like Kancheepuram, Vellore and Tiruvallur. However, because of the wide disparities at the base level, the time period for the eventual ‘catch-up’ can be substantial. To elucidate, Chennai with credit growth rate of 23% and GDDP growth rate of 7.5% constitutes more than 50% of total credit outstanding in Tamil Nadu in 2011-12 (indicated by its colour- yellow). Kancheepuram, with credit growth rate of 26%, and GDDP growth rate of 15%- almost twice as Chennai’s- still only constitutes roughly 2% to the total credit outstanding in Tamil Nadu in 2011-12<sup>3</sup>.</li>
+<li><strong>Observation 2:</strong> 12 of the 32 districts, (including Perambalur, Ariyalur, Nilgiris and Dharmapuri) in Tamil Nadu contributed less than 1% each to the state’s total bank credit outstanding. However, it is also to bear in mind that the outliers in the plot: Krishnagiri (on the extreme right, top corner), Tirupur (on the extreme left, top corner) and Ariyalur (on the extreme left, bottom corner) are recently formed districts (as explained in the previous post).</li>
+</ul>
+<p>Figure 2 plots the credit-to-GDP ratio for each district in Tamil Nadu in 2004-05 on the x-axis and the same variable for 2011-12 on the y-axis. The colour of the bubbles (as given by the scale on the right hand side) indicates credit-to-GDP in 2011-12.</p>
+<p><object data="./Exploratory Analysis of Credit and GDP Growth Rates for Tamil Nadu - Dvara Research_files/Figure4_2.html" height="500" width="650"><span class="mce_SELRES_start" data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;">﻿</span><embed height="500" src="https://dvararesearch.com/wp-content/uploads/2024/02/Figure4_2.html" width="650"/></object><br/>
+<em>Figure 2: District Wise Credit-to-GDP Ratio in Tamil Nadu at Current Prices (2004-05 and 2011-12)</em></p>
+<ul>
+<li><strong>Observation 3:</strong> As discussed in the previous blog <a href="https://dvararesearch.com/exploratory-analysis-of-credit-to-gdp-variable-for-tamil-nadu/" rel="noopener" target="_blank">post</a>, the credit-to-GDP ratio for Tamil Nadu in 2011-12 was approximately 71.4% (current prices). As evidenced from Figure 2, this high credit depth was primarily driven by Chennai (561% in 2011-12, current prices) and Coimbatore (131% in 2011-12, current prices).</li>
+</ul>
+<p>Figure 3 shows a zoomed-in version of the same figure to better understand the trends in districts besides Chennai and Coimbatore.</p>
+<p><object data="./Exploratory Analysis of Credit and GDP Growth Rates for Tamil Nadu - Dvara Research_files/Figure4_3.html" height="500" width="650"><embed height="500" src="https://dvararesearch.com/wp-content/uploads/2024/02/Figure4_3.html" width="650"/></object></p>
+<ul>
+<li><strong>Observation 4:</strong> Districts such as Tiruvallur and Vellore had low levels of credit depth with 15% and 18% respectively (current prices). Hence, there was a wide variation in the levels of credit depth in Tamil Nadu as of 2011-12.</li>
+</ul>
+<p>Figure 4: Growth in Credit-to-GDP Ratio for Chennai and Coimbatore (2004-05 to 2011-12)<br/>
+<object data="./Exploratory Analysis of Credit and GDP Growth Rates for Tamil Nadu - Dvara Research_files/Figure4_4.html" height="500" width="650"><embed height="500" src="https://dvararesearch.com/wp-content/uploads/2024/02/Figure4_4.html" width="650"/></object><br/>
+Figure 5: Growth in Credit-to-GDP Ratio for Select Districts (2004-05 to 2011-12)<br/>
+<object data="./Exploratory Analysis of Credit and GDP Growth Rates for Tamil Nadu - Dvara Research_files/Figure5_5.html" height="500" width="650"><embed height="500" src="https://dvararesearch.com/wp-content/uploads/2024/02/Figure5_5.html" width="650"/></object></p>
+<p>Figures 4 and 5 show distinct patterns for different districts in their growth of Credit-to-GDP ratio from 2004-05 to 2011-12.</p>
+<ul>
+<li><strong>Observation 5:</strong> Districts such as Chennai (Figure 4) and Theni (Figure 5) have been growing relatively steadily whereas districts such as Thiruvallur and Dharmapuri have relatively stagnated.</li>
+</ul>
+<p>Thus, the exploratory analysis undertaken clearly establishes the wide variation in distribution and depth of credit among districts in Tamil Nadu. Our future work will focus on better understanding the factors that lead to this difference, both from demand and supply sides.</p>
+<p><em>(Note: Please note that the figures in this post are interactive files, you can hover or zoom in on these for more details.)</em></p>
+<p>—</p>
+<p>1 – CAGR = [(Amount / Principal) ^ (1/ Number of years)]-1<br/>
+2 – <a href="http://www.econ.nyu.edu/user/debraj/Courses/Readings/BarroGrowth.pdf" rel="noopener" target="_blank">http://www.econ.nyu.edu/user/debraj/Courses/Readings/BarroGrowth.pdf</a><br/>
+3 – Credit-to-GDP of Kancheepuram has increased from 15% in 2004-05 t0 20% in 2011-12.</p>
+<p> </p>
+<div class="has-social-placeholder has-content-area" data-hashtags="" data-post-id="109873461" data-title="Exploratory Analysis of Credit and GDP Growth Rates for Tamil Nadu" data-url="https://dvararesearch.com/exploratory-analysis-of-credit-and-gdp-growth-rates-for-tamil-nadu/"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2024 Nishanth K</span>
+    <div class="footer-links">
+      <a href="../about.html">About</a>
+      <a href="../writing.html">Writing</a>
+      <a href="../research.html">Research</a>
+      <a href="../policy.html">Policy</a>
+      <a href="mailto:nishanthk050@gmail.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

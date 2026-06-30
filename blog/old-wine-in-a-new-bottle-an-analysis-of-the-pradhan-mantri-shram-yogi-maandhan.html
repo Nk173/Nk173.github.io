@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Old wine in a new bottle? – An analysis of the Pradhan Mantri Shram-Yogi Maandhan — Nishanth K</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .post-header { padding: 3.5rem 0 2rem; border-bottom: 1px solid var(--border); }
+    .post-header h1 {
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -.03em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .post-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .75rem 1.5rem;
+      font-size: .8125rem;
+      color: var(--sub);
+    }
+    .post-date { color: var(--sub); }
+    .post-origin-inline { font-size: .8125rem; color: var(--sub); }
+    .post-origin-inline a { color: var(--sub); text-decoration: underline; }
+    .post-origin-inline a:hover { color: var(--text); }
+    .post-authors { display: flex; gap: .5rem; flex-wrap: wrap; }
+    .author-name {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: .15rem .6rem;
+      font-size: .75rem;
+      color: var(--sub);
+    }
+    .post-tags-list { display: flex; gap: .375rem; flex-wrap: wrap; margin-top: .25rem; }
+    .post-tag {
+      font-size: .6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      padding: .15rem .5rem;
+      border-radius: 4px;
+      background: rgba(47,129,247,.12);
+      color: #58a6ff;
+    }
+
+    /* Article body styles */
+    .post-body {
+      max-width: 720px;
+      padding: 2.5rem 0 5rem;
+    }
+    .post-body p {
+      color: var(--sub);
+      font-size: .9375rem;
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+    .post-body h1,.post-body h2,.post-body h3,.post-body h4 {
+      color: var(--text);
+      font-weight: 600;
+      letter-spacing: -.02em;
+      margin: 2rem 0 .75rem;
+      line-height: 1.3;
+    }
+    .post-body h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: .5rem; }
+    .post-body h3 { font-size: 1.0625rem; }
+    .post-body h4 { font-size: .9375rem; color: var(--sub); }
+    .post-body strong, .post-body b { color: var(--text); font-weight: 600; }
+    .post-body em, .post-body i { color: #b0bec5; font-style: italic; }
+    .post-body a { color: var(--accent); }
+    .post-body a:hover { text-decoration: underline; }
+    .post-body ul, .post-body ol {
+      color: var(--sub);
+      font-size: .9375rem;
+      line-height: 1.8;
+      margin: .75rem 0 1.25rem 1.5rem;
+    }
+    .post-body li { margin-bottom: .4rem; }
+    .post-body blockquote {
+      border-left: 3px solid var(--accent);
+      margin: 1.5rem 0;
+      padding: .75rem 1.25rem;
+      background: var(--bg2);
+      border-radius: 0 var(--r) var(--r) 0;
+      color: var(--sub);
+      font-style: italic;
+    }
+    .post-body img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--r);
+      margin: 1.5rem 0;
+      border: 1px solid var(--border);
+      display: block;
+    }
+    .post-body figure { margin: 1.5rem 0; }
+    .post-body figcaption {
+      font-size: .8125rem;
+      color: var(--sub);
+      text-align: center;
+      margin-top: .5rem;
+    }
+    .post-body table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .875rem;
+      margin: 1.5rem 0;
+      color: var(--sub);
+    }
+    .post-body th {
+      background: var(--bg2);
+      color: var(--text);
+      font-weight: 600;
+      padding: .6rem .875rem;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+    .post-body td {
+      padding: .5rem .875rem;
+      border: 1px solid var(--border);
+    }
+    .post-body tr:nth-child(even) td { background: rgba(22,27,34,.5); }
+    .post-body sup { font-size: .7em; vertical-align: super; }
+    .post-body .wp-caption, .post-body .wp-block-image { margin: 1.5rem 0; }
+    .post-body .wp-caption-text, .post-body figcaption {
+      font-size: .8125rem;
+      color: var(--sub);
+      text-align: center;
+      margin-top: .4rem;
+    }
+    /* Hide Elementor wrappers that weren't stripped */
+    .post-body [class*="elementor-"] { all: unset; display: contents; }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .8125rem;
+      color: var(--sub);
+      padding: 1.5rem 0 0;
+      transition: color .15s;
+    }
+    .back-link:hover { color: var(--text); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="../index.html">Nishanth K</a>
+    <ul class="nav-links">
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../writing.html" class="active">Writing</a></li>
+      <li><a href="../research.html">Research</a></li>
+      <li><a href="../policy.html">Policy</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <a class="back-link" href="../writing.html">← Back to Writing</a>
+
+  <div class="post-header">
+    <h1>Old wine in a new bottle? – An analysis of the Pradhan Mantri Shram-Yogi Maandhan</h1>
+    <div class="post-meta">
+      <span class="post-date">February 5, 2019</span>
+      <span class="post-origin-inline">Originally published in the <a href="https://dvararesearch.com/" target="_blank" rel="noopener">Dvara Research Blog</a></span>
+      <div class="post-authors"><span class="author-name">Nishanth Kumar</span></div>
+    </div>
+    <div class="post-tags-list"><span class="post-tag">Government’s Welfare Schemes</span></div>
+  </div>
+
+  <div class="post-body">
+    <p>India has seen the evolution of both the publicly funded and privately funded models of pensions. We were the first country in southeast Asia to roll out a major social security program with the passing of the Employee’s State Insurance Act in 1948 and the Employee’s State Provident Fund in 1952. These programs aimed to cover about 2.5 million factory employees across the major industrial centres<a href="https://dvararesearch.com/old-wine-in-a-new-bottle-an-analysis-of-the-pradhan-mantri-shram-yogi-maandhan/#_ftn1" name="_ftnref1">[1]</a>. The programs that resulted from the passing of the laws provided cash benefits for workers due to injury or death during employment, cash sickness benefits during periods of wage loss, and cash maternity benefits. Until recently, social security benefits such as old-age pensions, health care and maternity benefits were confined strictly to the public sector<a href="https://dvararesearch.com/old-wine-in-a-new-bottle-an-analysis-of-the-pradhan-mantri-shram-yogi-maandhan/#_ftn2" name="_ftnref2">[2]</a>.  Over the last two decades, however, state-led initiatives have been taken to put in place more inclusive and robust policies to ensure universal social security. Now, there exists employer-employee co-contribution programs such as the Employee Provident Fund (EPF) that provide income for formal sector employees post-retirement. There exists a minimum income guarantee in the form of programs such as the Indira Gandhi National Old Age Pension Scheme (IGNOAPS), which is meant to provide a base level of income security for households below the poverty line. With a large proportion of low-income households employed in the informal workforce, addressing the puzzle of old-age income security for informal sector workers has become an important policy prerogative. Over recent years, the government has made significant efforts to provide old-age income security for the workers in the unorganised sector. More recently, it has made significant efforts to provide old-age income security for the workers in the unorganised sector through the National Pension Scheme – Swavalamban (NPS-S), that we had earlier <a href="https://dvararesearch.com/wp-content/uploads/2024/02/Microsoft-Word-20141231-Evaluation-of-NPS-S.docx.pdf" rel="noopener" target="_blank">evaluated</a> <a href="https://dvararesearch.com/old-wine-in-a-new-bottle-an-analysis-of-the-pradhan-mantri-shram-yogi-maandhan/#_ftn3" name="_ftnref3">[3]</a> and <a href="http://ifrogs.org/EVENTS/pensions_policy.html" rel="noopener" target="_blank">presented</a> on, which was later replaced by the Atal Pension Yojana (APY).</p>
+<p>In the much discussed 2019 interim budget presentation<a href="https://dvararesearch.com/old-wine-in-a-new-bottle-an-analysis-of-the-pradhan-mantri-shram-yogi-maandhan/#_ftn4" name="_ftnref4">[4]</a>, the Finance Minister announced a new pension scheme for unorganised sector labourers. The Pradhan Mantri Shram-Yogi Maandhan (PMSYM) is a defined benefit scheme that assures a monthly income of Rs. 3000 for any labourer over the age 60 and currently earning a monthly income of Rs. 15000 or less. This proposed scheme will now be available to supplement the Atal Pension Yojana (APY). Unlike the new PMSYM, the APY offered a defined benefit between Rs. 1000 and Rs 5000 per month predicated on the contributions from the individuals. While certain features of the scheme are yet to be clarified, table 1 provides an initial view of the features of the PMSYM with the other informal pension schemes.</p>
+<p><strong><u>Table 1: Comparing the Informal Sector Pension Schemes</u></strong></p>
+<table>
+<tbody>
+<tr>
+<td width="137"><strong>Conditions</strong></td>
+<td width="137"><strong>NPS-S</strong></td>
+<td width="164"><strong>Atal Pension Yojana</strong></td>
+<td width="164"><strong>PMSYM</strong></td>
+</tr>
+<tr>
+<td width="137">Type of scheme</td>
+<td width="137">Defined Contributions</td>
+<td width="164">Defined Benefit</td>
+<td width="164">Defined Benefit</td>
+</tr>
+<tr>
+<td width="137">Entry Age Eligibility</td>
+<td width="137">18-65</td>
+<td width="164">18-40</td>
+<td width="164">TBA</td>
+</tr>
+<tr>
+<td width="137">Income Eligibility</td>
+<td width="137">–</td>
+<td width="164">–</td>
+<td width="164">Upto Rs. 15000</td>
+</tr>
+<tr>
+<td width="137">Govt. Contribution</td>
+<td width="137">Rs. 1000 per year for individuals contributing Rs. 1000 or more in that year.</td>
+<td width="164">50% of the total contribution or Rs. 1000 per annum, whichever is lower</td>
+<td width="164">Equal monthly contributions as individual</td>
+</tr>
+<tr>
+<td width="137">Monthly Pension Benefits</td>
+<td width="137">Dependent on contributions</td>
+<td width="164">Between Rs. 1000 and Rs. 5000</td>
+<td width="164">Rs. 3000</td>
+</tr>
+<tr>
+<td width="137">Access Points</td>
+<td width="137">Aggregators</td>
+<td width="164">Linked to Bank Account</td>
+<td width="164">Linked to Bank Account</td>
+</tr>
+</tbody>
+</table>
+<p>The Atal Pension Yojana and the PMSYM are defined benefit schemes where the monthly pension benefits are fixed. The APY provided different slabs of monthly benefits ranging from Rs. 1000 to Rs. 5000 (in multiples of 1000) that an individual can subscribe to. PMSYM, on the other hand, offers a fixed monthly pension of Rs. 3000 to all subscribers for a nominal monthly contribution. While these schemes are encouraging efforts, several issues are common across both schemes that require attention.</p>
+<p><strong><u>Inadequacy of the pension benefit</u></strong></p>
+<p>At first sight, these nominal pension benefits seem quite high especially given the low contributions expected from subscribers. For an 18-year old individual, contributing Rs. 55 every month for 42 years to secure a guaranteed monthly income of Rs. 3000 does seem quite attractive. However, it is important to read these numbers in context. Assuming a 5% inflation rate, the real value of the monthly pension of Rs. 3000 would drop to Rs. 387 per month in 42 years. Even with a rate well within India’s inflation targets (between 2%-6%), these benefits will be depleted to an insignificant amount. To be more specific, using data from the IHDS-II<a href="https://dvararesearch.com/old-wine-in-a-new-bottle-an-analysis-of-the-pradhan-mantri-shram-yogi-maandhan/#_ftn5" name="_ftnref5">[5]</a>, we estimate that a monthly pension of Rs. 3000 will only account for 6% of the consumption expenditure of a household earning Rs. 15000 or less in 42 years<a href="https://dvararesearch.com/old-wine-in-a-new-bottle-an-analysis-of-the-pradhan-mantri-shram-yogi-maandhan/#_ftn6" name="_ftnref6">[6]</a>. Similarly, under the APY, the monthly pension of Rs. 5000 will only account for 10% of the consumption expenditure of a household in 42 years.</p>
+<p><strong><u>Table 2: Adequacy of Pension benefits under the existing schemes</u></strong></p>
+<table width="719">
+<tbody>
+<tr>
+<td width="133">Scheme</td>
+<td width="119">Age of Joining</td>
+<td width="159">Nominal Monthly Pension (in Rs.)</td>
+<td width="111">Real Monthly Pension (at 5% inflation)<p></p>
+<p>(in Rs. )</p></td>
+<td width="197">Extent of Coverage (Real Monthly Pension as a fraction of average monthly household expenditure)</td>
+</tr>
+<tr>
+<td rowspan="3" width="133">PMSYM</td>
+<td width="119">18</td>
+<td width="159">3000</td>
+<td width="111">387</td>
+<td width="197">6%</td>
+</tr>
+<tr>
+<td width="119">29</td>
+<td width="159">3000</td>
+<td width="111">661</td>
+<td width="197">11%</td>
+</tr>
+<tr>
+<td width="119">40</td>
+<td width="159">3000</td>
+<td width="111">1131</td>
+<td width="197">18%</td>
+</tr>
+<tr>
+<td rowspan="3" width="133">APY</td>
+<td width="119">18</td>
+<td width="159">5000</td>
+<td width="111">644</td>
+<td width="197">10%</td>
+</tr>
+<tr>
+<td width="119">29</td>
+<td width="159">5000</td>
+<td width="111">1102</td>
+<td width="197">18%</td>
+</tr>
+<tr>
+<td width="119">40</td>
+<td width="159">5000</td>
+<td width="111">1884</td>
+<td width="197">30%</td>
+</tr>
+<tr>
+<td rowspan="3" width="133">PMSYM + APY</td>
+<td width="119">18</td>
+<td width="159">8000</td>
+<td width="111">1031</td>
+<td width="197">16%</td>
+</tr>
+<tr>
+<td width="119">29</td>
+<td width="159">8000</td>
+<td width="111">1763</td>
+<td width="197">28%</td>
+</tr>
+<tr>
+<td width="119">40</td>
+<td width="159">8000</td>
+<td width="111">3015</td>
+<td width="197">48%</td>
+</tr>
+</tbody>
+</table>
+<p>Given the announcement does not mention, in any specific detail, whether the APY would be merged with the PMSYM, we assume that both schemes would be available to the consumer. An 18-year-old can avail a nominal monthly pension of Rs. 8000 (real value of pension will be Rs. 1031) in 42 years by contributing a total amount of Rs. 365 every month towards both schemes. While this amount may be insufficient income security for an 18-year-old, it would be more beneficial for 40-year-old for whom it may cover almost half of the monthly household expenditure.</p>
+<p>The larger point here is that the lack of inflation-indexed pension benefits poses serious threats to the future consumption of these households. Indexing both the subscriber and government contributions to inflation on an annual basis could provide the subscriber with a substantially higher corpus. For instance, the US Social Security Administration ensures inflation-indexed benefits for beneficiaries by making an annual cost of living adjustment. This ensures that the future benefits reflect the rise in the standard of living that occurred during his or her working lifetime<a href="https://dvararesearch.com/old-wine-in-a-new-bottle-an-analysis-of-the-pradhan-mantri-shram-yogi-maandhan/#_ftn7" name="_ftnref7">[7]</a>.</p>
+<p><strong><u>Barriers to accessing the benefits</u></strong></p>
+<p>The APY scheme marked a significant shift in the delivery architecture of informal pensions in India. Both the APY as well as the recently announced PMSYM are linked to bank accounts of the beneficiaries and rely exclusively on the bank channel for distribution. The NPS-S, on the other hand, allowed for the use of non-bank channels for aggregation such as labour boards, NBFCs, cooperatives, microfinance institutions and NGOs which had extensive grassroots outreach to unbanked individuals employed in informal labour. While this shift towards delivery using the banking channels may afford some efficiency gains in theory, it is important to note that there are growing concerns over the non-usage of bank accounts in India. The latest edition of the Global Findex Survey in 2017 indicated the number of individuals with a bank account who neither withdrew or deposited money rose from 42% in 2014 to 48% in 2017. While the government has made significant efforts to make access to bank accounts ubiquitous, these efforts may also have some unintended consequences that create exclusion – transitional or permanent. For instance, studies in Jharkhand<a href="https://dvararesearch.com/old-wine-in-a-new-bottle-an-analysis-of-the-pradhan-mantri-shram-yogi-maandhan/#_ftn8" name="_ftnref8">[8]</a> have shown challenges with accessing pension because of frictions in the bank account and Aadhaar process in its early days of implementation. There are also old challenges of exclusion by the banking channel that have not been fully addressed<a href="https://dvararesearch.com/old-wine-in-a-new-bottle-an-analysis-of-the-pradhan-mantri-shram-yogi-maandhan/#_ftn9" name="_ftnref9">[9]</a> and only get exacerbated as the migration of schemes to the JAM framework increases footfall at bank branches. Hence, it is imperative that delivery architecture for APY, PMSYM and any supplementary informal pension schemes considered in the future should allow for the existence of these multiple channels of delivery to enable higher levels of participation and persistence among subscribers.</p>
+<p>As India faces unprecedented population ageing due to lengthening lifespans and dropping fertility, it is quite encouraging to see policy directed towards ensuring income security for the future. However, the lack of improvements in the design of old-age pensions is quite telling if you consider the fact that, we discussed the same design flaws in a <a href="https://dvararesearch.com/an-initial-analysis-of-the-atal-pension-yojana/" rel="noopener" target="_blank">post</a> more than three years ago during the announcement of the APY. These design and delivery concerns must be addressed as soon as possible to ensure these schemes meet the effective requirements of the beneficiaries in the future.</p>
+<p>—</p>
+<p> </p>
+<p><a href="https://dvararesearch.com/old-wine-in-a-new-bottle-an-analysis-of-the-pradhan-mantri-shram-yogi-maandhan/#_ftnref1" name="_ftn1">[1]</a> Cohen, Wilbur, Social Security in India (1953), Social Security Bulletin, Vol. 16, No. 5</p>
+<p><a href="https://dvararesearch.com/old-wine-in-a-new-bottle-an-analysis-of-the-pradhan-mantri-shram-yogi-maandhan/#_ftnref2" name="_ftn2">[2]</a> Drèze, Jean and Khera, Reetika, Recent Social Security Initiatives in India (June 26, 2016). Available at SSRN: <a href="https://ssrn.com/abstract=2800699">https://ssrn.com/abstract=2800699</a> or <a href="https://dx.doi.org/10.2139/ssrn.2800699">http://dx.doi.org/10.2139/ssrn.2800699</a></p>
+<p><a href="https://dvararesearch.com/old-wine-in-a-new-bottle-an-analysis-of-the-pradhan-mantri-shram-yogi-maandhan/#_ftnref3" name="_ftn3">[3]</a> Dvara Research (2014), Evaluation of the National Pension System – Swavalamban Scheme</p>
+<p><a href="https://dvararesearch.com/old-wine-in-a-new-bottle-an-analysis-of-the-pradhan-mantri-shram-yogi-maandhan/#_ftnref4" name="_ftn4">[4]</a> The full budget speech can be found <a href="https://www.thehindu.com/news/resources/article26149388.ece/BINARY/interimbudget">here</a></p>
+<p><a href="https://dvararesearch.com/old-wine-in-a-new-bottle-an-analysis-of-the-pradhan-mantri-shram-yogi-maandhan/#_ftnref5" name="_ftn5">[5]</a> Desai, Sonalde, and Vanneman, Reeve. India Human Development Survey-II (IHDS-II), 2011-12. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2018-08-08. <a href="https://doi.org/10.3886/ICPSR36151.v6" rel="noopener" target="_blank">https://doi.org/10.3886/ICPSR36151.v6</a></p>
+<p><a href="https://dvararesearch.com/old-wine-in-a-new-bottle-an-analysis-of-the-pradhan-mantri-shram-yogi-maandhan/#_ftnref6" name="_ftn6">[6]</a> This is in fact a generous estimate given that the expenditure data used here is from IHDS-II collected in 2011-12.</p>
+<p><a href="https://dvararesearch.com/old-wine-in-a-new-bottle-an-analysis-of-the-pradhan-mantri-shram-yogi-maandhan/#_ftnref7" name="_ftn7">[7]</a> Indexing factors for Earning, Social Security Administration, United States of America. <a href="https://www.ssa.gov/oact/cola/awifactors.html" rel="noopener" target="_blank">https://www.ssa.gov/oact/cola/awifactors.html</a></p>
+<p><a href="https://dvararesearch.com/old-wine-in-a-new-bottle-an-analysis-of-the-pradhan-mantri-shram-yogi-maandhan/#_ftnref8" name="_ftn8">[8]</a> Biswas (2017), “Struggles of Pensioners in Jharkhand”, EPW Vol. 52, Issue No. 52</p>
+<p><a href="https://dvararesearch.com/old-wine-in-a-new-bottle-an-analysis-of-the-pradhan-mantri-shram-yogi-maandhan/#_ftnref9" name="_ftn9">[9]</a> Mowl and Boudot (2014), “Barriers to Basic Banking”, NSE Working Paper Series No. WP-2014-1</p>
+<p> </p>
+<div class="has-social-placeholder has-content-area" data-hashtags="" data-post-id="109875879" data-title="Old wine in a new bottle? – An analysis of the Pradhan Mantri Shram-Yogi Maandhan" data-url="https://dvararesearch.com/old-wine-in-a-new-bottle-an-analysis-of-the-pradhan-mantri-shram-yogi-maandhan/"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2024 Nishanth K</span>
+    <div class="footer-links">
+      <a href="../about.html">About</a>
+      <a href="../writing.html">Writing</a>
+      <a href="../research.html">Research</a>
+      <a href="../policy.html">Policy</a>
+      <a href="mailto:nishanthk050@gmail.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

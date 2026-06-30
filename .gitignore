@@ -1,0 +1,21 @@
+# dev / working files
+TODO.md
+links.csv
+generate_blogs.py
+Untitled-1.ipynb
+
+# old Google Sites export (source material, not part of the site)
+Nishanth K.html
+Nishanth K_files/
+
+# unused early experiments / large assets
+network_morph.py
+network_morph_layer_colored.gif
+network_morph_layer_colored.gif.zip
+power_method_frames/
+power_method_normalised_frames/
+output.png
+
+# OS cruft
+.DS_Store
+**/.DS_Store
