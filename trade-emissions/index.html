@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>The hidden carbon in global trade</title>
+  <link rel="stylesheet" href="style.css?v=7">
+</head>
+<body>
+  <header>
+    <p class="eyebrow">EMISSIONS EMBODIED IN INTERNATIONAL TRADE · 2022 · OECD 2025 EDITION</p>
+    <h1 id="heroTitle">How trade redistributes emissions between economies</h1>
+    <p id="heroDek" class="dek">An illustrative guide to the trade-value and embodied-emissions networks used to identify unequal environmental burdens in global production.</p>
+    <nav class="page-tabs" aria-label="Visualization sections"><button class="active" data-tab="example">Illustrative network</button><button data-tab="network" data-metric="emissions">Absolute emissions</button><button data-tab="network" data-metric="inequity">Inequitable emissions</button><button data-tab="sectors">Sectoral flows</button></nav>
+  </header>
+  <section id="example-tab" class="example-tab">
+    <div class="example-copy"><p class="eyebrow">HOW TO READ THE NETWORK</p><h2>Trade value and embodied emissions describe the same flow differently</h2><p>The upper network represents monetary trade; the lower network represents the emissions embodied in those transactions. A link becomes inequitable when its normalized emissions share is greater than its normalized trade-value share.</p><div class="equation"><span><small>Emissions share</small>5%</span><b>÷</b><span><small>Trade share</small>2%</span><b>=</b><strong><small>Inequity</small>2.5×</strong></div><p>The resulting inequitable-emissions network, <em>G<sub>EI</sub></em>, keeps only directed links above 1×. These retained links determine the trophic hierarchy shown in the interactive network.</p></div>
+    <figure class="example-figure"><img class="paper-figure" src="assets/fig0_toy_2_web.png" alt="Two-layer illustrative network comparing trade value with greenhouse-gas emissions embodied in trade.">
+      <template>
+      <svg class="model-svg" viewBox="0 0 960 690" role="img" aria-labelledby="model-title model-desc">
+        <title id="model-title">Toy model of trade value and embodied-emissions networks</title>
+        <desc id="model-desc">Five fictional countries appear in corresponding trade and emissions network layers. A highlighted export from country A to country B has a larger emissions share than trade share, producing an inequity ratio above one.</desc>
+        <defs>
+          <marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+          <marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z"/></marker>
+        </defs>
+        <g class="layer-card trade-layer">
+          <rect x="30" y="62" width="500" height="205" rx="12"/>
+          <text class="layer-kicker" x="52" y="91">MONETARY NETWORK</text><text class="layer-title" x="52" y="120">Trade value</text>
+          <g class="minor-links"><path d="M140 160L270 125"/><path d="M270 125L420 172"/><path d="M140 160L220 225"/><path d="M220 225L420 172"/><path d="M365 225L270 125"/><path d="M365 225L420 172"/></g>
+          <path class="focus trade-focus" d="M140 160C235 180 325 175 420 172" marker-end="url(#arrow-ink)"/>
+          <g class="toy-country"><circle cx="140" cy="160" r="19"/><text x="140" y="165">A</text><circle cx="270" cy="125" r="17"/><text x="270" y="130">C</text><circle cx="220" cy="225" r="17"/><text x="220" y="230">D</text><circle cx="365" cy="225" r="17"/><text x="365" y="230">E</text><circle cx="420" cy="172" r="19"/><text x="420" y="177">B</text></g>
+          <g class="share-label"><rect x="248" y="146" width="104" height="43" rx="6"/><text x="300" y="164">TRADE SHARE</text><text x="300" y="181">2%</text></g>
+        </g>
+        <g class="layer-card emissions-layer">
+          <rect x="30" y="305" width="500" height="205" rx="12"/>
+          <text class="layer-kicker" x="52" y="334">ENVIRONMENTAL NETWORK</text><text class="layer-title" x="52" y="363">Embodied emissions</text>
+          <g class="minor-links"><path d="M140 405L270 370"/><path d="M270 370L420 417"/><path d="M140 405L220 470"/><path d="M220 470L420 417"/><path d="M365 470L270 370"/><path d="M365 470L420 417"/></g>
+          <path class="focus emission-focus" d="M140 405C235 425 325 420 420 417" marker-end="url(#arrow-accent)"/>
+          <g class="toy-country"><circle cx="140" cy="405" r="19"/><text x="140" y="410">A</text><circle cx="270" cy="370" r="17"/><text x="270" y="375">C</text><circle cx="220" cy="470" r="17"/><text x="220" y="475">D</text><circle cx="365" cy="470" r="17"/><text x="365" y="475">E</text><circle cx="420" cy="417" r="19"/><text x="420" y="422">B</text></g>
+          <g class="share-label"><rect x="248" y="390" width="104" height="43" rx="6"/><text x="300" y="408">GHG SHARE</text><text x="300" y="425">5%</text></g>
+        </g>
+        <g class="pair-panel">
+          <text class="layer-kicker" x="603" y="90">ONE BILATERAL FLOW</text><text class="pair-title" x="603" y="124">Exporter A → Importer B</text>
+          <circle class="producer" cx="640" cy="225" r="30"/><text class="pair-code" x="640" y="231">A</text><circle class="consumer" cx="855" cy="225" r="30"/><text class="pair-code" x="855" y="231">B</text>
+          <path class="pair-trade" d="M675 211C745 165 805 165 820 211" marker-end="url(#arrow-ink)"/><text class="pair-arrow-label" x="748" y="157">TRADE SHARE · 2%</text>
+          <path class="pair-ghg" d="M675 239C745 280 805 280 820 239" marker-end="url(#arrow-accent)"/><text class="pair-arrow-label accent-text" x="748" y="294">GHG SHARE · 5%</text>
+          <g class="ratio-card"><rect x="595" y="355" width="315" height="123" rx="10"/><text class="ratio-label" x="752" y="384">RELATIVE EMISSIONS INTENSITY</text><text class="ratio-main" x="752" y="435">5% ÷ 2% = 2.5×</text><text class="ratio-result" x="752" y="462">INEQUITABLE FLOW · ABOVE 1×</text></g>
+          <text class="income-caption" x="640" y="270">EXPORTER</text><text class="income-caption" x="855" y="270">IMPORTER</text>
+          <g class="gei-panel"><rect x="595" y="505" width="315" height="112" rx="10"/><text class="gei-kicker" x="752" y="531">INEQUITABLE EMISSIONS NETWORK · G<tspan baseline-shift="sub">EI</tspan></text><circle cx="645" cy="570" r="18"/><text class="gei-code" x="645" y="575">A</text><path d="M671 570L827 570" marker-end="url(#arrow-accent)"/><circle cx="855" cy="570" r="18"/><text class="gei-code" x="855" y="575">B</text><text class="gei-edge" x="752" y="559">e<tspan baseline-shift="sub">AB</tspan> = 2.5 · RETAINED</text></g>
+        </g>
+        <text class="figure-note" x="30" y="655">The same directed relationship is weighted by trade value, embodied GHG, and finally their normalized ratio.</text>
+      </svg>
+      </template>
+      <figcaption>Illustrative network adapted from Kumar, Jensen and Viegas (2026). Countries and links are schematic rather than observed.</figcaption>
+    </figure>
+    <footer class="references"><h3>Sources and data</h3><ol><li>Kumar, N., Jensen, H. J. &amp; Viegas, E. (2026), <a href="https://doi.org/10.1098/rsos.251246">“Tracing inequitable emissions in global trade using a networks approach”</a>, <em>Royal Society Open Science</em> 13: 251246.</li><li>OECD, <a href="https://www.oecd.org/en/data/datasets/inter-country-input-output-tables.html">Inter-Country Input-Output tables, 2025 edition</a>.</li><li>OECD, <a href="https://www.oecd.org/en/data/datasets/greenhouse-gas-footprint-indicators.html">Greenhouse gas footprint indicators, 2025 edition</a>.</li><li><a href="data/2022/inequitable_emissions_interactive_2022.zip">Download the complete dataset used by this interactive</a> (CSV tables, metadata and data dictionary).</li></ol></footer>
+  </section>
+  <section id="sector-tab" class="sector-tab" hidden>
+    <div class="sector-heading"><p class="eyebrow">PRODUCING INDUSTRIES · OECD ICIO · 2022</p><h2>Where are emissions embodied in trade generated?</h2><p>Compare industries by their absolute embodied GHG emissions and by the burden carried on links where the normalized emissions share exceeds the normalized trade-value share.</p><span class="sector-control-label">Display</span><div class="sector-mode"><button class="active" data-sector-view="ranking">Ranked industries</button><button data-sector-view="network">Downstream network</button></div><span class="sector-control-label">Measure</span><div class="sector-mode"><button class="active" data-sector-mode="inequitable">Inequitable emissions</button><button data-sector-mode="absolute">Absolute emissions</button></div></div>
+    <div id="sector-chart" class="sector-chart" aria-live="polite"></div>
+    <div id="sector-network-view" class="sector-network-view" hidden><p class="sector-network-note">Arrows run from the producing industry to the downstream importing industry or final demand. The 300 largest qualifying links are shown for readability.</p><svg id="sector-network" role="img" aria-label="Industry-to-industry embodied emissions network"></svg><aside id="sector-details"><h2>Select an industry</h2><p>Click a node to highlight its direct downstream flows.</p></aside></div>
+  </section>
+  <main hidden>
+    <section class="controls" aria-label="Network controls">
+      <div class="direction-control"><span>Selected node</span><div class="direction-toggle"><button data-flow="export">Exports</button><button class="active" data-flow="import">Imports</button></div></div>
+      <label>View <select id="sector"><option value="Total">All 50 industries</option></select></label>
+      <label>Highlight <select id="depth"><option value="direct">Direct partners</option><option value="critical">Critical emissions path</option></select></label>
+      <label class="threshold-control"><span id="thresholdLabel">Inequity at least</span><div class="threshold-wrap"><input id="threshold" type="range" min="0" max="5" value="1" step="0.1" aria-describedby="thresholdBoundary"><span class="threshold-mark" aria-hidden="true"></span></div><div class="threshold-scale"><span id="scaleMin">0×</span><strong id="thresholdBoundary">1× boundary</strong><span id="scaleMax">5×</span></div><output id="thresholdValue">≥ 1.0×</output></label>
+      <button id="reset">Show all</button>
+    </section>
+    <p id="flow-description" class="flow-description"><strong>Imports view selected:</strong> clicking a country highlights embodied-emissions flows arriving from producing countries and traces the burden upstream.</p>
+    <section class="stage">
+      <div class="axis-label top">Downstream · disproportionate importers</div>
+      <svg id="network" role="img" aria-label="Directed inequitable trade network"></svg>
+      <div class="axis-label bottom">Upstream · emissions-intensive exporters</div>
+      <aside id="details"><h2>Select a country</h2><p>Click any node to trace the inequitable emissions embodied in its exports.</p></aside>
+    </section>
+    <p class="note">Vertical position shows trophic level. Node colour shows 2022 GDP per capita, PPP (constant 2021 international dollars): <span class="income-scale"></span> lower to higher income. Grey means unavailable (Taiwan and ROW). Pair details use all 50 OECD industries. The ratio compares normalized global shares; it is not tonnes per dollar.</p>
+  </main>
+  <script src="app.js?v=29"></script>
+</body>
+</html>
